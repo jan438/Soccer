@@ -7,9 +7,7 @@ import sys
 import csv
 import math
 import unicodedata
-import svgwrite
 from ics import Calendar, Event
-from svgwrite import Drawing
 from reportlab.graphics import renderPDF
 from reportlab.pdfgen import canvas
 from reportlab.lib.pagesizes import A4
@@ -21,7 +19,6 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.units import inch, mm
 from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
-from geopy.geocoders import Nominatim
 
 socfont = "LiberationSerif"
 version = "1.0"
