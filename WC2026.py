@@ -49,7 +49,7 @@ my_canvas = canvas.Canvas("PDF/WorldCup2026.pdf")
 my_canvas.setTitle("World Cup 2026")
 
 drawing = scaleSVG('north-america.svg', 0.5)
-renderPDF.draw(drawing, my_canvas, 0, 0)
+renderPDF.draw(drawing, my_canvas, 0, 100)
 
 my_canvas.save()
 key = input("Wait")
