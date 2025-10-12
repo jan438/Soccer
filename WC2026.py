@@ -23,6 +23,9 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from geopy.geocoders import Nominatim
 
+socfont = "LiberationSerif"
+version = "1.0"
+
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
     svgRenderer = SvgRenderer(svgfile)
@@ -50,6 +53,8 @@ my_canvas.setTitle("World Cup 2026")
 
 drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 100)
+my_canvas.setFont(socfont, 25)
+my_canvas.setTitle("World Cup Soccer 2026 " + version)
 
 my_canvas.save()
 key = input("Wait")
