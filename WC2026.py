@@ -53,9 +53,12 @@ my_canvas.setTitle("World Cup 2026")
 
 drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 100)
+drawing = scaleSVG('FIFA.svg', 0.1)
+renderPDF.draw(drawing, my_canvas, 0, 705)
+
 my_canvas.setFont(socfont, 25)
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
-my_canvas.drawString(100, 775, "World Cup Soccer 2026 " + version)
+my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
 my_canvas.save()
 key = input("Wait")
