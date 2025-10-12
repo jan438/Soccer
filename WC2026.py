@@ -23,6 +23,17 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from geopy.geocoders import Nominatim
 
+def scaleSVG(svgfile, scaling_factor):
+    svg_root = load_svg_file(svgfile)
+    svgRenderer = SvgRenderer(svgfile)
+    drawing = svgRenderer.render(svg_root)
+    scaling_x = scaling_factor
+    scaling_y = scaling_factor
+    drawing.width = drawing.minWidth() * scaling_x
+    drawing.height = drawing.height * scaling_y
+    drawing.scale(scaling_x, scaling_y)
+    return drawing
+
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
 if sys.platform[0] == 'w':
@@ -37,7 +48,7 @@ my_canvas = canvas.Canvas("PDF/WorldCup2026.pdf")
 
 my_canvas.setTitle("World Cup 2026")
 
-drawing = svg2rlg('north-america.svg')
+drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 0)
 
 my_canvas.save()
