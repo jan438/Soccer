@@ -48,9 +48,9 @@ bottom_padding = 0
 width = 595
 height = 842
 outsidearea = "#9e9e9e"
-# United States. Morocco, Tunisia, Iran, Japan, South Korea, Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
+# Morocco, Tunisia, Iran, Japan, South Korea, Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
 countnations = 48
-nations = "Australia", "Canada", "Egypt", "Jordan", "Mexico", "New Zealand", "Uzbekistan"
+nations = "Australia", "Canada", "Egypt", "Jordan", "Mexico", "New Zealand", "United States", "Uzbekistan"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
@@ -77,8 +77,10 @@ drawing = scaleSVG("Logos/" + nations[3] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 700)
 drawing = scaleSVG("Logos/" + nations[5] + ".svg", 0.06)
 renderPDF.draw(drawing, my_canvas, 0, 650)
-drawing = scaleSVG("Logos/" + nations[6] + ".svg", 0.1)
+drawing = scaleSVG("Logos/" + nations[6] + ".svg", 0.3)
 renderPDF.draw(drawing, my_canvas, 0, 600)
+drawing = scaleSVG("Logos/" + nations[7] + ".svg", 0.1)
+renderPDF.draw(drawing, my_canvas, 0, 550)
 
 my_canvas.save()
 key = input("Wait")
