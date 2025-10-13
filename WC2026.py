@@ -83,7 +83,7 @@ drawing = scaleSVG("Logos/" + nations[7] + ".svg", 0.3)
 renderPDF.draw(drawing, my_canvas, 0, 550)
 drawing = scaleSVG("Logos/" + nations[8] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 500)
-drawing = scaleSVG("Logos/" + nations[9] + ".svg", 0.8)
+drawing = scaleSVG("Logos/" + nations[9] + ".svg", 0.6)
 renderPDF.draw(drawing, my_canvas, 0, 450)
 
 my_canvas.save()
