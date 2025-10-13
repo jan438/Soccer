@@ -48,6 +48,7 @@ bottom_padding = 0
 width = 595
 height = 842
 outsidearea = "#9e9e9e"
+nation = "Egypt", "Mexico"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
