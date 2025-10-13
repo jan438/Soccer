@@ -75,7 +75,7 @@ my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
 drawing = scaleSVG("Logos/" + nations[3] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 700)
-drawing = scaleSVG("Logos/" + nations[5] + ".svg", 0.1)
+drawing = scaleSVG("Logos/" + nations[5] + ".svg", 0.21)
 renderPDF.draw(drawing, my_canvas, 0, 650)
 drawing = scaleSVG("Logos/" + nations[6] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 600)
