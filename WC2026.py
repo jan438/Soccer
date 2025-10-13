@@ -66,6 +66,7 @@ drawing = scaleSVG('FIFA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 770)
 
 my_canvas.setFont(socfont, 25)
+my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
