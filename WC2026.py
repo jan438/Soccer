@@ -49,7 +49,7 @@ width = 595
 height = 842
 outsidearea = "#9e9e9e"
 # United States. Morocco, Tunisia, Iran, Japan, South Korea, Uzbekistan. New Zealand. Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
-nation = "Australia", "Canada", "Egypt", "Jordan", "Mexico"
+nations = "Australia", "Canada", "Egypt", "Jordan", "Mexico"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
@@ -71,6 +71,9 @@ my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
+
+drawing = scaleSVG('Logos/Jordan.svg', 0.1)
+renderPDF.draw(drawing, my_canvas, 0, 700)
 
 my_canvas.save()
 key = input("Wait")
