@@ -41,7 +41,7 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
-# north-america svg width="1000" height="902"
+# north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
