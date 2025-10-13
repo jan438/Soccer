@@ -48,8 +48,8 @@ bottom_padding = 0
 width = 595
 height = 842
 outsidearea = "#9e9e9e"
-# United States. Morocco, Tunisia, Iran, Japan, Jordan, South Korea, Uzbekistan. New Zealand. Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
-nation = "Australia", "Canada", "Egypt", "Mexico"
+# United States. Morocco, Tunisia, Iran, Japan, South Korea, Uzbekistan. New Zealand. Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
+nation = "Australia", "Canada", "Egypt", "Jordan", "Mexico"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
