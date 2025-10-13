@@ -40,7 +40,8 @@ if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
 
-# 595 pixels = 210 mm A4 width
+# 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
+# north-america svg width="1000" height="902"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
