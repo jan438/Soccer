@@ -43,6 +43,12 @@ os.chdir(path)
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
 
+left_padding = 0
+bottom_padding = 0
+width = 595
+height = 842
+outsidearea = "#9e9e9e"
+
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
@@ -50,6 +56,9 @@ pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-Bol
 my_canvas = canvas.Canvas("PDF/WorldCup2026.pdf")
 
 my_canvas.setTitle("World Cup 2026")
+
+my_canvas.setFillColor(HexColor(outsidearea))
+my_canvas.rect(left_padding, bottom_padding, width, height, fill=1)
 
 drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 100)
