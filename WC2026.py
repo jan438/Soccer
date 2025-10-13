@@ -72,7 +72,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
-drawing = scaleSVG('Logos/Jordan.svg', 0.1)
+drawing = scaleSVG("Logos/" + nations[3] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 700)
 
 my_canvas.save()
