@@ -48,7 +48,7 @@ bottom_padding = 0
 width = 595
 height = 842
 outsidearea = "#9e9e9e"
-# Tunisia, Japan, South Korea, Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
+# Japan, South Korea, Argentina, Brazil, Ecuador, Uruguay, Paraguay, Colombia
 countnations = 48
 nations = "Australia", "Canada", "Egypt", "Iran", "Jordan", "Mexico", "New Zealand", "Tunisia", "United States", "Uzbekistan", "Morocco", "Ecuador"
 
@@ -74,7 +74,9 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
 drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 770)
+renderPDF.draw(drawing, my_canvas, 0, 790)
+drawing = scaleSVG("Logos/" + nations[1] + ".svg", 0.07)
+renderPDF.draw(drawing, my_canvas, 0, 750)
 drawing = scaleSVG("Logos/" + nations[3] + ".svg", 0.6)
 renderPDF.draw(drawing, my_canvas, 0, 700)
 drawing = scaleSVG("Logos/" + nations[4] + ".svg", 0.1)
