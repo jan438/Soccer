@@ -47,6 +47,8 @@ left_padding = 0
 bottom_padding = 0
 width = 595
 height = 842
+poule_width = 50
+poule_height = 50
 outsidearea = "#9e9e9e"
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
@@ -61,7 +63,7 @@ my_canvas = canvas.Canvas("PDF/WorldCup2026.pdf")
 my_canvas.setTitle("World Cup 2026")
 
 my_canvas.setFillColor(HexColor(outsidearea))
-my_canvas.rect(left_padding, bottom_padding, width, height, fill=1)
+my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
 drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 100)
@@ -72,6 +74,9 @@ my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
+
+my_canvas.setStrokeColor(black)
+my_canvas.rect(0, 600, poule_width, poule_height, stroke = 1, fill = 0)
 
 drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 790)
