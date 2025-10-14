@@ -48,7 +48,7 @@ bottom_padding = 0
 width = 595
 height = 842
 poule_width = 48
-poule_height = 50
+poule_height = 200
 outsidearea = "#9e9e9e"
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
