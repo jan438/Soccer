@@ -61,6 +61,7 @@ poule_height = 200
 outsidearea = "#9e9e9e"
 left_margin = 9.4
 poule_y = 500
+teamspp = 4
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
@@ -87,10 +88,14 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
+teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
     my_canvas.drawString(left_margin + poule * poule_width, poule_y + poule_height - 20, chr(65 + poule))
     my_canvas.rect(left_margin + poule * poule_width, poule_y, poule_width, poule_height, stroke = 1, fill = 0)
+    for team in range(teamspp):
+        print(teamcounter, nationsdata[teamcounter][0])
+        teamcounter += 1
 
 drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 790)
