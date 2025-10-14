@@ -80,7 +80,7 @@ my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
 my_canvas.setStrokeColor(black)
 for poule in range(12):
-    my_canvas.drawString(left_margin + poule * poule_width, poule_y + poule_height - 20, chr(65))
+    my_canvas.drawString(left_margin + poule * poule_width, poule_y + poule_height - 20, chr(65 + poule))
     my_canvas.rect(left_margin + poule * poule_width, poule_y, poule_width, poule_height, stroke = 1, fill = 0)
 
 drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
