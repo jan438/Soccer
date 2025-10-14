@@ -22,6 +22,7 @@ from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 socfont = "LiberationSerif"
 version = "1.0"
+nationsdata = []
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -39,6 +40,14 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
+file_to_open = "Data/WC2026.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        nationsdata.append(row)
+        count += 1
+print("Count csv", count)
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
