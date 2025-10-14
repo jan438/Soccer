@@ -65,7 +65,6 @@ teamspp = 4
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
-nations = "Australia", "Canada", "Egypt", "Iran", "Jordan", "Mexico", "New Zealand", "Tunisia", "United States", "Uzbekistan", "Morocco", "Ecuador", "Paraguay", "Colombia"
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
@@ -95,34 +94,9 @@ for poule in range(12):
     my_canvas.rect(left_margin + poule * poule_width, poule_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
         print(teamcounter, nationsdata[teamcounter][0], nationsdata[teamcounter][3])
+        drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", 0.1)
+        renderPDF.draw(drawing, my_canvas, 0, teamcounter * 15)
         teamcounter += 1
-
-drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 790)
-drawing = scaleSVG("Logos/" + nations[1] + ".svg", 0.07)
-renderPDF.draw(drawing, my_canvas, 0, 750)
-drawing = scaleSVG("Logos/" + nations[2] + ".svg", 0.07)
-renderPDF.draw(drawing, my_canvas, 0, 725)
-drawing = scaleSVG("Logos/" + nations[3] + ".svg", 0.3)
-renderPDF.draw(drawing, my_canvas, 0, 700)
-drawing = scaleSVG("Logos/" + nations[4] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 650)
-drawing = scaleSVG("Logos/" + nations[6] + ".svg", 0.06)
-renderPDF.draw(drawing, my_canvas, 0, 600)
-drawing = scaleSVG("Logos/" + nations[7] + ".svg", 0.15)
-renderPDF.draw(drawing, my_canvas, 0, 550)
-drawing = scaleSVG("Logos/" + nations[8] + ".svg", 0.3)
-renderPDF.draw(drawing, my_canvas, 0, 500)
-drawing = scaleSVG("Logos/" + nations[9] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 450)
-drawing = scaleSVG("Logos/" + nations[10] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 400)
-drawing = scaleSVG("Logos/" + nations[11] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 350)
-drawing = scaleSVG("Logos/" + nations[12] + ".svg", 0.3)
-renderPDF.draw(drawing, my_canvas, 0, 300)
-drawing = scaleSVG("Logos/" + nations[13] + ".svg", 0.1)
-renderPDF.draw(drawing, my_canvas, 0, 250)
 
 my_canvas.save()
 key = input("Wait")
