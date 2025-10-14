@@ -50,6 +50,8 @@ height = 842
 poule_width = 48
 poule_height = 200
 outsidearea = "#9e9e9e"
+left_margin = 9.4
+
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
 nations = "Australia", "Canada", "Egypt", "Iran", "Jordan", "Mexico", "New Zealand", "Tunisia", "United States", "Uzbekistan", "Morocco", "Ecuador", "Paraguay", "Colombia"
@@ -77,7 +79,7 @@ my_canvas.drawString(200, 775, "World Cup Soccer 2026")
 
 my_canvas.setStrokeColor(black)
 for poule in range(12):
-    my_canvas.rect(poule * poule_width, 600, poule_width, poule_height, stroke = 1, fill = 0)
+    my_canvas.rect(left_margin + poule * poule_width, 600, poule_width, poule_height, stroke = 1, fill = 0)
 
 drawing = scaleSVG("Logos/" + nations[0] + ".svg", 0.1)
 renderPDF.draw(drawing, my_canvas, 0, 790)
