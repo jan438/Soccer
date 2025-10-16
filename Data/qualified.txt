@@ -1,0 +1,8 @@
+Host nations: Canada*, Mexico*, United States*                                                                3
+Asia: Australia*, Iran*, Japan*, Jordan*, Qatar, Saudi Arabia, South Korea*, Uzbekistan*                      8
+Africa: Algeria*, Cape Verde*, Egypt*, Ghana*, Ivory Coast*, Morocco*, Senegal*, South Africa*, Tunisia*      9
+Concacaf: None yet                                                                                            0
+Europe: England*                                                                                              1
+Oceania: New Zealand*                                                                                         1
+South America: Argentina*, Brazil*, Colombia*, Ecuador*, Paraguay*, Uruguay*                                  6
+                                                                                                             28
