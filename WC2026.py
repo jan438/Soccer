@@ -60,7 +60,7 @@ poule_width = 48
 poule_height = 200
 outsidearea = "#9e9e9e"
 left_margin = 9.4
-poulerect_y = 500
+poulerect_y = 600
 poule_y = 500
 teamspp = 4
 poule_x = left_margin
@@ -83,12 +83,12 @@ my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 drawing = scaleSVG('north-america.svg', 0.5)
 renderPDF.draw(drawing, my_canvas, 0, 100)
 drawing = scaleSVG('FIFA.svg', 0.1)
-renderPDF.draw(drawing, my_canvas, 50, 770)
+renderPDF.draw(drawing, my_canvas, 50, 800)
 
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
-my_canvas.drawString(200, 775, "World Cup Soccer 2026")
+my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 teamcounter = 0
 my_canvas.setStrokeColor(black)
