@@ -62,7 +62,7 @@ outsidearea = "#9e9e9e"
 left_margin = 9.4
 poule_y = 500
 teamspp = 4
-poule_x = 0
+poule_x = left_margin
 poule_y = 700
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
