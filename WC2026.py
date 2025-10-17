@@ -62,6 +62,8 @@ outsidearea = "#9e9e9e"
 left_margin = 9.4
 poule_y = 500
 teamspp = 4
+poule_x = 0
+poule_y = 700
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
@@ -95,7 +97,7 @@ for poule in range(12):
     for team in range(teamspp):
         print(teamcounter, nationsdata[teamcounter][0], nationsdata[teamcounter][3])
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", 0.1)
-        renderPDF.draw(drawing, my_canvas, 0, teamcounter * 15)
+        renderPDF.draw(drawing, my_canvas, poule_x, poule_y)
         teamcounter += 1
 
 my_canvas.save()
