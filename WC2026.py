@@ -98,7 +98,7 @@ for poule in range(12):
     for team in range(teamspp):
         print(teamcounter, nationsdata[teamcounter][0], float(nationsdata[teamcounter][1]), float(nationsdata[teamcounter][2]), float(nationsdata[teamcounter][3]))
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
-        renderPDF.draw(drawing, my_canvas, poule_x, poule_y)
+        renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), poule_y +  float(nationsdata[teamcounter][3]))
         poule_y = poule_y - 38
         teamcounter += 1
     poule_x = poule_x + poule_width
