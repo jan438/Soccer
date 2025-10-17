@@ -60,6 +60,7 @@ poule_width = 48
 poule_height = 200
 outsidearea = "#9e9e9e"
 left_margin = 9.4
+poulerect_y = 400
 poule_y = 500
 teamspp = 4
 poule_x = left_margin
@@ -93,7 +94,7 @@ teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
     my_canvas.drawString(left_margin + poule * poule_width, poule_y + poule_height - 20, chr(65 + poule))
-    my_canvas.rect(left_margin + poule * poule_width, poule_y, poule_width, poule_height, stroke = 1, fill = 0)
+    my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
         print(teamcounter, nationsdata[teamcounter][0], float(nationsdata[teamcounter][1]), nationsdata[teamcounter][2], nationsdata[teamcounter][3])
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
