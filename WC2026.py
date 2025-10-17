@@ -98,7 +98,10 @@ for poule in range(12):
         print(teamcounter, nationsdata[teamcounter][0], nationsdata[teamcounter][3])
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", 0.1)
         renderPDF.draw(drawing, my_canvas, poule_x, poule_y)
+        poule_y = poule_y - 20
         teamcounter += 1
+    poule_x = poule_x + poule_width
+    poule_y = 700
 
 my_canvas.save()
 key = input("Wait")
