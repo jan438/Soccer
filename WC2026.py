@@ -62,7 +62,6 @@ pouleland_height = 45
 outsidearea = "#9e9e9e"
 left_margin = 9.4
 poulerect_y = 590
-poule_y = 500
 teamspp = 4
 poule_x = left_margin
 poule_y = 700
