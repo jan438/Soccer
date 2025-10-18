@@ -64,7 +64,7 @@ left_margin = 9.4
 poulerect_y = 590
 teamspp = 4
 poule_x = left_margin
-poule_y = 705
+pouleland_y = 705
 poule_margin = 5
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
@@ -98,15 +98,15 @@ for poule in range(12):
     my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 20, chr(65 + poule))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
-        my_canvas.rect(left_margin + poule * poule_width + poule_margin, poule_y + poule_margin, poule_width - 2 * poule_margin, pouleland_height - 2 * poule_margin, stroke = 1, fill = 0)
+        my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y + poule_margin, poule_width - 2 * poule_margin, pouleland_height - 2 * poule_margin, stroke = 1, fill = 0)
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
-        renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), poule_y +  float(nationsdata[teamcounter][3]))
+        renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         my_canvas.setFont(socfont, 12)
-        my_canvas.drawString(left_margin + poule * poule_width, poule_y + 5, nationsdata[teamcounter][0])
-        poule_y = poule_y - 38
+        my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 5, nationsdata[teamcounter][0])
+        pouleland_y = pouleland_y - 38
         teamcounter += 1
     poule_x = poule_x + poule_width
-    poule_y = 705
+    pouleland_y = 705
 
 my_canvas.save()
 key = input("Wait")
