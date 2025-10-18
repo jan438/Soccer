@@ -93,12 +93,13 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
+    my_canvas.setFont(socfont, 25)
     my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 20, chr(65 + poule))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
-        print(teamcounter, nationsdata[teamcounter][0], float(nationsdata[teamcounter][1]), float(nationsdata[teamcounter][2]), float(nationsdata[teamcounter][3]))
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), poule_y +  float(nationsdata[teamcounter][3]))
+        my_canvas.setFont(socfont, 12)
         my_canvas.drawString(left_margin + poule * poule_width, poule_y, nationsdata[teamcounter][0])
         poule_y = poule_y - 38
         teamcounter += 1
