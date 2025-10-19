@@ -58,7 +58,7 @@ width = 595
 height = 842
 poule_width = 48
 poule_height = 200
-pouleland_height = 45
+pouleland_height = 50
 outsidearea = "#9e9e9e"
 left_margin = 9.4
 poulerect_y = 590
@@ -103,7 +103,7 @@ for poule in range(12):
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         my_canvas.setFont(socfont, 12)
         my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 5, nationsdata[teamcounter][0])
-        pouleland_y = pouleland_y - 38
+        pouleland_y = pouleland_y - 45
         teamcounter += 1
     poule_x = poule_x + poule_width
     pouleland_y = 725
