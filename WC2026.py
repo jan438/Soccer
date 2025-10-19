@@ -95,7 +95,7 @@ teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
     my_canvas.setFont(socfont, 20)
-    my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 20, chr(65 + poule))
+    my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 17, chr(65 + poule))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
         my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y + poule_margin, poule_width - 2 * poule_margin, pouleland_height - 2 * poule_margin, stroke = 1, fill = 0)
