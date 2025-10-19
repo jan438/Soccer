@@ -64,7 +64,7 @@ left_margin = 9.4
 poulerect_y = 590
 teamspp = 4
 poule_x = left_margin
-pouleland_y = 705
+pouleland_y = 725
 poule_margin = 5
 
 # Japan, South Korea, Argentina, Brazil, Uruguay
@@ -106,7 +106,7 @@ for poule in range(12):
         pouleland_y = pouleland_y - 38
         teamcounter += 1
     poule_x = poule_x + poule_width
-    pouleland_y = 705
+    pouleland_y = 725
 
 my_canvas.save()
 key = input("Wait")
