@@ -67,7 +67,6 @@ poule_x = left_margin
 pouleland_y = 730
 poule_margin = 5
 
-# Japan, South Korea, Argentina, Brazil, Uruguay
 countnations = 48
 
 pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
