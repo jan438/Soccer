@@ -102,8 +102,9 @@ for poule in range(12):
         my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y, poule_width - 2 * poule_margin, pouleland_height, stroke = 1, fill = 0)
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
-        my_canvas.setFont(socfont, 12)
-        my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 5, nationsdata[teamcounter][0])
+        if nameinlogo[0] == "n":
+            my_canvas.setFont(socfont, 12)
+            my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 5, nationsdata[teamcounter][0])
         pouleland_y = pouleland_y - 45
         teamcounter += 1
     poule_x = poule_x + poule_width
