@@ -103,7 +103,7 @@ for poule in range(12):
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         if nameinlogo[0] == "n":
             my_canvas.setFont(socfont, 12)
-            my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 5, nationsdata[teamcounter][0])
+            my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 2, nationsdata[teamcounter][0])
         pouleland_y = pouleland_y - 45
         teamcounter += 1
     poule_x = poule_x + poule_width
