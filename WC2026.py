@@ -104,7 +104,7 @@ for poule in range(12):
         if nameinlogo[0] == "n":
             my_canvas.setFont(socfont, 11)
             my_canvas.drawString(left_margin + poule * poule_width, pouleland_y + 2, nationsdata[teamcounter][0])
-        pouleland_y = pouleland_y - 45
+        pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
     pouleland_y = 730
