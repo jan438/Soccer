@@ -91,7 +91,7 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
-    my_canvas.setFillColor(HexColor("#3f3f3f"))
+    my_canvas.setFillColor(HexColor("#b1b1b1"))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
     
 teamcounter = 0
