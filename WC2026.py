@@ -90,13 +90,16 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
+for poule in range(12):
+    my_canvas.setFillColor(HexColor("#3f3f3f"))
+    my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
+    
 teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
     my_canvas.setFont(socfont, 20)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 17, chr(65 + poule))
-    my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
         nameinlogo = nationsdata[teamcounter][4]
         my_canvas.setFillColor(HexColor("#c5c5c5"))
