@@ -98,10 +98,12 @@ for poule in range(12):
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 0)
     for team in range(teamspp):
         nameinlogo = nationsdata[teamcounter][4]
-        my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y, poule_width - 2 * poule_margin, pouleland_height, stroke = 1, fill = 0)
+        my_canvas.setFillColor(HexColor("#c5c5c5"))
+        my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y, poule_width - 2 * poule_margin, pouleland_height, stroke = 1, fill = 1)
         drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]))
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         if nameinlogo[0] == "n":
+            my_canvas.setFillColor(HexColor("#000000"))
             my_canvas.setFont(socfont, 8)
             my_canvas.drawString(left_margin + poule * poule_width + 4, pouleland_y + 1, nationsdata[teamcounter][0])
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
