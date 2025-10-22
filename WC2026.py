@@ -66,7 +66,7 @@ teamspp = 4
 poule_x = left_margin
 pouleland_y = 730
 poule_margin = 5
-cadre_pouleland = True
+cadre_pouleland = False
 maxnamewidth = 42.0
 
 countnations = 48
@@ -101,7 +101,7 @@ my_canvas.setStrokeColor(black)
 for poule in range(12):
     my_canvas.setFont(socfont, 20)
     my_canvas.setFillColor(HexColor("#000000"))
-    my_canvas.drawString(left_margin + poule * poule_width, poulerect_y + poule_height - 17, chr(65 + poule))
+    my_canvas.drawString(left_margin + poule * poule_width + 17.0, poulerect_y + poule_height - 17, chr(65 + poule))
     for team in range(teamspp):
         nameinlogo = nationsdata[teamcounter][4]
         if cadre_pouleland:
