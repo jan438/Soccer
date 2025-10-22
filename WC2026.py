@@ -67,6 +67,7 @@ poule_x = left_margin
 pouleland_y = 730
 poule_margin = 5
 cadre_pouleland = True
+maxnamewidth = 42.0
 
 countnations = 48
 
@@ -111,6 +112,8 @@ for poule in range(12):
         if nameinlogo[0] == "n":
             my_canvas.setFillColor(HexColor("#000000"))
             my_canvas.setFont(socfont, 8)
+            namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
+            print("namewidth", maxnamewidth - namewidth)
             my_canvas.drawString(left_margin + poule * poule_width + 4, pouleland_y + 1, nationsdata[teamcounter][0])
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
