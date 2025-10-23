@@ -113,7 +113,7 @@ for poule in range(12):
             my_canvas.setFillColor(HexColor("#000000"))
             my_canvas.setFont(socfont, 8)
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
-            my_canvas.drawString(left_margin + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
+            my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
