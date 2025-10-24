@@ -117,7 +117,7 @@ for poule in range(12):
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
-    pouleland_y = 730
+    pouleland_y = 725
 
 my_canvas.save()
 key = input("Wait")
