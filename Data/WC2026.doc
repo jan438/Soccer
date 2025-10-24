@@ -6,7 +6,8 @@
 
 
 Worldmap
-not participating     ff0000
+not participating     ff0000 red
+participating         00ff00 green 
 not determined        9BD5C1
 
 New Siberian Islands (4)
@@ -18,7 +19,7 @@ New Siberian Islands (4)
 Arctic Archipelago (island most east)
    d="M128.238,68.375 
 
-Japan   
+Japan participating  
    d="M850.931,218.02 
    
    
