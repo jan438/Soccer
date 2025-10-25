@@ -94,11 +94,6 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
-drawing = scaleSVG('Flags/twCV.svg', 0.2)
-renderPDF.draw(drawing, my_canvas, 200, 200)
-drawing = scaleSVG('Flags/twUZ.svg', 0.2)
-renderPDF.draw(drawing, my_canvas, 100, 200)
-
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
@@ -122,6 +117,11 @@ for poule in range(12):
             my_canvas.setFont(socfont, 8)
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
+        print(     nationsdata[teamcounter][8]        )
+        if nationsdata[teamcounter][8] != "NL":
+            print( "fffggg"  ,  nationsdata[teamcounter][8]        )
+            drawing = scaleSVG("Flags/tw" + nationsdata[teamcounter][8] + ".svg", 0.2)
+            renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
