@@ -91,6 +91,11 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
+drawing = scaleSVG('Flags/twCV.svg', 0.2)
+renderPDF.draw(drawing, my_canvas, 200, 200)
+drawing = scaleSVG('Flags/twUZ.svg', 0.2)
+renderPDF.draw(drawing, my_canvas, 100, 200)
+
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
