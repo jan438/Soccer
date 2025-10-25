@@ -69,7 +69,7 @@ cadre_pouleland = False
 maxnamewidth = 42.0
 scalewiki = 0.5
 scalesimple = 0.5
-mapversie = "Wiki"
+mapversie = "Simple"
 
 countnations = 48
 
