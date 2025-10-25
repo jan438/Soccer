@@ -69,6 +69,7 @@ cadre_pouleland = False
 maxnamewidth = 42.0
 scalewiki = 0.5
 scalesimple = 0.5
+mapversie = "Wiki"
 
 countnations = 48
 
@@ -76,14 +77,14 @@ pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf')
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
-my_canvas = canvas.Canvas("PDF/WorldCup2026.pdf")
+my_canvas = canvas.Canvas("PDF/WorldCup2026" + mapversie + ".pdf")
 
 my_canvas.setTitle("World Cup 2026")
 
 my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
-drawing = scaleSVG('SVG/WorldMapSimple.svg', scalesimple)
+drawing = scaleSVG("SVG/WorldMap" + mapversie + ".svg", scalesimple)
 renderPDF.draw(drawing, my_canvas, 0, 100)
 drawing = scaleSVG('FIFA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 800)
