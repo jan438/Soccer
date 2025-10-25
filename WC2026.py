@@ -103,7 +103,7 @@ for poule in range(12):
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(left_margin + poule * poule_width + 17.0, poulerect_y + poule_height - 17, chr(65 + poule))
     for team in range(teamspp):
-        print(nationsdata[teamcounter][7])
+        print(nationsdata[teamcounter][8])
         nameinlogo = nationsdata[teamcounter][4]
         if cadre_pouleland:
             my_canvas.setFillColor(HexColor("#c5c5c5"))
