@@ -69,7 +69,7 @@ cadre_pouleland = False
 maxnamewidth = 42.0
 scalewiki = 0.5
 scalesimple = 0.33
-xsimple = -60
+xsimple = -56
 ysimple = 100
 mapversie = "Simple"
 
