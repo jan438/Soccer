@@ -68,7 +68,9 @@ poule_margin = 5
 cadre_pouleland = False
 maxnamewidth = 42.0
 scalewiki = 0.5
-scalesimple = 0.5
+scalesimple = 0.33
+xsimple = -60
+ysimple = 100
 mapversie = "Simple"
 
 countnations = 48
@@ -85,7 +87,7 @@ my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
 drawing = scaleSVG("SVG/WorldMap" + mapversie + ".svg", scalesimple)
-renderPDF.draw(drawing, my_canvas, 0, 100)
+renderPDF.draw(drawing, my_canvas, xsimple, ysimple)
 drawing = scaleSVG('FIFA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 800)
 
