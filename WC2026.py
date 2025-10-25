@@ -117,9 +117,7 @@ for poule in range(12):
             my_canvas.setFont(socfont, 8)
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
-        print(     nationsdata[teamcounter][8]        )
         if nationsdata[teamcounter][8] != "NL":
-            print( "fffggg"  ,  nationsdata[teamcounter][8]        )
             drawing = scaleSVG("Flags/tw" + nationsdata[teamcounter][8] + ".svg", 0.2)
             renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
