@@ -83,7 +83,7 @@ my_canvas.setTitle("World Cup 2026")
 my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
-drawing = scaleSVG('SVG/WorldMapWiki.svg', scalewiki)
+drawing = scaleSVG('SVG/WorldMapSimple.svg', scalesimple)
 renderPDF.draw(drawing, my_canvas, 0, 100)
 drawing = scaleSVG('FIFA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 800)
