@@ -37,10 +37,11 @@ scalesimple = 0.33
 xsimple = -56
 ysimple = 100
 
-width = 2000
-height = 857
+widthsvg = 2000  widthpdf = 2000 * 0.33 = 660
+heightsvg = 857  heightpdf = 857 * 0,33 = 282.81
 
-most west American Samoa d="M 27.7 593.3 
+
+most west American Samoa d="M 27.7 593.3      x = 27.7 * 0.33 = 9.141 y = 593.3 = 195,789
 most east New Zealand    d="M 1915.2 733.9
    
    

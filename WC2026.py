@@ -104,6 +104,11 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
+# American Samoa 
+#my_canvas.drawString(left_margin + 9.141, 195,789, "American Samoa ")
+#my_canvas.setFillColor(HexColor("#e88cff"))
+#my_canvas.circle(left_margin + 9.141, 195,789, 4.0, stroke = 0, fill = 1)
+
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
