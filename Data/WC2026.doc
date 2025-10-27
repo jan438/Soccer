@@ -8,6 +8,11 @@
 7 y worldmap
 8 landcode
 
+Wiki:
+
+scalewiki = 0.56
+xwiki = 10
+ywiki = 100
 
 Worldmap
 not participating     ff0000 red
@@ -24,6 +29,12 @@ Arctic Archipelago (island most east)
    d="M128.238,68.375 
 
 Japan participating  
-   d="M850.931,218.02 
+   d="M850.931,218.02
+   
+Simple
+
+scalesimple = 0.33
+xsimple = -56
+ysimple = 100
    
    
