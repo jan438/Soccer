@@ -105,7 +105,7 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 # American Samoa 
-#my_canvas.drawString(left_margin + 9.141, 195,789, "American Samoa ")
+my_canvas.drawString(left_margin + 9.141, 195.789, "American Samoa")
 #my_canvas.setFillColor(HexColor("#e88cff"))
 #my_canvas.circle(left_margin + 9.141, 195,789, 4.0, stroke = 0, fill = 1)
 
