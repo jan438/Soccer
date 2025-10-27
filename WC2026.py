@@ -113,7 +113,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_margin + 332.016 , 241.89, "New Zealand")
 my_canvas.setFillColor(HexColor("#e88cff"))
 # to correct 632.016
-my_canvas.circle(left_margin + 500.0, 241.89, 4.0, stroke = 0, fill = 1)
+my_canvas.circle(left_margin + 550.0, 241.89, 4.0, stroke = 0, fill = 1)
 
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
