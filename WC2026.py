@@ -107,6 +107,8 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 my_canvas.setFillColor(HexColor("#e88cff"))
 my_canvas.circle(0, ysimple, 4.0, stroke = 0, fill = 1)
 my_canvas.circle(595, ysimple, 4.0, stroke = 0, fill = 1)
+my_canvas.circle(0, ysimple + 300, 4.0, stroke = 0, fill = 1)
+my_canvas.circle(595, ysimple + 300, 4.0, stroke = 0, fill = 1)
 
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
