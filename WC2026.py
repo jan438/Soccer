@@ -104,17 +104,9 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
-# most East Unitet States
-my_canvas.drawString(xsimple + 33.0, ysimple + 118.7, "Alaska")
 my_canvas.setFillColor(HexColor("#e88cff"))
-#my_canvas.circle(xsimple + 33.0, ysimple + 118.7, 4.0, stroke = 0, fill = 1)
-my_canvas.circle(33.0, 118.7, 4.0, stroke = 0, fill = 1)
-# New Zealand
-my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_margin + 332.016 , 241.89, "New Zealand")
-my_canvas.setFillColor(HexColor("#e88cff"))
-# to correct 632.016
-my_canvas.circle(xsimple + 550.0, ysimple + 241.89, 4.0, stroke = 0, fill = 1)
+my_canvas.circle(0, ysimple, 4.0, stroke = 0, fill = 1)
+my_canvas.circle(595, ysimple, 4.0, stroke = 0, fill = 1)
 
 for poule in range(12):
     my_canvas.setFillColor(HexColor("#b1b1b1"))
