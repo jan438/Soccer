@@ -136,5 +136,11 @@ for poule in range(12):
         teamcounter += 1
     poule_x = poule_x + poule_width
 
+line = 400
+for j in range(12):   
+    for i in range(6):
+        my_canvas.drawString(left_margin + i * 70, line, "Game")
+    line -= 20
+    
 my_canvas.save()
 key = input("Wait")
