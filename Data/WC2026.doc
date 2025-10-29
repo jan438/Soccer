@@ -40,8 +40,7 @@ ysimple = 100
 widthsvg = 2000  widthpdf = 2000 * 0.33 = 660
 heightsvg = 857  heightpdf = 857 * 0,33 = 282.81
 
-most west United States 100 359.7      x = 100 * 0.33 = 33.0  y = 359.7 * 0.33 = 118.7?
-most east New Zealand   1929.6 743.8   x = 636.768 y = 245.454?
-cape verde most east    858.3 397.8    x = 230.0   y = 250.0  
-   
+   0 on map -50 on pdf | 0 on pdf     595 op pdf | 2000 on map
+   cape verde most east island 858.3 397.8 on map
+                               230.0 250.0 on pdf
    
