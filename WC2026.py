@@ -129,9 +129,9 @@ for poule in range(12):
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
         if nationsdata[teamcounter][8] != "NL":
             drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.3)
-            renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
+            renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]) - 75)
             my_canvas.setFillColor(HexColor("#ffff00"))
-            my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
+            my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]) - 75, 2.0, stroke = 0, fill = 1)
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
