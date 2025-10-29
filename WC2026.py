@@ -139,6 +139,8 @@ for poule in range(12):
 line = 550
 for j in range(12):   
     for i in range(6):
+        drawing = scaleSVG("SVG/calendar-blank.svg", 0.3)
+        renderPDF.draw(drawing, my_canvas, left_margin + i * 70, line)
         my_canvas.drawString(left_margin + i * 70, line, "Game")
     line -= 18
     
