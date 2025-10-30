@@ -207,7 +207,7 @@ for j in range(13):
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
     line -= 18
-    if j == 8:
+    if j == 7:
        my_canvas.line(5, line, 590, line)
     
 my_canvas.save()
