@@ -196,13 +196,14 @@ for poule in range(12):
 for i in range(len(gameevents)):
     print(gameevents[i].summary)
 
-my_canvas.setFont(socfont, 10)    
+my_canvas.setFont(socfont, 8)    
 line = 550
 for j in range(13):   
     for i in range(8):
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
-        my_canvas.drawString(left_margin + i * colwidthgame + 10, line, "Game")
+        my_canvas.drawString(left_margin + i * colwidthgame + 18, line, "Game oponent1")
+        my_canvas.drawString(left_margin + i * colwidthgame + 18, line + 6, "Game oponent12")
     line -= 18
     
 my_canvas.save()
