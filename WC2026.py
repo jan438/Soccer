@@ -200,9 +200,9 @@ my_canvas.setFont(socfont, 10)
 line = 550
 for j in range(13):   
     for i in range(8):
-        drawing = scaleSVG("SVG/calendar-blank.svg", 0.3)
+        drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
-        my_canvas.drawString(left_margin + i * colwidthgame + 8, line, "Game")
+        my_canvas.drawString(left_margin + i * colwidthgame + 10, line, "Game")
     line -= 18
     
 my_canvas.save()
