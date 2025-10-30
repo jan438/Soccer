@@ -23,6 +23,7 @@ from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 socfont = "LiberationSerif"
 version = "1.0"
 nationsdata = []
+alleventslines = []
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -48,6 +49,19 @@ with open(file_to_open, 'r') as file:
         nationsdata.append(row)
         count += 1
 print("Count csv", count)
+
+eventcal = "Calendar/WK2026.ics"
+in_file = open(os.path.join(path, eventcal), 'r')
+count = 0
+lastpos = 0
+found = 0
+for line in in_file:
+    newlinepos = line.find("\t\n")
+    lastsubstring = line[lastpos:newlinepos]
+    alleventslines.append(lastsubstring)
+    count += 1
+in_file.close()
+print("Count eventslines", len(alleventslines))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
