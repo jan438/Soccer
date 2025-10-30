@@ -195,7 +195,8 @@ for poule in range(12):
 
 for i in range(len(gameevents)):
     print(gameevents[i].summary)
-    
+
+my_canvas.setFont(socfont, 10)    
 line = 550
 for j in range(13):   
     for i in range(8):
