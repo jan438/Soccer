@@ -193,6 +193,9 @@ for poule in range(12):
         teamcounter += 1
     poule_x = poule_x + poule_width
 
+for i in range(len(gameevents)):
+    print(gameevents[i])
+    
 line = 550
 for j in range(13):   
     for i in range(8):
