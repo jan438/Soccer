@@ -24,6 +24,16 @@ socfont = "LiberationSerif"
 version = "1.0"
 nationsdata = []
 alleventslines = []
+gameevents = []
+
+class GameEvent:
+    def __init__(self, summary, day, location, starttime, endtime, month):
+        self.summary = summary
+        self.day = day
+        self.location = location
+        self.starttime = starttime
+        self.endtime = endtime
+        self.month = month
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -62,6 +72,38 @@ for line in in_file:
     count += 1
 in_file.close()
 print("Count eventslines", len(alleventslines))
+for i in range(len(alleventslines)):
+    neweventpos = alleventslines[i].find("BEGIN:VEVENT")
+    summaryeventpos = alleventslines[i].find("SUMMARY")
+    locationeventpos = alleventslines[i].find("LOCATION")
+    dtstarteventpos = alleventslines[i].find("DTSTART")
+    dtendeventpos = alleventslines[i].find("DTEND")
+    endeventpos = alleventslines[i].find("END:VEVENT")
+    if neweventpos == 0:
+        day = 0
+        location = ""
+        starttime = 0
+        endtime = 0
+        month = 0
+    if dtstarteventpos == 0:
+        eventdtstartstr = alleventslines[i][8:]
+        datevaluepos = alleventslines[i].find("VALUE=DATE:")
+        if datevaluepos == 8:
+            eventdtstartstr = alleventslines[i][19:]
+        year = int(eventdtstartstr[:4])
+        month = int(eventdtstartstr[4:6])
+        day = int(eventdtstartstr[6:8])
+        starttime = eventdtstartstr
+    if dtendeventpos == 0:
+        eventdtendstr = alleventslines[i][6:]
+        endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
+    if summaryeventpos == 0:
+        summary = alleventslines[i][8:]
+    if locationeventpos == 0:
+        location = alleventslines[i][9:]
+    if endeventpos == 0:
+        gameevents.append(GameEvent(summary, day, location, starttime, endtime, month))
+print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
