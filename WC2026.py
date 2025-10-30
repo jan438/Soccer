@@ -75,6 +75,7 @@ xsimple = -56
 ysimple = 50
 #mapversie = "Wiki"
 mapversie = "Simple"
+colwidthgame = 73
 
 countnations = 48
 
@@ -137,11 +138,11 @@ for poule in range(12):
     poule_x = poule_x + poule_width
 
 line = 550
-for j in range(12):   
-    for i in range(6):
+for j in range(13):   
+    for i in range(8):
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.3)
-        renderPDF.draw(drawing, my_canvas, left_margin + i * 98, line)
-        my_canvas.drawString(left_margin + i * 98 + 10, line, "Game")
+        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
+        my_canvas.drawString(left_margin + i * colwidthgame + 8, line, "Game")
     line -= 18
     
 my_canvas.save()
