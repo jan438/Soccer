@@ -208,11 +208,11 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
     line -= 18
     if j == 7:
-       my_canvas.line(5, line, 590, line)
+       my_canvas.line(5, line - 2, 590, line)
     if j == 9:
-       my_canvas.line(5, line, 590, line)
+       my_canvas.line(5, line - 2, 590, line)
     if j == 10:
-       my_canvas.line(5, line, 590, line)
+       my_canvas.line(5, line - 2, 590, line)
     
 my_canvas.save()
 key = input("Wait")
