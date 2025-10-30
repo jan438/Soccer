@@ -194,7 +194,7 @@ for poule in range(12):
     poule_x = poule_x + poule_width
 
 for i in range(len(gameevents)):
-    print(gameevents[i])
+    print(gameevents[i].summary)
     
 line = 550
 for j in range(13):   
