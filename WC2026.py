@@ -204,6 +204,8 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.drawString(left_margin + i * colwidthgame + 18, line, "Opponent2")
         my_canvas.drawString(left_margin + i * colwidthgame + 18, line + 6, "Opponent1")
+        drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
+        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 20, line)
     line -= 18
     
 my_canvas.save()
