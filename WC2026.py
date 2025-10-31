@@ -110,16 +110,14 @@ print("Count game events", len(gameevents))
 
 #citiescolors = ["#88255F", "#DB4035", "#FF9933", "#FAD000", "#AFB83B", "#7ECC49", "#E7E84F", "#299438", "#A8A202", "#158FAD", "#14AAF5", "#CD0027", "#4073FF", "#D38895", "#884DFF", "#AF38EB", "#EB96EB", "#E05194", "#FF8D85", "#808080", "#FFE001", "#CCAC93", "#9A6324", "#80FF80"]
 
-#Guadalajara, Mexico City, New York, Dallas, Kansas City, Houston, Atlanta, Los Angeles, Seattle,  San Francisco, Philadelphia, Miami, Boston, Vancouver, Monterrey, Toronto
-
-cities = [["Mexico City", "#CD0027", [15.0, 50.0]], ["New York", "#884DFF", [25.0, 70.0]],
+cities = [["Mexico City", "#CD0027", [15.0, 150.0]], ["New York", "#884DFF", [25.0, 70.0]],
           ["Dallas", "#884DFF", [25.0, 70.0]], ["Kansas City", "#884DFF", [25.0, 70.0]],
           ["Houston", "#884DFF", [25.0, 70.0]], ["Atlanta", "#884DFF", [25.0, 70.0]],
           ["Los Angeles", "#884DFF", [25.0, 70.0]], ["Seattle", "#884DFF", [25.0, 70.0]],
-          ["San Francisco", "#884DFF", [25.0, 70.0]], ["Philadelphia", "#884DFF", [25.0, 70.0]],
+          ["San Francisco", "#884DFF", [25.0, 20.0]], ["Philadelphia", "#884DFF", [25.0, 70.0]],
           ["Miami", "#884DFF", [25.0, 70.0]], ["Boston", "#884DFF", [25.0, 70.0]],
           ["Vancouver", "#884DFF", [25.0, 70.0]], ["Monterrey", "#884DFF", [25.0, 70.0]], 
-          ["Toronto", "#884DFF", [25.0, 70.0]], ["Guadalajara", "#884DFF", [30.0, 80.0]]]
+          ["Toronto", "#884DFF", [25.0, 100.0]], ["Guadalajara", "#884DFF", [30.0, 90.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
