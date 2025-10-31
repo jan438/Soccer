@@ -110,6 +110,8 @@ print("Count game events", len(gameevents))
 
 #citiescolors = ["#88255F", "#DB4035", "#FF9933", "#FAD000", "#AFB83B", "#7ECC49", "#E7E84F", "#299438", "#A8A202", "#158FAD", "#14AAF5", "#CD0027", "#4073FF", "#D38895", "#884DFF", "#AF38EB", "#EB96EB", "#E05194", "#FF8D85", "#808080", "#FFE001", "#CCAC93", "#9A6324", "#80FF80"]
 
+#Guadalajara, Mexico City, New York, Dallas, Kansas City, Houston, Atlanta, Los Angeles, Seattle,  San Francisco, Philadelphia, Miami, Boston, Vancouver, Monterrey, Toronto
+
 cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]]]
 left_padding = 0
 bottom_padding = 0
