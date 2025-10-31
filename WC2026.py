@@ -109,7 +109,7 @@ print("Count game events", len(gameevents))
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
 #citiescolors = ["#88255F", "#DB4035", "#FF9933", "#FAD000", "#AFB83B", "#7ECC49", "#E7E84F", "#299438", "#A8A202", "#158FAD", "#14AAF5", "#CD0027", "#4073FF", "#D38895", "#884DFF", "#AF38EB", "#EB96EB", "#E05194", "#FF8D85", "#808080", "#FFE001", "#CCAC93", "#9A6324", "#80FF80"]
 
-cities = [["City1","City2"], ["#CD0027", "#884DFF"]]
+cities = [["City1", "#CD0027", [5.0, 5.0]], ["City2", "#884DFF", [6.0, 6.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
@@ -198,7 +198,7 @@ for poule in range(12):
 for i in range(len(gameevents)):
     print(gameevents[i].summary)
     
-print(cities[0][0], cities[1][1])
+print(cities[0][0], cities[1][1], cities[0][2])
 
 line = 550
 for j in range(13):   
