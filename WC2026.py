@@ -207,7 +207,7 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)    
         my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 9.5, "A")
-        my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 3.5, "19-7")
+        my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.0, "19-7")
         my_canvas.setFont(socfont, 8)    
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, "Opponent2")
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, "Opponent1")
