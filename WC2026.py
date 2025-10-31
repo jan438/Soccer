@@ -112,7 +112,14 @@ print("Count game events", len(gameevents))
 
 #Guadalajara, Mexico City, New York, Dallas, Kansas City, Houston, Atlanta, Los Angeles, Seattle,  San Francisco, Philadelphia, Miami, Boston, Vancouver, Monterrey, Toronto
 
-cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["Guadalajara", "#884DFF", [30.0, 80.0]]]
+cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
+          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], 
+          ["City2", "#884DFF", [25.0, 70.0]], ["Guadalajara", "#884DFF", [30.0, 80.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
