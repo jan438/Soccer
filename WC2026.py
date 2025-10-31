@@ -198,7 +198,8 @@ for poule in range(12):
 for i in range(len(gameevents)):
     print(gameevents[i].summary)
     
-print(cities[0][0], cities[0][1], cities[0][2][0])
+for i in range(len(cities)):    
+    print(cities[i][0], cities[i][1], cities[i][2][0])
 
 line = 550
 for j in range(13):   
