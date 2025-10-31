@@ -216,6 +216,7 @@ for j in range(13):
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, "Opponent1")
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
+        my_canvas.circle(left_margin + i * colwidthgame + 0.45, line + 6, 2.0, stroke = 0, fill = 1)
     line -= 18
     if j == 7:
        my_canvas.line(5, line - 2, 590, line)
