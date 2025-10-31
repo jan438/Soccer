@@ -112,7 +112,7 @@ print("Count game events", len(gameevents))
 
 #Guadalajara, Mexico City, New York, Dallas, Kansas City, Houston, Atlanta, Los Angeles, Seattle,  San Francisco, Philadelphia, Miami, Boston, Vancouver, Monterrey, Toronto
 
-cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]]]
+cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
@@ -201,7 +201,8 @@ for poule in range(12):
 for i in range(len(gameevents)):
     print(gameevents[i].summary)
     
-for i in range(len(cities)):    
+for i in range(len(cities)):
+    print(i)
     my_canvas.setFillColor(HexColor(cities[i][1]))
     my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#000000"))
