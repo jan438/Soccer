@@ -200,6 +200,7 @@ for i in range(len(gameevents)):
     
 for i in range(len(cities)):    
     print(cities[i][0], cities[i][1], cities[i][2][0])
+    my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
 
 line = 550
 for j in range(13):   
