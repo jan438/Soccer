@@ -131,7 +131,7 @@ xsimple = -56
 ysimple = 10
 #mapversie = "Wiki"
 mapversie = "Simple"
-colwidthgame = 73
+colwidthgame = 72
 
 countnations = 48
 
