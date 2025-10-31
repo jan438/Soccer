@@ -107,7 +107,7 @@ print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
-
+#citiescolors = ["#88255F", "#DB4035", "#FF9933", "#FAD000", "#AFB83B", "#7ECC49", "#E7E84F", "#299438", "#A8A202", "#158FAD", "#14AAF5", "#CD0027", "#4073FF", "#D38895", "#884DFF", "#AF38EB", "#EB96EB", "#E05194", "#FF8D85", "#808080", "#FFE001", "#CCAC93", "#9A6324", "#80FF80"]
 left_padding = 0
 bottom_padding = 0
 width = 595
