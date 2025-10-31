@@ -112,14 +112,14 @@ print("Count game events", len(gameevents))
 
 #Guadalajara, Mexico City, New York, Dallas, Kansas City, Houston, Atlanta, Los Angeles, Seattle,  San Francisco, Philadelphia, Miami, Boston, Vancouver, Monterrey, Toronto
 
-cities = [["City1", "#CD0027", [15.0, 50.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]],
-          ["City2", "#884DFF", [25.0, 70.0]], ["City2", "#884DFF", [25.0, 70.0]], 
-          ["City2", "#884DFF", [25.0, 70.0]], ["Guadalajara", "#884DFF", [30.0, 80.0]]]
+cities = [["Mexico City", "#CD0027", [15.0, 50.0]], ["New York", "#884DFF", [25.0, 70.0]],
+          ["Dallas", "#884DFF", [25.0, 70.0]], ["Kansas City", "#884DFF", [25.0, 70.0]],
+          ["Houston", "#884DFF", [25.0, 70.0]], ["Atlanta", "#884DFF", [25.0, 70.0]],
+          ["Los Angeles", "#884DFF", [25.0, 70.0]], ["Seattle", "#884DFF", [25.0, 70.0]],
+          ["San Francisco", "#884DFF", [25.0, 70.0]], ["Philadelphia", "#884DFF", [25.0, 70.0]],
+          ["Miami", "#884DFF", [25.0, 70.0]], ["Boston", "#884DFF", [25.0, 70.0]],
+          ["Vancouver", "#884DFF", [25.0, 70.0]], ["Monterrey", "#884DFF", [25.0, 70.0]], 
+          ["Toronto", "#884DFF", [25.0, 70.0]], ["Guadalajara", "#884DFF", [30.0, 80.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
@@ -209,7 +209,7 @@ for i in range(len(gameevents)):
     print(gameevents[i].summary)
     
 for i in range(len(cities)):
-    print(i)
+    print(cities[i][0])
     my_canvas.setFillColor(HexColor(cities[i][1]))
     my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#000000"))
