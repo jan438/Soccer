@@ -208,8 +208,9 @@ for j in range(13):
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
-        my_canvas.setFillColor(HexColor("#000000"))  
+        my_canvas.setFillColor(HexColor("#ffffff"))  
         my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 9.5, "A")
+        my_canvas.setFillColor(HexColor("#000000"))  
         my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, "19-7")
         my_canvas.setFont(socfont, 8)    
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, "Opponent2")
@@ -217,7 +218,7 @@ for j in range(13):
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         my_canvas.setFillColor(HexColor("#00ff00"))  
-        my_canvas.circle(left_margin + i * colwidthgame + 0.52, line + 9.5, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(left_margin + i * colwidthgame + 8.0, line + 11.0, 2.0, stroke = 0, fill = 1)
     line -= 18
     if j == 7:
        my_canvas.line(5, line - 2, 590, line)
