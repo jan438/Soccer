@@ -36,7 +36,7 @@ class GameEvent:
         self.month = month
         
 def lookuplocation(loc):
-    print("loc", loc)
+    print("loc", loc, cities[3][0])
     index = 3
     return index
 
