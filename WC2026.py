@@ -220,12 +220,13 @@ for i in range(len(cities)):
     my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
     
 calindex = 0
+limitcalindex = 5
 gameindex = 0
 
 line = 550
 for j in range(13):   
     for i in range(8):
-        if calindex < 10:
+        if calindex < limitcalindex:
             print(calindex, gameevents[calindex].summary)
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
@@ -241,7 +242,7 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         my_canvas.setFillColor(HexColor("#00ff00"))  
         my_canvas.circle(left_margin + i * colwidthgame + 8.0, line + 12.0, 2.0, stroke = 0, fill = 1)
-        if calindex < 10:
+        if calindex < limitcalindex:
             calindex += 1
     line -= 18
     if j == 7:
