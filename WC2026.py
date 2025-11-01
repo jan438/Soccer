@@ -220,14 +220,14 @@ for i in range(len(cities)):
     my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
     
 calindex = 0
-limitcalindex = 5
+limitcalindex = 6
 gameindex = 0
 
 line = 550
 for j in range(13):   
     for i in range(8):
         if calindex < limitcalindex:
-            print(calindex, gameevents[calindex].summary)
+            print(calindex, gameevents[calindex].summary[5])
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
