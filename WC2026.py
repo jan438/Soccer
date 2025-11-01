@@ -210,9 +210,6 @@ for poule in range(12):
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
-
-for i in range(len(gameevents)):
-    print(gameevents[i].summary)
     
 for i in range(len(cities)):
     print(cities[i][0])
