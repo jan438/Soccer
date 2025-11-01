@@ -212,7 +212,7 @@ for i in range(len(cities)):
     my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.setFont(socfont, 7)
-    my_canvas.drawString(float(cities[i][2][0]) + 5.0, float(cities[i][2][1]), cities[i][0])
+    my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
 
 line = 550
 for j in range(13):   
