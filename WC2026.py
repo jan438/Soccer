@@ -227,7 +227,7 @@ line = 550
 for j in range(13):   
     for i in range(8):
         if calindex < limitcalindex:
-            print(calindex, gameevents[calindex].summary[5])
+            print(calindex, gameevents[calindex].summary[5], gameevents[calindex].location)
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
