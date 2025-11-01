@@ -36,8 +36,11 @@ class GameEvent:
         self.month = month
         
 def lookuplocation(loc):
+    index = 8
     print("loc", loc, cities[3][0])
-    index = 3
+    for l in range(len(cities)):
+        if cities[l][0] == loc:
+            index = l
     return index
 
 def scaleSVG(svgfile, scaling_factor):
