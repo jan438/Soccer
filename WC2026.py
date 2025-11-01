@@ -255,11 +255,11 @@ for j in range(13):
             calindex += 1
     line -= 18
     if j == 7:
-       my_canvas.line(5, line - 2, 590, line)
+       line -= 10
     if j == 9:
-       my_canvas.line(5, line - 2, 590, line)
+       line -= 10
     if j == 10:
-       my_canvas.line(5, line - 2, 590, line)
+       line -= 10
     
 my_canvas.save()
 key = input("Wait")
