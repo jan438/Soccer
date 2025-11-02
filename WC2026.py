@@ -212,8 +212,6 @@ for poule in range(12):
         if nationsdata[teamcounter][8] != "NL":
             drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.3)
             renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
-            my_canvas.setFillColor(HexColor("#ffff00"))
-            my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
