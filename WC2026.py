@@ -251,7 +251,7 @@ for j in range(12):
         if calindex < limitcalindex:
             locidx = lookuplocation(gameevents[calindex].location)
             my_canvas.setFillColor(HexColor(cities[locidx][1]))
-            my_canvas.circle(left_margin + i * colwidthgame + 8.2, line + 12.0, 2.0, stroke = 0, fill = 1)
+            my_canvas.circle(left_margin + i * colwidthgame + 9.0, line + 12.0, 2.0, stroke = 0, fill = 1)
         if calindex < limitcalindex:
             calindex += 1
     line -= 18
