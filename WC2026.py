@@ -238,8 +238,11 @@ for j in range(12):
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))  
         my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 9.5, gameevents[calindex].summary[5])
-        my_canvas.setFillColor(HexColor("#000000"))  
-        my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, "19-7")
+        my_canvas.setFillColor(HexColor("#000000"))
+        daystr = "19"
+        monthstr = "6"
+        datestr = daystr + "-" + monthstr
+        my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, datestr)
         my_canvas.setFont(socfont, 8)    
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, "Opponent2")
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, "Opponent1")
