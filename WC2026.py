@@ -229,7 +229,7 @@ limitcalindex = 71
 gameindex = 0
 
 line = 550
-for j in range(12):   
+for j in range(13):   
     for i in range(8):
         if calindex < limitcalindex:
             print(calindex, gameevents[calindex].summary[5], gameevents[calindex].location)
