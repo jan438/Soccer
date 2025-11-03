@@ -240,7 +240,7 @@ for j in range(12):
         my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 9.5, gameevents[calindex].summary[5])
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
-        monthstr = "6"
+        monthstr = str(gameevents[calindex].month)
         datestr = daystr + "-" + monthstr
         my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, datestr)
         my_canvas.setFont(socfont, 8)    
