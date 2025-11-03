@@ -237,7 +237,7 @@ for j in range(12):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))  
-        my_canvas.drawString(left_margin + i * colwidthgame + 0.48, line + 9.5, gameevents[calindex].summary[5])
+        my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[5])
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
@@ -251,7 +251,7 @@ for j in range(12):
         if calindex < limitcalindex:
             locidx = lookuplocation(gameevents[calindex].location)
             my_canvas.setFillColor(HexColor(cities[locidx][1]))
-            my_canvas.circle(left_margin + i * colwidthgame + 8.0, line + 12.0, 2.0, stroke = 0, fill = 1)
+            my_canvas.circle(left_margin + i * colwidthgame + 8.2, line + 12.0, 2.0, stroke = 0, fill = 1)
         if calindex < limitcalindex:
             calindex += 1
     line -= 18
