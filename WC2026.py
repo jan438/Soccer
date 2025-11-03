@@ -255,11 +255,11 @@ for j in range(12):
         if calindex < limitcalindex:
             calindex += 1
     line -= 18
-    if j == 7:
-       line -= 10
-    if j == 9:
+    if j == 8:
        line -= 10
     if j == 10:
+       line -= 10
+    if j == 11:
        line -= 10
     
 my_canvas.save()
