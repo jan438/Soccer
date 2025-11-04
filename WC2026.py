@@ -225,7 +225,7 @@ for i in range(len(cities)):
     my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
     
 calindex = 0
-limitcalindex = 87
+limitcalindex = 90
 gameindex = 0
 
 line = 550
@@ -240,7 +240,7 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        if category == "3":
+        if category == "3" or category == "1":
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[1:4])
         else:
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, category)
