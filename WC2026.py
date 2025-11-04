@@ -240,7 +240,7 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        if category == "3" or category == "1" or category == "Q" or category == "H":
+        if category == "3" or category == "1" or category == "Q" or category == "S":
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[1:4])
         else:
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, category)
