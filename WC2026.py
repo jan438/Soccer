@@ -239,7 +239,7 @@ for j in range(13):
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))
         if category == "3":
-            print("32")
+            my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[1:4])
         else:
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, category)
         my_canvas.setFillColor(HexColor("#000000"))
