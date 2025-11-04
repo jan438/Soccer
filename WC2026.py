@@ -232,8 +232,10 @@ line = 550
 for j in range(13):   
     for i in range(8):
         category = gameevents[calindex].summary[5]
-        if calindex < limitcalindex:
+        if calindex <= limitcalindex:
             print(calindex, category, gameevents[calindex].location)
+        else:
+            break
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
@@ -252,12 +254,10 @@ for j in range(13):
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, "Opponent1")
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
-        if calindex < limitcalindex:
-            locidx = lookuplocation(gameevents[calindex].location)
-            my_canvas.setFillColor(HexColor(cities[locidx][1]))
-            my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.0, 2.0, stroke = 0, fill = 1)
-        if calindex < limitcalindex:
-            calindex += 1
+        locidx = lookuplocation(gameevents[calindex].location)
+        my_canvas.setFillColor(HexColor(cities[locidx][1]))
+        my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.0, 2.0, stroke = 0, fill = 1)
+        calindex += 1
     line -= 18
     if j == 8:
        line -= 10
