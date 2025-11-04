@@ -231,13 +231,17 @@ gameindex = 0
 line = 550
 for j in range(13):   
     for i in range(8):
+        category = gameevents[calindex].summary[5]
         if calindex < limitcalindex:
-            print(calindex, gameevents[calindex].summary[5], gameevents[calindex].location)
+            print(calindex, category, gameevents[calindex].location)
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
-        my_canvas.setFillColor(HexColor("#ffffff"))  
-        my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[5])
+        my_canvas.setFillColor(HexColor("#ffffff"))
+        if category == "3":
+            print("32")
+        else:
+            my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, category)
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
