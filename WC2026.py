@@ -256,7 +256,7 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         locidx = lookuplocation(gameevents[calindex].location)
         my_canvas.setFillColor(HexColor(cities[locidx][1]))
-        my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.0, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.5, 2.0, stroke = 0, fill = 1)
         calindex += 1
     line -= 18
     if j == 8:
