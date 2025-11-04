@@ -231,8 +231,8 @@ gameindex = 0
 line = 550
 for j in range(13):   
     for i in range(8):
-        category = gameevents[calindex].summary[5]
         if calindex <= limitcalindex:
+            category = gameevents[calindex].summary[5]
             print(calindex, category, gameevents[calindex].location)
         else:
             break
