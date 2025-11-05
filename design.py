@@ -47,5 +47,14 @@ my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(designcolors[1]))
 my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
 
+my_canvas.setFillColor(HexColor(designcolors[2]))
+my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1)
+
+my_canvas.setFillColor(HexColor(designcolors[3]))
+my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
+
+my_canvas.setFillColor(HexColor(designcolors[4]))
+my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
+
 my_canvas.save()
 key = input("Wait")
