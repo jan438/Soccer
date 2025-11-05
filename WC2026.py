@@ -238,7 +238,7 @@ groupline = line + 20
 my_canvas.drawString(left_margin + 1.0, groupline, "Group Stage")
 thirtytwoline = line - 154
 my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
-sixteenline = line - 202
+sixteenline = line - 200
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
 finalline = line - 232
 my_canvas.drawString(left_margin + 1.0, finalline, "Quarter finals")
