@@ -240,7 +240,7 @@ thirtytwoline = line - 154
 my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
 sixteenline = line - 200
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
-finalline = line - 232
+finalline = line - 228
 my_canvas.drawString(left_margin + 1.0, finalline, "Quarter finals")
 my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, finalline, "Semi finals")
 my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, finalline, "Bronze final")
