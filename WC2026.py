@@ -236,7 +236,7 @@ gameindex = 0
 line = 550
 groupline = line + 20
 my_canvas.drawString(left_margin + 1.0, groupline, "Group Stage")
-thirtytwoline = line - 152
+thirtytwoline = line - 154
 my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
 sixteenline = line - 202
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
