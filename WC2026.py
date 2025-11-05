@@ -238,6 +238,8 @@ for j in range(13):
     for i in range(8):
         if calindex <= limitcalindex:
             category = gameevents[calindex].summary[5]
+            opponent1 = ""
+            opponent2 = ""
             print(calindex, category, gameevents[calindex].location)
         else:
             break
@@ -249,9 +251,8 @@ for j in range(13):
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[1:4])
             description = gameevents[calindex].description
             idx = description.find("-")
-            opponent1 = description[:idx]
-            opponent2 = description[idx + 1:]
-            print("Description", description, idx, opponent1, "===", opponent2)
+            opponent1 = description[:idx - 1]
+            opponent2 = description[idx + 2:]
         else:
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, category)
         my_canvas.setFillColor(HexColor("#000000"))
@@ -260,8 +261,8 @@ for j in range(13):
         datestr = daystr + "-" + monthstr
         my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, datestr)
         my_canvas.setFont(socfont, 8)    
-        my_canvas.drawString(left_margin + i * colwidthgame + 30, line, "Opponent2")
-        my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, "Opponent1")
+        my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
+        my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         locidx = lookuplocation(gameevents[calindex].location)
