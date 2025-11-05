@@ -22,8 +22,10 @@ from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 socfont = "LiberationSerif"
 Borealis = [ "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
+BluePlanet1 = [ "#2297FA", "#50B6FE", "#7ED8FA", "#94AEFE", "#8082D6" ]
+
 left_padding = 10
-bottom_padding = 100
+bottom_padding = 500
 width = 50
 height = 50
 
@@ -50,6 +52,17 @@ my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1
 my_canvas.setFillColor(HexColor(Borealis[3]))
 my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[4]))
+my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
+bottom_padding = 400
+my_canvas.setFillColor(HexColor(BluePlanet1[0]))
+my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
+my_canvas.setFillColor(HexColor(BluePlanet1[1]))
+my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
+my_canvas.setFillColor(HexColor(BluePlanet1[2]))
+my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1)
+my_canvas.setFillColor(HexColor(BluePlanet1[3]))
+my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
+my_canvas.setFillColor(HexColor(BluePlanet1[4]))
 my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
 
 my_canvas.save()
