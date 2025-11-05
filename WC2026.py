@@ -234,11 +234,14 @@ limitcalindex = 103
 gameindex = 0
 
 line = 550
-stageline = line
-my_canvas.drawString(left_margin + 1.0, stageline + 20, "Group Stage")
-my_canvas.drawString(left_margin + 1.0, stageline - 152, "Round of 32")
-my_canvas.drawString(left_margin + 1.0, stageline - 202, "Round of 16")
-my_canvas.drawString(left_margin + 1.0, stageline - 232, "Quarter finals")
+groupline = line + 20
+my_canvas.drawString(left_margin + 1.0, groupline, "Group Stage")
+thirtytwoline = line - 152
+my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
+sixteenline = line - 202
+my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
+finalline = line - 232
+my_canvas.drawString(left_margin + 1.0, finalline, "Quarter finals")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Semi finals")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Bronze final")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Final")
