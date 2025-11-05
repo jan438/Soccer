@@ -234,6 +234,14 @@ limitcalindex = 103
 gameindex = 0
 
 line = 550
+my_canvas.drawString(left_margin + 1.0, line + 10, "Group Stage")
+my_canvas.drawString(left_margin + 1.0, line + 20, "Round of 32")
+my_canvas.drawString(left_margin + 1.0, line + 30, "Round of 16")
+my_canvas.drawString(left_margin + 1.0, line + 40, "Quarter finals")
+#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Semi finals")
+#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Bronze final")
+#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Final")
+  
 for j in range(13):   
     for i in range(8):
         if calindex <= limitcalindex:
