@@ -44,5 +44,8 @@ my_canvas.setTitle("Designs")
 my_canvas.setFillColor(HexColor(designcolors[0]))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
+my_canvas.setFillColor(HexColor(designcolors[1]))
+my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
+
 my_canvas.save()
 key = input("Wait")
