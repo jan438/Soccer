@@ -1,0 +1,48 @@
+import os
+import calendar
+from datetime import datetime, date, timedelta
+import pytz
+import os
+import sys
+import csv
+import math
+import unicodedata
+from ics import Calendar, Event
+from reportlab.graphics import renderPDF
+from reportlab.pdfgen import canvas
+from reportlab.lib.pagesizes import A4
+from reportlab.lib.colors import HexColor
+from reportlab.pdfbase import pdfmetrics  
+from reportlab.pdfbase.pdfmetrics import registerFontFamily
+from reportlab.lib.colors import blue, green, black, red, pink, gray, brown, purple, orange, yellow, white, lightgrey
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.lib.units import inch, mm
+from reportlab.graphics.shapes import *
+from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
+
+socfont = "LiberationSerif"
+outsidearea = "#9e9e9e"
+left_padding = 10
+bottom_padding = 100
+width = 50
+height = 50
+
+if sys.platform[0] == 'l':
+    path = '/home/jan/git/Soccer'
+if sys.platform[0] == 'w':
+    path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
+os.chdir(path)
+
+pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
+my_canvas = canvas.Canvas("PDF/Designs.pdf")
+
+my_canvas.setTitle("Designs")
+
+my_canvas.setFillColor(HexColor(outsidearea))
+my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
+
+my_canvas.save()
+key = input("Wait")
