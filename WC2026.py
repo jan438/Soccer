@@ -242,9 +242,9 @@ sixteenline = line - 202
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
 finalline = line - 232
 my_canvas.drawString(left_margin + 1.0, finalline, "Quarter finals")
-#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Semi finals")
-#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Bronze final")
-#my_canvas.drawString(left_margin + i * colwidthgame + 1.0, stageline + 9.5, "Final")
+my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, finalline, "Semi finals")
+my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, finalline, "Bronze final")
+my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, finalline, "Final")
   
 for j in range(13):   
     for i in range(8):
