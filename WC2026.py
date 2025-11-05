@@ -237,7 +237,7 @@ line = 550
 my_canvas.drawString(left_margin + 1.0, line + 20, "Group Stage")
 my_canvas.drawString(left_margin + 1.0, line - 152, "Round of 32")
 my_canvas.drawString(left_margin + 1.0, line - 202, "Round of 16")
-my_canvas.drawString(left_margin + 1.0, line - 252, "Quarter finals")
+my_canvas.drawString(left_margin + 1.0, line - 232, "Quarter finals")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Semi finals")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Bronze final")
 #my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, "Final")
