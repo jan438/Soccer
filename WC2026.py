@@ -82,6 +82,7 @@ print("Count eventslines", len(alleventslines))
 for i in range(len(alleventslines)):
     neweventpos = alleventslines[i].find("BEGIN:VEVENT")
     summaryeventpos = alleventslines[i].find("SUMMARY")
+    descriptioneventpos = alleventslines[i].find("DESCRIPTION")
     locationeventpos = alleventslines[i].find("LOCATION")
     dtstarteventpos = alleventslines[i].find("DTSTART")
     dtendeventpos = alleventslines[i].find("DTEND")
@@ -106,6 +107,9 @@ for i in range(len(alleventslines)):
         endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
     if summaryeventpos == 0:
         summary = alleventslines[i][8:]
+    if descriptioneventpos == 0:
+        description = alleventslines[i][12:]
+        print(description)
     if locationeventpos == 0:
         location = alleventslines[i][9:]
     if endeventpos == 0:
