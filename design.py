@@ -24,8 +24,8 @@ socfont = "LiberationSerif"
 Borealis = [ "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
 BluePlanet1 = [ "#2297FA", "#50B6FE", "#7ED8FA", "#94AEFE", "#8082D6" ]
 
-left_padding = 10
-bottom_padding = 500
+design_x = 10
+design_y = 500
 width = 50
 height = 50
 
@@ -44,26 +44,26 @@ my_canvas = canvas.Canvas("PDF/Designs.pdf")
 my_canvas.setTitle("Designs")
 
 my_canvas.setFillColor(HexColor(Borealis[0]))
-my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[1]))
-my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[2]))
-my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + 2 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[3]))
-my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + 3 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[4]))
-my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
-bottom_padding = 400
+my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
+design_y = 400
 my_canvas.setFillColor(HexColor(BluePlanet1[0]))
-my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(BluePlanet1[1]))
-my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(BluePlanet1[2]))
-my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + 2 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(BluePlanet1[3]))
-my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + 3 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(BluePlanet1[4]))
-my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
+my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
 
 my_canvas.save()
 key = input("Wait")
