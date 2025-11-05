@@ -21,7 +21,7 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 socfont = "LiberationSerif"
-designcolors = [ "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
+Borealis = [ "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
 left_padding = 10
 bottom_padding = 100
 width = 50
@@ -41,19 +41,15 @@ my_canvas = canvas.Canvas("PDF/Designs.pdf")
 
 my_canvas.setTitle("Designs")
 
-my_canvas.setFillColor(HexColor(designcolors[0]))
+my_canvas.setFillColor(HexColor(Borealis[0]))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
-
-my_canvas.setFillColor(HexColor(designcolors[1]))
+my_canvas.setFillColor(HexColor(Borealis[1]))
 my_canvas.rect(left_padding + width, bottom_padding, width, height, fill = 1)
-
-my_canvas.setFillColor(HexColor(designcolors[2]))
+my_canvas.setFillColor(HexColor(Borealis[2]))
 my_canvas.rect(left_padding + 2 * width, bottom_padding, width, height, fill = 1)
-
-my_canvas.setFillColor(HexColor(designcolors[3]))
+my_canvas.setFillColor(HexColor(Borealis[3]))
 my_canvas.rect(left_padding + 3 * width, bottom_padding, width, height, fill = 1)
-
-my_canvas.setFillColor(HexColor(designcolors[4]))
+my_canvas.setFillColor(HexColor(Borealis[4]))
 my_canvas.rect(left_padding + 4 * width, bottom_padding, width, height, fill = 1)
 
 my_canvas.save()
