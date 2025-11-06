@@ -66,6 +66,8 @@ for i in range(len(designs)):
     my_canvas.setFillColor(HexColor(designs[i][5]))
     my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
     design_y = design_y - 50
+    if i == 9:
+        design_x += 175
     
 my_canvas.save()
 key = input("Wait")
