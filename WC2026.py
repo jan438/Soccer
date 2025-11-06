@@ -288,7 +288,7 @@ for j in range(13):
         my_canvas.rect(left_margin, line + 13, 4 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + 17, "Quarter finals")
-        #my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + 10, "Semi finals")
+        my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + 17, "Semi finals")
         #my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + 10, "Bronze final")
         #my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + 10, "Final")
     
