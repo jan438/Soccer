@@ -44,6 +44,7 @@ my_canvas = canvas.Canvas("PDF/Designs.pdf")
 
 my_canvas.setTitle("Designs")
 
+my_canvas.setFillColor(black)
 my_canvas.drawString(design_x, design_y + 33, Borealis[0])
 my_canvas.setFillColor(HexColor(Borealis[1]))
 my_canvas.rect(design_x, design_y, width, height, fill = 1)
@@ -55,7 +56,7 @@ my_canvas.setFillColor(HexColor(Borealis[4]))
 my_canvas.rect(design_x + 3 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(Borealis[5]))
 my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
-design_y = design_y - 40
+design_y = design_y - 50
 my_canvas.drawString(design_x, design_y + 33, BluePlanet1[0])
 my_canvas.setFillColor(HexColor(BluePlanet1[1]))
 my_canvas.rect(design_x, design_y, width, height, fill = 1)
@@ -67,7 +68,7 @@ my_canvas.setFillColor(HexColor(BluePlanet1[4]))
 my_canvas.rect(design_x + 3 * width, design_y, width, height, fill = 1)
 my_canvas.setFillColor(HexColor(BluePlanet1[5]))
 my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
-design_y = design_y - 40
+design_y = design_y - 50
 my_canvas.drawString(design_x, design_y + 33, Oasis[0])
 my_canvas.setFillColor(HexColor(Oasis[1]))
 my_canvas.rect(design_x, design_y, width, height, fill = 1)
