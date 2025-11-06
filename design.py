@@ -30,7 +30,8 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
            [ "Verdant", "#76C474", "#4FB65E", "#1D9642", "#116630", "#063009" ],
            [ "Icecap", "#777DB4", "#99B5F4", "#709FEB", "#3765A9", "#08386E" ],
            [ "Turquoise Torrent", "#6ED1D4", "#87EAE5", "#B1EDEF", "#A4D9EB", "#84CEE9" ],
-           [ "Alaska", "#5E436C", "#7D648E", "#D5DAE3", "#87A4DE", "#5873CB" ]] 
+           [ "Alaska", "#5E436C", "#7D648E", "#D5DAE3", "#87A4DE", "#5873CB" ],
+           [ "Blooms in Blue", "#427938", "#4DA73D", "#488872", "#359DED", "#0282C9" ]]   
 
 design_x = 10
 design_y = 700
