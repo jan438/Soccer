@@ -40,7 +40,8 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
            [ "Fields of Lavender", "#2E2462", "#4D5082", "#51645C", "#376F91", "#113C5F" ],
            [ "Caribbean Coast", "#16505B", "#20646D", "#2D8181", "#8EAF82", "#255A00" ],
            [ "Northern Lights", "#4BCFD6", "#1A5092", "#346EA4", "#3D8FB1", "#A7DCEF" ],
-           [ "Bluebells", "#5A619A", "#6785CC", "#8697CA", "#87B77B", "#67A45F" ]]
+           [ "Bluebells", "#5A619A", "#6785CC", "#8697CA", "#87B77B", "#67A45F" ],
+           [ "Moonstone", "#016FAE", "#6BE6CF", "#019DAC", "#01697C", "#015649" ]]
 
 design_x = 10
 design_y = 700
@@ -75,7 +76,7 @@ for i in range(len(designs)):
     my_canvas.setFillColor(HexColor(designs[i][5]))
     my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
     design_y = design_y - 50
-    if i == 9:
+    if i == 9 or i == 19:
         design_x += 175
         design_y = 700
     
