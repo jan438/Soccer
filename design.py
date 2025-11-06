@@ -31,7 +31,16 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
            [ "Icecap", "#777DB4", "#99B5F4", "#709FEB", "#3765A9", "#08386E" ],
            [ "Turquoise Torrent", "#6ED1D4", "#87EAE5", "#B1EDEF", "#A4D9EB", "#84CEE9" ],
            [ "Alaska", "#5E436C", "#7D648E", "#D5DAE3", "#87A4DE", "#5873CB" ],
-           [ "Blooms in Blue", "#427938", "#4DA73D", "#488872", "#359DED", "#0282C9" ]]   
+           [ "Blooms in Blue", "#427938", "#4DA73D", "#488872", "#359DED", "#0282C9" ],
+           [ "Clear Cobalt", "#D6F0F1", "#9DCCD7", "#5997AE", "#165578", "#0F151D" ],
+           [ "Crystalline", "#002D3F", "#024A65", "#015E80", "#016A8E", "#047A9A" ],
+           [ "Blue Ridge", "#DCF2FD", "#BBE6F9", "#596BB3", "#1E386B", "#102447" ],
+           [ "Jungle", "#4E785E", "#2A4B44", "#24342A", "#131C1B", "#4C5C65" ],
+           [ "Coral Cove", "#0B4746", "#085B5B", "#17A8B1", "#3FD5DE", "#1EE9F2" ],
+           [ "Fields of Lavender", "#2E2462", "#4D5082", "#51645C", "#376F91", "#113C5F" ],
+           [ "Caribbean Coast", "#16505B", "#20646D", "#2D8181", "#8EAF82", "#255A00" ],
+           [ "Northern Lights", "#4BCFD6", "#1A5092", "#346EA4", "#3D8FB1", "#A7DCEF" ],
+           [ "Bluebells", "#5A619A", "#6785CC", "#8697CA", "#87B77B", "#67A45F" ]]
 
 design_x = 10
 design_y = 700
