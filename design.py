@@ -68,6 +68,7 @@ for i in range(len(designs)):
     design_y = design_y - 50
     if i == 9:
         design_x += 175
+        design_y = 700
     
 my_canvas.save()
 key = input("Wait")
