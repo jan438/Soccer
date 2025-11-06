@@ -285,7 +285,7 @@ for j in range(13):
         line -= 10
         # Fly by Night
         my_canvas.setFillColor(HexColor("#433E76"))
-        my_canvas.rect(left_margin, line + 12, 4 * colwidthgame, 13, stroke = 1, fill = 1)
+        my_canvas.rect(left_margin, line + 13, 4 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + 17, "Quarter finals")
         #my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + 10, "Semi finals")
