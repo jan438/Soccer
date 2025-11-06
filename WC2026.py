@@ -300,6 +300,10 @@ for j in range(13):
         my_canvas.setFillColor(HexColor("#ffffff"))
         
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + 17, "Bronze final")
+        
+        my_canvas.setFillColor(HexColor(designcolors[3]))
+        my_canvas.rect(left_margin + 7 * colwidthgame, line + 13, 1 * colwidthgame, 12, stroke = 1, fill = 1)
+        my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + 17, "Final")
     
 my_canvas.save()
