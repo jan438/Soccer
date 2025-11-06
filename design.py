@@ -41,7 +41,16 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
            [ "Caribbean Coast", "#16505B", "#20646D", "#2D8181", "#8EAF82", "#255A00" ],
            [ "Northern Lights", "#4BCFD6", "#1A5092", "#346EA4", "#3D8FB1", "#A7DCEF" ],
            [ "Bluebells", "#5A619A", "#6785CC", "#8697CA", "#87B77B", "#67A45F" ],
-           [ "Moonstone", "#016FAE", "#6BE6CF", "#019DAC", "#01697C", "#015649" ]]
+           [ "Moonstone", "#016FAE", "#6BE6CF", "#019DAC", "#01697C", "#015649" ],
+           [ "Ursa Major", "#075A77", "#079BBB", "#13B8CE", "#6D79C2", "#512475" ],
+           [ "Paradise", "#01374A", "#0395A7", "#72ADBF", "#5E877D", "#2B5435" ],
+           [ "Little Pigeon", "#0A1932", "#143151", "#617997", "#9BB6DA", "#DFF0FD" ],
+           [ "Amethyst Freeze", "#332686", "#523DC5", "#375ED2", "#BEF4FE", "#289991" ],
+           [ "Lakeshore", "#122C41", "#08445B", "#2E647A", "#2185B6", "#035042" ],
+           [ "Fly by Night", "#433E76", "#514F81", "#65779D", "#819CBA", "#AFBCCE" ],
+           [ "Blue Agate", "#264248", "#398A95", "#DCE2E5", "#60BDBC", "#1B7979" ],
+           [ "Equator", "#01697C", "#01B1C6", "#01E7DC", "#00C2A5", "#00785B" ],
+           [ "Skyline", "#038492", "#05B2C7", "#5D4CDA", "#3995E9", "#0473AD" ]]
 
 design_x = 10
 design_y = 700
