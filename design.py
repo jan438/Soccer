@@ -26,7 +26,9 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
            [ "Oasis", "#23570D", "#367C28", "#86B06B", "#BAD5EC", "#6BA2DE" ],
            [ "Black Forest", "#0E1609", "#1D2C20", "#2E462B", "#5C6D5E", "#A0A899"],
            [ "Butterfly Blue", "#3173D7", "#50BFDB", "#A6E4DD", "#6F9CDC", "#7270DD"],
-           [ "Arctic", "#83A7C9", "#A2C6E8", "#E0ECF8", "#6ACCF3", "#2094D1" ]]
+           [ "Arctic", "#83A7C9", "#A2C6E8", "#E0ECF8", "#6ACCF3", "#2094D1" ],
+           [ "Verdant", "#76C474", "#4FB65E", "#1D9642", "#116630", "#063009" ],
+           [ "Icecap", "#777DB4", "#99B5F4", "#709FEB", "#3765A9", "#08386E" ]]
 
 design_x = 10
 design_y = 700
