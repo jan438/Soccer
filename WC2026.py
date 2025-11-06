@@ -240,11 +240,6 @@ thirtytwoline = line - 154
 my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
 sixteenline = line - 200
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
-finalline = line - 228
-my_canvas.drawString(left_margin + 1.0, finalline, "Quarter finals")
-my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, finalline, "Semi finals")
-my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, finalline, "Bronze final")
-my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, finalline, "Final")
   
 for j in range(13):   
     for i in range(8):
@@ -283,11 +278,18 @@ for j in range(13):
         calindex += 1
     line -= 18
     if j == 8:
-       line -= 10
+        line -= 10
     if j == 10:
-       line -= 10
+        line -= 10
     if j == 11:
-       line -= 10
+        line -= 10
+        my_canvas.setFillColor(HexColor("#433E76"))
+        my_canvas.rect(left_margin, line + 10, 4 * colwidthgame, 10, stroke = 1, fill = 1)
+        my_canvas.setFillColor(HexColor("#ffffff"))
+        my_canvas.drawString(left_margin + 1.0, line + 15, "Quarter finals")
+        #my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + 10, "Semi finals")
+        #my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + 10, "Bronze final")
+        #my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + 10, "Final")
     
 my_canvas.save()
 key = input("Wait")
