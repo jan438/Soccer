@@ -173,6 +173,9 @@ my_canvas = canvas.Canvas("PDF/WorldCup2026" + mapversie + ".pdf")
 
 my_canvas.setTitle("World Cup 2026")
 
+# Fly by Night
+designcolors = [ "#433E76", "#514F81", "#65779D", "#819CBA", "#AFBCCE" ]
+
 my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
@@ -283,8 +286,7 @@ for j in range(13):
         line -= 10
     if j == 11:
         line -= 10
-        # Fly by Night
-        my_canvas.setFillColor(HexColor("#433E76"))
+        my_canvas.setFillColor(HexColor(designcolors[0]))
         my_canvas.rect(left_margin, line + 13, 4 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + 17, "Quarter finals")
