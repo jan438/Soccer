@@ -239,9 +239,6 @@ gameindex = 0
 line = 550
 groupline = line + 20
 my_canvas.drawString(left_margin + 1.0, groupline, "Group Stage")
-thirtytwoline = line - 154
-my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
-
 
 categoryrectdy = 13
 categorystrdy = 17
@@ -286,6 +283,10 @@ for j in range(13):
     line -= rowheightgame
     if j == 8:
         line -= 10
+        my_canvas.setFillColor(HexColor(designcolors[0]))
+        my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.setFillColor(HexColor("#ffffff"))
+        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 32")
     if j == 10:
         line -= 10
         my_canvas.setFillColor(HexColor(designcolors[0]))
