@@ -238,7 +238,7 @@ gameindex = 0
 line = 550
 categoryrectdy = 15
 categorystrdy = 17
-categoryrectheight = 11
+categoryrectheight = 9
 rowheightgame = 18
  
 for j in range(13):
