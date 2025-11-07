@@ -246,7 +246,7 @@ my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
 categoryrectdy = 13
 categorystrdy = 17
 categoryrectheight = 12
-#rowheightgame = 18
+rowheightgame = 18
  
 for j in range(13):   
     for i in range(8):
@@ -283,7 +283,7 @@ for j in range(13):
         my_canvas.setFillColor(HexColor(cities[locidx][1]))
         my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.5, 2.0, stroke = 0, fill = 1)
         calindex += 1
-    line -= 18
+    line -= rowheightgame
     if j == 8:
         line -= 10
     if j == 10:
