@@ -235,17 +235,18 @@ for i in range(len(cities)):
 calindex = 0
 limitcalindex = 103
 gameindex = 0
-
 line = 550
-groupline = line + 20
-my_canvas.drawString(left_margin + 1.0, groupline, "Group Stage")
-
 categoryrectdy = 13
 categorystrdy = 17
 categoryrectheight = 12
 rowheightgame = 18
  
-for j in range(13):   
+for j in range(13):
+    if j == 0:
+        my_canvas.setFillColor(HexColor(designcolors[0]))
+        my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.setFillColor(HexColor("#ffffff"))
+        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Group Stage")
     for i in range(8):
         if calindex <= limitcalindex:
             category = gameevents[calindex].summary[5]
