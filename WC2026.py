@@ -244,7 +244,10 @@ my_canvas.drawString(left_margin + 1.0, thirtytwoline, "Round of 32")
 sixteenline = line - 200
 my_canvas.drawString(left_margin + 1.0, sixteenline, "Round of 16")
 categoryrectdy = 13
-  
+categorystrdy = 17
+#categoryrectheight = 12
+#rowheightgame = 18
+ 
 for j in range(13):   
     for i in range(8):
         if calindex <= limitcalindex:
@@ -290,19 +293,19 @@ for j in range(13):
         my_canvas.setFillColor(HexColor(designcolors[0]))
         my_canvas.rect(left_margin, line + categoryrectdy, 4 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 1.0, line + 17, "Quarter finals")
+        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Quarter finals")
         my_canvas.setFillColor(HexColor(designcolors[1]))
         my_canvas.rect(left_margin + 4 * colwidthgame, line + categoryrectdy, 2 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + 17, "Semi finals")
+        my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + categorystrdy, "Semi finals")
         my_canvas.setFillColor(HexColor(designcolors[2]))
         my_canvas.rect(left_margin + 6 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + 17, "Bronze final")
+        my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + categorystrdy, "Bronze final")
         my_canvas.setFillColor(HexColor(designcolors[3]))
         my_canvas.rect(left_margin + 7 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, 12, stroke = 1, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + 17, "Final")
+        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + categorystrdy, "Final")
     
 my_canvas.save()
 key = input("Wait")
