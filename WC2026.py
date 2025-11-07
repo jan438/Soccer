@@ -243,6 +243,7 @@ rowheightgame = 18
  
 for j in range(13):
     if j == 0:
+        my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor(designcolors[0]))
         my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
