@@ -237,8 +237,8 @@ limitcalindex = 103
 gameindex = 0
 line = 550
 categoryrectdy = 13
-categorystrdy = 17
-categoryrectheight = 12
+categorystrdy = 18
+categoryrectheight = 11
 rowheightgame = 18
  
 for j in range(13):
