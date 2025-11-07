@@ -236,8 +236,8 @@ calindex = 0
 limitcalindex = 103
 gameindex = 0
 line = 550
-categoryrectdy = 13
-categorystrdy = 18
+categoryrectdy = 15
+categorystrdy = 17
 categoryrectheight = 11
 rowheightgame = 18
  
