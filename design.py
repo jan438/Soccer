@@ -56,6 +56,7 @@ design_x = 10
 design_y = 700
 width = 32
 height = 32
+abcy = 23
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -74,16 +75,32 @@ my_canvas.setTitle("Designs")
 for i in range(len(designs)):
     my_canvas.setFillColor(black)
     my_canvas.drawString(design_x, design_y + 33, designs[i][0])
+    
     my_canvas.setFillColor(HexColor(designs[i][1]))
     my_canvas.rect(design_x, design_y, width, height, stroke = 0, fill = 1)
+    my_canvas.setFillColor(black)
+    my_canvas.drawString(design_x + 10, design_y + abcy, "abc" )
+    
     my_canvas.setFillColor(HexColor(designs[i][2]))
     my_canvas.rect(design_x + width, design_y, width, height, stroke = 0, fill = 1)
+    my_canvas.setFillColor(black)
+    my_canvas.drawString(design_x + width + 10, design_y + abcy, "abc" )
+    
     my_canvas.setFillColor(HexColor(designs[i][3]))
     my_canvas.rect(design_x + 2 * width, design_y, width, height, stroke = 0, fill = 1)
+    my_canvas.setFillColor(black)
+    my_canvas.drawString(design_x + 2 * width + 10, design_y + abcy, "abc" )
+    
     my_canvas.setFillColor(HexColor(designs[i][4]))
     my_canvas.rect(design_x + 3 * width, design_y, width, height, stroke = 0, fill = 1)
+    my_canvas.setFillColor(black)
+    my_canvas.drawString(design_x + 3 * width + 10, design_y + abcy, "abc" )
+    
     my_canvas.setFillColor(HexColor(designs[i][5]))
     my_canvas.rect(design_x + 4 * width, design_y, width, height, stroke = 0, fill = 1)
+    my_canvas.setFillColor(black)
+    my_canvas.drawString(design_x + 4 * width + 10, design_y + abcy, "abc" )
+    
     design_y = design_y - 50
     if i == 9 or i == 19:
         design_x += 185
