@@ -240,6 +240,9 @@ categoryrectdy = 15
 categorystrdy = 17
 categoryrectheight = 9
 rowheightgame = 18
+
+my_canvas.setFillColor(HexColor(designcolors[4]))
+my_canvas.rect(left_margin, 300 , 590, 300, stroke = 0, fill = 1)
  
 for j in range(13):
     if j == 0:
