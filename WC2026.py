@@ -21,6 +21,7 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 socfont = "LiberationSerif"
+socfontbold = 'LiberationSerifBold'
 version = "1.0"
 nationsdata = []
 alleventslines = []
@@ -270,8 +271,10 @@ for j in range(13):
             opponent1 = description[:idx - 1]
             opponent2 = description[idx + 2:]
         else:
+            my_canvas.setFont(socfontbold, 8)
             my_canvas.setFillColor(HexColor("#ffffff"))
-            my_canvas.drawString(left_margin + i * colwidthgame + 5.8, line + 10.0, category)
+            my_canvas.drawString(left_margin + i * colwidthgame + 5.5, line + 10.0, category)
+        my_canvas.setFont(socfont, 8)  
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
