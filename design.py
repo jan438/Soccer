@@ -79,22 +79,22 @@ for i in range(len(designs)):
     
     my_canvas.setFillColor(HexColor(designs[i][1]))
     my_canvas.rect(design_x, design_y, width, height, stroke = 0, fill = 1)
-    my_canvas.setFillColor(black)
+    my_canvas.setFillColor(designs[i][6])
     my_canvas.drawString(design_x + abcdx, design_y + abcdy, "abc" )
     
     my_canvas.setFillColor(HexColor(designs[i][2]))
     my_canvas.rect(design_x + width, design_y, width, height, stroke = 0, fill = 1)
-    my_canvas.setFillColor(black)
+    my_canvas.setFillColor(designs[i][7])
     my_canvas.drawString(design_x + width + abcdx, design_y + abcdy, "abc" )
     
     my_canvas.setFillColor(HexColor(designs[i][3]))
     my_canvas.rect(design_x + 2 * width, design_y, width, height, stroke = 0, fill = 1)
-    my_canvas.setFillColor(black)
+    my_canvas.setFillColor(designs[i][8])
     my_canvas.drawString(design_x + 2 * width + abcdx, design_y + abcdy, "abc" )
     
     my_canvas.setFillColor(HexColor(designs[i][4]))
     my_canvas.rect(design_x + 3 * width, design_y, width, height, stroke = 0, fill = 1)
-    my_canvas.setFillColor(black)
+    my_canvas.setFillColor(designs[i][9])
     my_canvas.drawString(design_x + 3 * width + abcdx, design_y + abcdy, "abc" )
     
     my_canvas.setFillColor(HexColor(designs[i][5]))
