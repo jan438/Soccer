@@ -261,7 +261,7 @@ for j in range(13):
             break
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.42)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
-        my_canvas.setFont(socfont, 7)
+        my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor("#ffffff"))
         if category == "3" or category == "1" or category == "Q" or category == "S" or category == "T" or category == "Z":
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 9.5, gameevents[calindex].summary[1:4])
@@ -277,7 +277,6 @@ for j in range(13):
         monthstr = str(gameevents[calindex].month)
         datestr = daystr + "-" + monthstr
         my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 2.5, datestr)
-        my_canvas.setFont(socfont, 8)    
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
