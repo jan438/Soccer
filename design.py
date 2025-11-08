@@ -57,6 +57,8 @@ design_y = 700
 width = 30
 height = 30
 
+# 10 kolom 10 kolom 10 kolom 10 = 595 = 3 * kolom = 555 
+
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
 if sys.platform[0] == 'w':
@@ -86,7 +88,7 @@ for i in range(len(designs)):
     my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
     design_y = design_y - 50
     if i == 9 or i == 19:
-        design_x += 175
+        design_x += 185
         design_y = 700
     
 my_canvas.save()
