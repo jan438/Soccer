@@ -259,7 +259,7 @@ for j in range(13):
             print(calindex, category, gameevents[calindex].location)
         else:
             break
-        drawing = scaleSVG("SVG/calendar-blank.svg", 0.4)
+        drawing = scaleSVG("SVG/calendar-blank.svg", 0.42)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line)
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))
