@@ -21,7 +21,7 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 
 socfont = "LiberationSerif"
-designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83", "#000000", "#000000", "#000000", "#000000", "#000000" ],
+designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83", "#000000", "#000000", "#000000", "#ffffff", "#ffffff" ],
            [ "BluePlanet1", "#2297FA", "#50B6FE", "#7ED8FA", "#94AEFE", "#8082D6" , "#000000", "#000000", "#000000", "#000000", "#000000"],
            [ "Oasis", "#23570D", "#367C28", "#86B06B", "#BAD5EC", "#6BA2DE", "#000000", "#000000", "#000000", "#000000", "#000000" ],
            [ "Black Forest", "#0E1609", "#1D2C20", "#2E462B", "#5C6D5E", "#A0A899", "#ffffff", "#ffffff", "#ffffff", "#000000", "#000000"],
