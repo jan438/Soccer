@@ -54,10 +54,8 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83" ]
 
 design_x = 10
 design_y = 700
-width = 30
-height = 30
-
-# 10 kolom 10 kolom 10 kolom 10 = 595 = 3 * kolom = 555 
+width = 32
+height = 32
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -77,15 +75,15 @@ for i in range(len(designs)):
     my_canvas.setFillColor(black)
     my_canvas.drawString(design_x, design_y + 33, designs[i][0])
     my_canvas.setFillColor(HexColor(designs[i][1]))
-    my_canvas.rect(design_x, design_y, width, height, fill = 1)
+    my_canvas.rect(design_x, design_y, width, height, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor(designs[i][2]))
-    my_canvas.rect(design_x + width, design_y, width, height, fill = 1)
+    my_canvas.rect(design_x + width, design_y, width, height, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor(designs[i][3]))
-    my_canvas.rect(design_x + 2 * width, design_y, width, height, fill = 1)
+    my_canvas.rect(design_x + 2 * width, design_y, width, height, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor(designs[i][4]))
-    my_canvas.rect(design_x + 3 * width, design_y, width, height, fill = 1)
+    my_canvas.rect(design_x + 3 * width, design_y, width, height, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor(designs[i][5]))
-    my_canvas.rect(design_x + 4 * width, design_y, width, height, fill = 1)
+    my_canvas.rect(design_x + 4 * width, design_y, width, height, stroke = 0, fill = 1)
     design_y = design_y - 50
     if i == 9 or i == 19:
         design_x += 185
