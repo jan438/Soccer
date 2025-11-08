@@ -56,8 +56,8 @@ design_x = 10
 design_y = 700
 width = 32
 height = 32
-abcdy = 23
-abcdx = 8
+abcdy = 17
+abcdx = 6
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
