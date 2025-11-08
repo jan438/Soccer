@@ -270,7 +270,7 @@ for j in range(13):
             opponent1 = description[:idx - 1]
             opponent2 = description[idx + 2:]
         else:
-            my_canvas.setFillColor(HexColor("#000000"))
+            my_canvas.setFillColor(HexColor("#ffffff"))
             my_canvas.drawString(left_margin + i * colwidthgame + 5.0, line + 9.5, category)
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
