@@ -48,7 +48,7 @@ designs = [[ "Borealis", "#01EFAC", "#01CBAE", "#2082A6", "#524094", "#562A83", 
            [ "Amethyst Freeze", "#332686", "#523DC5", "#375ED2", "#BEF4FE", "#289991", "#ffffff", "#ffffff", "#ffffff", "#000000", "#ffffff" ],
            [ "Lakeshore", "#122C41", "#08445B", "#2E647A", "#2185B6", "#035042", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff" ],
            [ "Fly by Night", "#433E76", "#514F81", "#65779D", "#819CBA", "#AFBCCE", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#000000"],
-           [ "Blue Agate", "#264248", "#398A95", "#DCE2E5", "#60BDBC", "#1B7979", "#000000", "#000000", "#000000", "#000000", "#000000" ],
+           [ "Blue Agate", "#264248", "#398A95", "#DCE2E5", "#60BDBC", "#1B7979", "#ffffff", "#ffffff", "#000000", "#ffffff", "#ffffff" ],
            [ "Equator", "#01697C", "#01B1C6", "#01E7DC", "#00C2A5", "#00785B", "#ffffff", "#ffffff", "#000000", "#ffffff", "#ffffff" ],
            [ "Skyline", "#038492", "#05B2C7", "#5D4CDA", "#3995E9", "#0473AD", "#ffffff", "#ffffff", "#ffffff", "#ffffff", "#ffffff" ]]
 
