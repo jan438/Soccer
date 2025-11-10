@@ -279,7 +279,10 @@ for j in range(13):
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
         datestr = daystr + "-" + monthstr
-        my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 0.5, datestr)
+        if len(daystr) == 1:
+            my_canvas.drawString(left_margin + i * colwidthgame + 2.0, line + 0.5, datestr)
+        else:
+            my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 0.5, datestr)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
