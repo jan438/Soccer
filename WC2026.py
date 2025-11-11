@@ -147,6 +147,7 @@ poule_width = 48
 poule_height = 205
 pouleland_height = 40
 outsidearea = "#9e9e9e"
+fifacolor = "#326295"
 left_margin = 9.4
 poulerect_y = 585
 teamspp = 4
@@ -294,7 +295,7 @@ for j in range(13):
     line -= rowheightgame
     if j == 8:
         line -= 10
-        my_canvas.setFillColor(HexColor(designcolors[0]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 32")
