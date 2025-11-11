@@ -163,7 +163,8 @@ scalesimple = 0.33
 xsimple = -56
 ysimple = 10
 #mapversie = "Wiki"
-mapversie = "Simple"
+#mapversie = "Simple"
+mapversie = "Fifa"
 colwidthgame = 72
 
 countnations = 48
