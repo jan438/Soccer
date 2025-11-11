@@ -147,6 +147,7 @@ poule_width = 48
 poule_height = 205
 pouleland_height = 40
 outsidearea = "#9e9e9e"
+insidearea = "#b1b1b1"
 fifacolor = "#326295"
 left_margin = 9.4
 poulerect_y = 585
@@ -197,7 +198,7 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
-    my_canvas.setFillColor(HexColor("#b1b1b1"))
+    my_canvas.setFillColor(HexColor(insidearea))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
     
 teamcounter = 0
