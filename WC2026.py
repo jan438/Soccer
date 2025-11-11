@@ -301,19 +301,19 @@ for j in range(13):
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 32")
     if j == 10:
         line -= 10
-        my_canvas.setFillColor(HexColor(designcolors[0]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 16")
     if j == 11:
         line -= 10
-        my_canvas.setFillColor(HexColor(designcolors[0]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin, line + categoryrectdy, 4 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
-        my_canvas.setFillColor(HexColor(designcolors[1]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin + 4 * colwidthgame, line + categoryrectdy, 2 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
-        my_canvas.setFillColor(HexColor(designcolors[2]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin + 6 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
-        my_canvas.setFillColor(HexColor(designcolors[3]))
+        my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin + 7 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Quarter finals")
