@@ -41,12 +41,12 @@ classified fill="#326295"
 <!--
 Start GB 972.6 129.5
 Start EN 976.6 145.8
-Start WA 965.3 174.6
+Start WA 969.7 173.2
 -->
  <circle r="1.0" cx="972.6" cy="129.5" id="0" fill="red">
  </circle>
   <circle r="1.0" cx="976.6" cy="145.8" id="1" fill="blue">
  </circle>
-  <circle r="1.0" cx="965.3" cy="174.6" id="1" fill="green">
+  <circle r="1.0" cx="969.7" cy="173.2" id="1" fill="green">
  </circle>
 </svg>
