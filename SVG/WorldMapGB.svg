@@ -43,13 +43,16 @@ Start GB 972.6 129.5
 Start EN 976.6 145.8
 Start WA 969.7 173.2
 End   WA 971.5 161.1
+Start SC 969.2 153.8
 -->
  <circle r="1.0" cx="972.6" cy="129.5" id="0" fill="red">
  </circle>
-  <circle r="1.0" cx="976.6" cy="145.8" id="1" fill="blue">
+ <circle r="1.0" cx="976.6" cy="145.8" id="1" fill="blue">
  </circle>
-  <circle r="1.0" cx="969.7" cy="173.2" id="2" fill="green">
+ <circle r="1.0" cx="969.7" cy="173.2" id="2" fill="green">
  </circle>
-   <circle r="1.0" cx="971.5" cy="161.1" id="3" fill="yellow">
+ <circle r="1.0" cx="971.5" cy="161.1" id="3" fill="yellow">
+ </circle>
+ <circle r="1.0" cx="969.2" cy="153.8" id="4" fill="purple">
  </circle>
 </svg>
