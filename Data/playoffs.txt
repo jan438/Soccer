@@ -1,24 +1,16 @@
-A
 Slowakije  SK
-B
 Kosovo     VK
-C
 Denemarken DK
-D
 Oekraïne   UA
-E
 Turkije    TR
-F
 Ierland    IE
-G
 Polen      PL
-H
 Bosnië-Herzegovina  BA
-I
 Italië     IT
-J
 Wales      GW
-K
 Albanië    AL
-L
 Tsjechië   CZ
+Sweden
+Romania
+North Macedonia
+Northern Ireland
