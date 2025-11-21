@@ -3,13 +3,13 @@ Slowakije
 B
 Kosovo
 C
-Denemarken
+Denemarken DK
 D
-Oekraïne
+Oekraïne   UA
 E
-Turkije
+Turkije    TR
 F
-Ierland
+Ierland    IE
 G
 Polen      PL
 H
