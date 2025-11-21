@@ -1,2 +1,24 @@
-
-   
+A
+Slowakije
+B
+Kosovo
+C
+Denemarken
+D
+Oekraïne
+E
+Turkije
+F
+Ierland
+G
+Polen      PL
+H
+Bosnië-Herzegovina  BA
+I
+Italië     IT
+J
+Wales      GW
+K
+Albanië    AL
+L
+Tsjechië   CZ
