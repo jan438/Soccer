@@ -10,7 +10,7 @@ Italië     IT
 Wales      GW
 Albanië    AL
 Tsjechië   CZ
-Sweden
-Romania
-North Macedonia
-Northern Ireland
+Sweden     SE
+Romania    RO
+North Macedonia    NM
+Northern Ireland   xx
