@@ -237,7 +237,8 @@ for i in range(len(cities)):
     my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
     
 calindex = 0
-limitcalindex = 103
+#limitcalindex = 103
+limitcalindex = 11
 gameindex = 0
 line = 550
 categoryrectdy = 15
@@ -257,7 +258,10 @@ for j in range(13):
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Group Stage")
     for i in range(8):
         if calindex <= limitcalindex:
-            category = gameevents[calindex].summary[5]
+            if len(gameevents[calindex].summary) == 2:
+                category = gameevents[calindex].summary[0]
+            else:
+                category = gameevents[calindex].summary[5]
             opponent1 = ""
             opponent2 = ""
             print(calindex, category, gameevents[calindex].location)
@@ -267,6 +271,8 @@ for j in range(13):
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line - 2)
         my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor("#ffffff"))
+        if category >= "A" and category <= "L":
+            print(category)
         if category == "3" or category == "1" or category == "Q" or category == "S" or category == "T" or category == "Z":
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 7.5, gameevents[calindex].summary[1:4])
             description = gameevents[calindex].description
