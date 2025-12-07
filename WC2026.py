@@ -272,7 +272,10 @@ for j in range(13):
         my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor("#ffffff"))
         if category >= "A" and category <= "L":
-            print(category)
+            description = gameevents[calindex].description
+            idx = description.find("-")
+            opponent1 = description[:idx - 1]
+            opponent2 = description[idx + 2:]
         if category == "3" or category == "1" or category == "Q" or category == "S" or category == "T" or category == "Z":
             my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 7.5, gameevents[calindex].summary[1:4])
             description = gameevents[calindex].description
