@@ -238,7 +238,7 @@ for i in range(len(cities)):
     
 calindex = 0
 #limitcalindex = 103
-limitcalindex = 11
+limitcalindex = 17
 gameindex = 0
 line = 550
 categoryrectdy = 15
@@ -264,7 +264,6 @@ for j in range(13):
                 category = gameevents[calindex].summary[5]
             opponent1 = ""
             opponent2 = ""
-            print(calindex, category, gameevents[calindex].location)
         else:
             break
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.42)
