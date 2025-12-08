@@ -6,7 +6,7 @@ E
 F
 G
 H
-I
+I 26-6 Noorwegen - Frankrijk 0 ipv 9
 J
 K
 L
@@ -18,3 +18,5 @@ Vierde  rij gekontroleerd
 Vijfde  rij gekontroleerd
 Zesde   rij gekontroleerd
 Zevende rij gekontroleerd
+Achtste rij gokontroleerd
+Negende rij gekontroleerd
