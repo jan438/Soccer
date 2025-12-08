@@ -1,7 +1,7 @@
 A
 B
 C
-D
+D Australia - C    3 ipv 6
 E
 F
 G
@@ -10,3 +10,6 @@ I
 J
 K
 L
+
+Eerste rij gekontroleerd
+Tweede rij gekontroleerd
