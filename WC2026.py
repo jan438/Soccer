@@ -237,8 +237,7 @@ for i in range(len(cities)):
     my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
     
 calindex = 0
-#limitcalindex = 103
-limitcalindex = 50
+limitcalindex = 103
 gameindex = 0
 line = 550
 categoryrectdy = 15
