@@ -309,7 +309,6 @@ for j in range(13):
         strhour = "{:02d}".format(hour)
         strminute = "{:02d}".format(minute)
         startevent = strhour + strminute
-        print(gameevents[calindex].starttime, "hour", hour, "minute", minute, startevent)
         drawing = scaleSVG("Clocks/" + startevent + "tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         locidx = lookuplocation(gameevents[calindex].location)
