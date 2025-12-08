@@ -11,9 +11,10 @@ J
 K
 L
 
-Eerste rij gekontroleerd
-Tweede rij gekontroleerd
-Derde  rij gekontroleerd
-Vierde rij gekontroleerd
-Vijfde rij gekontroleerd
-Zesde  rij gekontroleerd
+Eerste  rij gekontroleerd
+Tweede  rij gekontroleerd
+Derde   rij gekontroleerd
+Vierde  rij gekontroleerd
+Vijfde  rij gekontroleerd
+Zesde   rij gekontroleerd
+Zevende rij gekontroleerd
