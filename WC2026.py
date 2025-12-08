@@ -43,6 +43,16 @@ def lookuplocation(loc):
         if cities[l][0] == loc:
             index = l
     return index
+    
+def converttimetztolocalclock(timetz):
+    utc_string = timetz
+    utc_format = "%Y%m%dT%H%M%S"
+    local_tz = pytz.timezone('Europe/Amsterdam')
+    utc_dt = datetime.strptime(utc_string, utc_format)
+    local_dt = utc_dt
+    hour = local_dt.hour
+    minute = local_dt.minute
+    return [hour, minute]
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -295,7 +305,8 @@ for j in range(13):
             my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 0.5, datestr)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
-        print(gameevents[calindex].starttime)
+        [hour, minute] = converttimetztolocalclock(gameevents[calindex].starttime)
+        print(gameevents[calindex].starttime, "hour", hour, "minute", minute)
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         locidx = lookuplocation(gameevents[calindex].location)
