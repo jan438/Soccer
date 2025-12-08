@@ -306,7 +306,10 @@ for j in range(13):
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
         my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
         [hour, minute] = converttimetztolocalclock(gameevents[calindex].starttime)
-        print(gameevents[calindex].starttime, "hour", hour, "minute", minute)
+        strhour = "{:02d}".format(hour)
+        strminute = "{:02d}".format(minute)
+        startevent = strhour + strminute
+        print(gameevents[calindex].starttime, "hour", hour, "minute", minute, startevent)
         drawing = scaleSVG("Clocks/2030tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
         locidx = lookuplocation(gameevents[calindex].location)
