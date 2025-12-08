@@ -238,7 +238,7 @@ for i in range(len(cities)):
     
 calindex = 0
 #limitcalindex = 103
-limitcalindex = 17
+limitcalindex = 50
 gameindex = 0
 line = 550
 categoryrectdy = 15
