@@ -1,7 +1,7 @@
-A
+A 19-6 Mexico - Z Korea 9 ipv 3  
 B
 C
-D Australia - C    3 ipv 6
+D 13-6 Australia - C    3 ipv 6
 E
 F
 G
@@ -14,3 +14,4 @@ L
 Eerste rij gekontroleerd
 Tweede rij gekontroleerd
 Derde  rij gekontroleerd
+Vierde rij gekontroleerd
