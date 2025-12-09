@@ -310,7 +310,7 @@ for j in range(13):
         strminute = "{:02d}".format(minute)
         startevent = strhour + strminute
         drawing = scaleSVG("Clocks/" + startevent + "tw.svg", 0.4)
-        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line)
+        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line - 1.0)
         if hour < 12:
             renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.3), my_canvas, left_margin + i * colwidthgame, line)
         locidx = lookuplocation(gameevents[calindex].location)
