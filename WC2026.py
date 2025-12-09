@@ -265,8 +265,10 @@ for j in range(13):
         my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Group Stage")
-        my_canvas.drawString(left_margin + 60.0, line + categorystrdy, "A.M.")
-        renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + 70.6, line + categorystrdy)
+        my_canvas.drawString(left_margin + 60.0, line + categorystrdy, "Host")
+        my_canvas.circle(left_margin + 50.0, line + categorystrdy + 6.5, 2.0, stroke = 0, fill = 1)
+        my_canvas.drawString(left_margin + 90.0, line + categorystrdy, "A.M.")
+        renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + 100.6, line + categorystrdy)
     for i in range(8):
         if calindex <= limitcalindex:
             if len(gameevents[calindex].summary) == 2:
