@@ -311,7 +311,7 @@ for j in range(13):
         startevent = strhour + strminute
         drawing = scaleSVG("Clocks/" + startevent + "tw.svg", 0.4)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line - 1.0)
-        if hour < 12:
+        if hour < 12 and j < 9:
             renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 20.0, line)
         locidx = lookuplocation(gameevents[calindex].location)
         my_canvas.setFillColor(HexColor(cities[locidx][1]))
