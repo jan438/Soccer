@@ -159,6 +159,7 @@ pouleland_height = 40
 outsidearea = "#9e9e9e"
 insidearea = "#b1b1b1"
 fifacolor = "#326295"
+bannedcolor = "#ff89a8"
 left_margin = 9.4
 poulerect_y = 585
 teamspp = 4
