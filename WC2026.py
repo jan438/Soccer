@@ -214,6 +214,8 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
+    if poule == 1:
+        break
     my_canvas.saveState()
     p = my_canvas.beginPath()
     p.setStrokeWidth = 2
