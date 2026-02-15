@@ -216,10 +216,9 @@ for poule in range(12):
     my_canvas.saveState()
     p = my_canvas.beginPath()
     p.setStrokeWidth = 2
-    p.rect(100, height - 200, 400, 80)
+    p.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height)
     my_canvas.clipPath(p, stroke = 1)
     my_canvas.linearGradient(0, 0, 400, 0, (red, brown), (0, 1))
-    #my_canvas.setFillColor(HexColor(insidearea))
     #my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
     my_canvas.restoreState()
     
