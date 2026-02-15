@@ -213,6 +213,13 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
+    #c.saveState()
+    #p = c.beginPath()
+    #p.setStrokeWidth = 2
+    #p.rect(100, height - 200, 400, 80)
+    #c.clipPath(p, stroke = 1)
+    #c.linearGradient(0, 0, 400, 0, (darkblue, gold), (0, 1))
+    #c.restoreState()
     my_canvas.setFillColor(HexColor(insidearea))
     my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, stroke = 1, fill = 1)
     
