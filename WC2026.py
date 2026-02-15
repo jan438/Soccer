@@ -219,7 +219,7 @@ for poule in range(12):
     p.setStrokeWidth = 2
     p.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height)
     my_canvas.clipPath(p, stroke = 1)
-    my_canvas.linearGradient(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, (insidearea1, insidearea2), (0, 1))
+    my_canvas.linearGradient(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, (HexColor(insidearea1), HexColor(insidearea2)), (0, 1))
     my_canvas.restoreState()
     
 teamcounter = 0
@@ -264,7 +264,7 @@ categorystrdy = 17
 categoryrectheight = 9
 rowheightgame = 18
 
-my_canvas.setFillColor(insidearea1)
+my_canvas.setFillColor(HexColor(insidearea1))
 my_canvas.rect(left_margin, 300 , 8 * colwidthgame, 272, stroke = 0, fill = 1)
  
 for j in range(13):
