@@ -229,14 +229,14 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 for poule in range(12):
     if poule == 1:
         break
-    drawRect(my_canvas, 100, 100, 50, 200, "b")
-    my_canvas.saveState()
-    p = my_canvas.beginPath()
-    p.setStrokeWidth = 2
-    p.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height)
-    my_canvas.clipPath(p, stroke = 1)
-    my_canvas.linearGradient(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, (HexColor(insidearea1), HexColor(insidearea2)), (0, 1))
-    my_canvas.restoreState()
+    drawRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, "b")
+    #my_canvas.saveState()
+    #p = my_canvas.beginPath()
+    #p.setStrokeWidth = 2
+    #p.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height)
+    #my_canvas.clipPath(p, stroke = 1)
+    #my_canvas.linearGradient(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, (HexColor(insidearea1), HexColor(insidearea2)), (0, 1))
+    #my_canvas.restoreState()
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
