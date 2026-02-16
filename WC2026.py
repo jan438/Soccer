@@ -69,7 +69,7 @@ def drawRect(c, x1, y1, x2, y2, mode):
     c.saveState()
     p = c.beginPath()
     p.rect(x1, y1, x2, y2)
-    c.clipPath(p, stroke = 1)
+    c.clipPath(p, stroke = 0)
     if mode == "b":
         c.linearGradient(x1, y1, x2, y2, (col1, col2), (0, 1))
     if mode == "t":
