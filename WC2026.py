@@ -65,15 +65,15 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawRect(c, x, y, w, h, d):    
+def drawRect(c, x1, y1, x2, y2, d):    
     c.saveState()
     p = c.beginPath()
-    p.rect(x, y, w, h)
+    p.rect(x1, y1, x2, y2)
     c.clipPath(p, stroke = 1)
     if d == "b":
-        c.linearGradient(x, y, x, h, (col1, col2), (0, 1))
+        c.linearGradient(x1, y1, x2, y2, (col1, col2), (0, 1))
     if d == "t":
-        c.linearGradient(x, y, x, h, (col1, col2), (1, 0))
+        c.linearGradient(x1, y1, x2, y2, (col1, col2), (1, 0))
     c.restoreState()
 
 if sys.platform[0] == 'l':
@@ -230,13 +230,6 @@ for poule in range(12):
     if poule == 1:
         break
     drawRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, "b")
-    #my_canvas.saveState()
-    #p = my_canvas.beginPath()
-    #p.setStrokeWidth = 2
-    #p.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height)
-    #my_canvas.clipPath(p, stroke = 1)
-    #my_canvas.linearGradient(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, (HexColor(insidearea1), HexColor(insidearea2)), (0, 1))
-    #my_canvas.restoreState()
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
