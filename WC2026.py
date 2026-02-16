@@ -64,6 +64,17 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.height = drawing.height * scaling_y
     drawing.scale(scaling_x, scaling_y)
     return drawing
+    
+def drawRect(c, x, y, w, h, d):    
+    c.saveState()
+    p = c.beginPath()
+    p.rect(x, y, w, h)
+    c.clipPath(p, stroke = 1)
+    if d == "b":
+        c.linearGradient(x, y, x, h, (col1, col2), (0, 1))
+    if d == "t":
+        c.linearGradient(x, y, x, h, (col1, col2), (1, 0))
+    c.restoreState()
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -181,6 +192,8 @@ ysimple = 10
 #mapversie = "GB"
 mapversie = "Russia"
 colwidthgame = 72
+col1 = HexColor("#b8bfbc")
+col2 = HexColor("#a4aaa8")
 
 countnations = 48
 
@@ -216,6 +229,7 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 for poule in range(12):
     if poule == 1:
         break
+    drawRect(my_canvas, 100, 100, 50, 200, "b")
     my_canvas.saveState()
     p = my_canvas.beginPath()
     p.setStrokeWidth = 2
