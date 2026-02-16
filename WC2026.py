@@ -65,14 +65,14 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawRect(c, x1, y1, x2, y2, d):    
+def drawRect(c, x1, y1, x2, y2, mode):    
     c.saveState()
     p = c.beginPath()
     p.rect(x1, y1, x2, y2)
     c.clipPath(p, stroke = 1)
-    if d == "b":
+    if mode == "b":
         c.linearGradient(x1, y1, x2, y2, (col1, col2), (0, 1))
-    if d == "t":
+    if mode == "t":
         c.linearGradient(x1, y1, x2, y2, (col1, col2), (1, 0))
     c.restoreState()
 
@@ -227,9 +227,11 @@ my_canvas.setTitle("World Cup Soccer 2026 " + version)
 my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
-    if poule == 1:
-        break
-    drawRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, "b")
+    if poule % 2 == 0:
+        mode = "b"
+    else:
+        mode = "t"
+    drawRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
