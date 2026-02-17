@@ -286,7 +286,7 @@ for i in range(len(cities)):
 calindex = 0
 limitcalindex = 103
 gameindex = 0
-line = 550
+gameline = 550
 categoryrectdy = 15
 categorystrdy = 17
 categoryrectheight = 9
@@ -295,15 +295,15 @@ for j in range(13):
     if j == 0:
         my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin, gameline + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Group Stage")
-        my_canvas.drawString(left_margin + 60.0, line + categorystrdy, "Host")
+        my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Group Stage")
+        my_canvas.drawString(left_margin + 60.0, gameline + categorystrdy, "Host")
         my_canvas.setFillColor(HexColor(cities[13][1]))
-        my_canvas.circle(left_margin + 80.0, line + categorystrdy + 3.5, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(left_margin + 80.0, gameline + categorystrdy + 3.5, 2.0, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 90.0, line + categorystrdy, "A.M.")
-        renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + 105.6, line + categorystrdy)
+        my_canvas.drawString(left_margin + 90.0, gameline + categorystrdy, "A.M.")
+        renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + 105.6, gameline + categorystrdy)
     for i in range(8):
         if calindex <= limitcalindex:
             if len(gameevents[calindex].summary) == 2:
@@ -315,7 +315,7 @@ for j in range(13):
         else:
             break
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.42)
-        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, line - 2)
+        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, gameline - 2)
         my_canvas.setFont(socfont, 8)
         my_canvas.setFillColor(HexColor("#ffffff"))
         if category >= "A" and category <= "L":
@@ -324,7 +324,7 @@ for j in range(13):
             opponent1 = description[:idx - 1]
             opponent2 = description[idx + 2:]
         if category == "3" or category == "1" or category == "Q" or category == "S" or category == "T" or category == "Z":
-            my_canvas.drawString(left_margin + i * colwidthgame + 1.0, line + 7.5, gameevents[calindex].summary[1:4])
+            my_canvas.drawString(left_margin + i * colwidthgame + 1.0, gameline + 7.5, gameevents[calindex].summary[1:4])
             description = gameevents[calindex].description
             idx = description.find("-")
             opponent1 = description[:idx - 1]
@@ -332,58 +332,58 @@ for j in range(13):
         else:
             my_canvas.setFont(socfontbold, 8)
             my_canvas.setFillColor(HexColor("#ffffff"))
-            my_canvas.drawString(left_margin + i * colwidthgame + 5.5, line + 8.0, category)
+            my_canvas.drawString(left_margin + i * colwidthgame + 5.5, gameline + 8.0, category)
         my_canvas.setFont(socfont, 8)  
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
         datestr = daystr + "-" + monthstr
         if len(daystr) == 1:
-            my_canvas.drawString(left_margin + i * colwidthgame + 2.0, line + 0.5, datestr)
+            my_canvas.drawString(left_margin + i * colwidthgame + 2.0, gameline + 0.5, datestr)
         else:
-            my_canvas.drawString(left_margin + i * colwidthgame + 0.45, line + 0.5, datestr)
-        my_canvas.drawString(left_margin + i * colwidthgame + 30, line, opponent2)
-        my_canvas.drawString(left_margin + i * colwidthgame + 30, line + 6, opponent1)
+            my_canvas.drawString(left_margin + i * colwidthgame + 0.45, gameline + 0.5, datestr)
+        my_canvas.drawString(left_margin + i * colwidthgame + 30, gameline, opponent2)
+        my_canvas.drawString(left_margin + i * colwidthgame + 30, gameline + 6, opponent1)
         [hour, minute] = converttimetztolocalclock(gameevents[calindex].starttime)
         strhour = "{:02d}".format(hour)
         strminute = "{:02d}".format(minute)
         startevent = strhour + strminute
         drawing = scaleSVG("Clocks/" + startevent + "tw.svg", 0.4)
-        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, line - 1.0)
+        renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame + 15, gameline - 1.0)
         if hour < 12 and j < 9:
-            renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 21.6, line - 1.0)
+            renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 21.6, gameline - 1.0)
         locidx = lookuplocation(gameevents[calindex].location)
         my_canvas.setFillColor(HexColor(cities[locidx][1]))
-        my_canvas.circle(left_margin + i * colwidthgame + 22.1, line + 6.5, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(left_margin + i * colwidthgame + 22.1, gameline + 6.5, 2.0, stroke = 0, fill = 1)
         calindex += 1
-    line -= rowheightgame
+    gameline -= rowheightgame
     if j == 8:
-        line -= 10
+        gameline -= 10
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin, gameline + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 32")
+        my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Round of 32")
     if j == 10:
-        line -= 10
+        gameline -= 10
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin, line + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin, gameline + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Round of 16")
+        my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Round of 16")
     if j == 11:
-        line -= 10
+        gameline -= 10
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin, line + categoryrectdy, 4 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin, gameline + categoryrectdy, 4 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin + 4 * colwidthgame, line + categoryrectdy, 2 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin + 4 * colwidthgame, gameline + categoryrectdy, 2 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin + 6 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin + 6 * colwidthgame, gameline + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor(fifacolor))
-        my_canvas.rect(left_margin + 7 * colwidthgame, line + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
+        my_canvas.rect(left_margin + 7 * colwidthgame, gameline + categoryrectdy, 1 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
-        my_canvas.drawString(left_margin + 1.0, line + categorystrdy, "Quarter finals")
-        my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, line + categorystrdy, "Semi finals")
-        my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, line + categorystrdy, "Bronze final")
-        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, line + categorystrdy, "Final")
+        my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Quarter finals")
+        my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, gameline + categorystrdy, "Semi finals")
+        my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
+        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")
     
 my_canvas.save()
 key = input("Wait")
