@@ -65,7 +65,7 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawRect(c, x, y, w, h, mode):    
+def drawVerticalRect(c, x, y, w, h, mode):    
     c.saveState()
     p = c.beginPath()
     p.rect(x, y, w, h)
@@ -231,7 +231,7 @@ for poule in range(12):
         mode = "b"
     else:
         mode = "t"
-    drawRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
+    drawVerticalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
