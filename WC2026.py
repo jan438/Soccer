@@ -354,7 +354,7 @@ for j in range(13):
             renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 21.6, gameline - 1.0)
         locidx = lookuplocation(gameevents[calindex].location)
         my_canvas.setFillColor(HexColor(cities[locidx][1]))
-        my_canvas.circle(left_margin + i * colwidthgame + 22.1, gameline + 6.5, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(left_margin + i * colwidthgame + 10.0, gameline + 3.0, 2.0, stroke = 0, fill = 1)
         calindex += 1
     gameline -= rowheightgame
     if j == 8:
