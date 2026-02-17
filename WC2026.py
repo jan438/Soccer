@@ -203,6 +203,7 @@ mapversie = "Russia"
 colwidthgame = 72
 col1 = HexColor("#b8bfbc")
 col2 = HexColor("#a4aaa8")
+rowheightgame = 18
 
 countnations = 48
 
@@ -242,12 +243,12 @@ for poule in range(12):
         mode = "t"
     drawVerticalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
     
-for j in range(8):
+for j in range(13):
     if j % 2 == 0:
         mode = "l"
     else:
         mode = "r"
-    drawHorizontalRect(my_canvas, left_margin, 280 + j * 10, 8 * colwidthgame, 50, mode)
+    drawHorizontalRect(my_canvas, left_margin, 280 + j * rowheightgame, 8 * colwidthgame, rowheightgame, mode)
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
@@ -289,7 +290,6 @@ line = 550
 categoryrectdy = 15
 categorystrdy = 17
 categoryrectheight = 9
-rowheightgame = 18
  
 for j in range(13):
     if j == 0:
