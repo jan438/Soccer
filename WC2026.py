@@ -204,6 +204,7 @@ colwidthgame = 72
 col1 = HexColor("#b8bfbc")
 col2 = HexColor("#a4aaa8")
 rowheightgame = 18
+gameline = 550
 
 countnations = 48
 
@@ -286,7 +287,6 @@ for i in range(len(cities)):
 calindex = 0
 limitcalindex = 103
 gameindex = 0
-gameline = 550
 categoryrectdy = 15
 categorystrdy = 17
 categoryrectheight = 9
