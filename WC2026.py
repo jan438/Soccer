@@ -75,6 +75,17 @@ def drawVerticalRect(c, x, y, w, h, mode):
     if mode == "t":
         c.linearGradient(x, y, x, y + h, (col1, col2), (1, 0))
     c.restoreState()
+    
+def drawHorizontalRect(c, x, y, w, h, mode):    
+    c.saveState()
+    p = c.beginPath()
+    p.rect(x, y, w, h)
+    c.clipPath(p, stroke = 0)
+    if mode == "l":
+        c.linearGradient(x, y, x + w, y, (col1, col2), (0, 1))
+    if mode == "r":
+        c.linearGradient(x, y, x + w, y, (col1, col2), (1, 0))
+    c.restoreState()
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
