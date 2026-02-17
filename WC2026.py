@@ -65,15 +65,15 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawRect(c, x1, y1, x2, y2, mode):    
+def drawRect(c, x, y, w, h, mode):    
     c.saveState()
     p = c.beginPath()
-    p.rect(x1, y1, x2, y2)
+    p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "b":
-        c.linearGradient(x1, y1, x2, y2, (col1, col2), (0, 1))
+        c.linearGradient(x, y, x, y + h, (col1, col2), (0, 1))
     if mode == "t":
-        c.linearGradient(x1, y1, x2, y2, (col1, col2), (1, 0))
+        c.linearGradient(x, y, x, y + h, (col1, col2), (1, 0))
     c.restoreState()
 
 if sys.platform[0] == 'l':
