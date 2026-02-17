@@ -179,8 +179,6 @@ poule_width = 48
 poule_height = 205
 pouleland_height = 40
 outsidearea = "#9e9e9e"
-insidearea1 = "#b1b1b1"
-insidearea2 = "#000000"
 fifacolor = "#326295"
 banpar = "#ff89a8"
 banvis = "#ea9c00"
@@ -292,9 +290,6 @@ categoryrectdy = 15
 categorystrdy = 17
 categoryrectheight = 9
 rowheightgame = 18
-
-my_canvas.setFillColor(HexColor(insidearea1))
-my_canvas.rect(left_margin, 300 , 8 * colwidthgame, 272, stroke = 0, fill = 1)
  
 for j in range(13):
     if j == 0:
