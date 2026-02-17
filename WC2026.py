@@ -244,6 +244,13 @@ for poule in range(12):
         mode = "t"
     drawVerticalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
     
+for j in range(8):
+    if j % 2 == 0:
+        mode = "l"
+    else:
+        mode = "r"
+    drawHorizontalRect(my_canvas, left_margin, j * 10, 500, 100, mode)
+    
 teamcounter = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
