@@ -249,7 +249,7 @@ for j in range(8):
         mode = "l"
     else:
         mode = "r"
-    drawHorizontalRect(my_canvas, left_margin, j * 10, 8 * colwidthgame, 100, mode)
+    drawHorizontalRect(my_canvas, left_margin, j * 10, 8 * colwidthgame, 50, mode)
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
