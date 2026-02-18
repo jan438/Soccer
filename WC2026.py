@@ -82,9 +82,9 @@ def drawHorizontalRect(c, x, y, w, h, mode):
     p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "l":
-        c.linearGradient(x, y, x + w, y, (col1, col2), (0, 1))
+        c.linearGradient(x, y, x + w, y, (outsidearea, col2, outsidearea), (0, 0.5, 1))
     if mode == "r":
-        c.linearGradient(x, y, x + w, y, (col1, col2), (1, 0))
+        c.linearGradient(x, y, x + w, y, (outsidearea, col2, outsidearea), (1, 0.5, 0))
     c.restoreState()
 
 if sys.platform[0] == 'l':
