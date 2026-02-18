@@ -239,18 +239,18 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 
 for poule in range(12):
     if poule % 2 == 0:
-        mode = "b"
+        mode = "l"
     else:
-        mode = "t"
-    drawVerticalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
+        mode = "r"
+    drawHorizontalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
 
 line = gameline
 for j in range(13):
     if j % 2 == 0:
-        mode = "l"
+        mode = "t"
     else:
-        mode = "r"
-    drawHorizontalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode)
+        mode = "b"
+    drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode)
     
 teamcounter = 0
 my_canvas.setStrokeColor(black)
