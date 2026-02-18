@@ -187,7 +187,7 @@ poulerect_y = 585
 teamspp = 4
 poule_x = left_margin
 poule_margin = 5
-cadre_pouleland = True
+cadre_pouleland = False
 maxnamewidth = 42.0
 scalewiki = 0.56
 xwiki = 10
@@ -202,7 +202,7 @@ ysimple = 10
 mapversie = "Russia"
 colwidthgame = 72
 col1 = HexColor("#b8bfbc")
-col2 = HexColor("#a4aaa8")
+col2 = HexColor("#b6bdbb")
 rowheightgame = 18
 gameline = 550
 
@@ -246,7 +246,7 @@ for poule in range(12):
 
 line = gameline
 for j in range(13):
-    if j == 8 or j == 10 or j == 11:
+    if j == 9 or j == 11 or j == 12:
         line -= 10
     if j % 2 == 0:
         mode = "t"
