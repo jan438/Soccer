@@ -246,6 +246,8 @@ for poule in range(12):
 
 line = gameline
 for j in range(13):
+    if j == 8:
+        line = line - 10
     if j % 2 == 0:
         mode = "t"
     else:
