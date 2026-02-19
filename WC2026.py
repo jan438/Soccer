@@ -153,6 +153,9 @@ print("Count game events", len(gameevents))
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 # north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
 
+colors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+          "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
+
 cities = [["Mexico City", "#88255F", [87.0, 168.0], [87.0, 171.0]],
           ["New York", "#DB4035", [145.0, 216.0], [148.0, 213.0]],
           ["Dallas", "#FF9933", [100.0, 199.0], [100.0, 202.0]],
@@ -213,9 +216,6 @@ pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-Bol
 my_canvas = canvas.Canvas("PDF/WorldCup2026" + mapversie + ".pdf")
 
 my_canvas.setTitle("World Cup 2026")
-
-# Fly by Night
-designcolors = [ "#433E76", "#514F81", "#65779D", "#819CBA", "#AFBCCE" ]
 
 my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
@@ -279,7 +279,8 @@ for poule in range(12):
     
 for i in range(len(cities)):
     print(cities[i][0])
-    my_canvas.setFillColor(HexColor(cities[i][1]))
+    #my_canvas.setFillColor(HexColor(cities[i][1]))
+    my_canvas.setFillColor(HexColor(colors[i]))
     my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#ffffff"))
     my_canvas.setFont(socfont, 7)
