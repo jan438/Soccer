@@ -257,7 +257,7 @@ for j in range(13):
     
 drawHorizontalRect(my_canvas, 10, 10, 85, 110, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, 205, 10, 85, 110, "l", lcol1, lcol2)           
-drawHorizontalRect(my_canvas, 365, 10, 85, 110, "l", lcol1, lcol2)     
+drawHorizontalRect(my_canvas, 375, 10, 85, 110, "l", lcol1, lcol2)     
     
 teamcounter = 0
 eteamcouner = 0
