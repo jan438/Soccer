@@ -299,7 +299,7 @@ for j in range(13):
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Group Stage")
         my_canvas.drawString(left_margin + 60.0, gameline + categorystrdy, "Host")
-        my_canvas.setFillColor(HexColor(cities[13][1]))
+        my_canvas.setFillColor(HexColor(colors[13]))
         my_canvas.circle(left_margin + 80.0, gameline + categorystrdy + 3.5, 2.0, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 90.0, gameline + categorystrdy, "A.M.")
