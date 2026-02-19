@@ -390,7 +390,9 @@ for j in range(13):
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")
         
-drawHorizontalRect(my_canvas, 10, 10, 50, 100, "l")        
+drawHorizontalRect(my_canvas, 10, 10, 50, 100, "l")
+drawHorizontalRect(my_canvas, 210, 10, 50, 100, "l")           
+drawHorizontalRect(my_canvas, 310, 10, 50, 100, "l")        
     
 my_canvas.save()
 key = input("Wait")
