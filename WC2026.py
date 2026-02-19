@@ -151,7 +151,6 @@ for i in range(len(alleventslines)):
 print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
-# north-america svg width="1000" height="902" scaled 0.5 = 500 x 451
 
 colors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
@@ -260,7 +259,6 @@ for poule in range(12):
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(left_margin + poule * poule_width + 17.0, poulerect_y + poule_height - 17, chr(65 + poule))
     for team in range(teamspp):
-        print(nationsdata[teamcounter][9])
         nameinlogo = nationsdata[teamcounter][4]
         if cadre_pouleland:
             my_canvas.setFillColor(HexColor("#c5c5c5"))
@@ -272,8 +270,11 @@ for poule in range(12):
             my_canvas.setFont(socfont, 8)
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
-        drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
-        renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
+        if nationsdata[teamcounter][9] == "e":
+            print(nationsdata[teamcounter][8])
+        else:
+            drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
+            renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
         pouleland_y = pouleland_y - (pouleland_height + poule_margin)
         teamcounter += 1
     poule_x = poule_x + poule_width
