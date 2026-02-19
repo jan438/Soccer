@@ -255,9 +255,9 @@ for j in range(13):
         mode = "b"
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
     
-drawHorizontalRect(my_canvas, 10, 10, 85, 110, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, 205, 10, 85, 110, "l", lcol1, lcol2)           
-drawHorizontalRect(my_canvas, 375, 10, 85, 110, "l", lcol1, lcol2)     
+drawHorizontalRect(my_canvas, 10, 5, 85, 128, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 205, 5, 85, 128, "l", lcol1, lcol2)           
+drawHorizontalRect(my_canvas, 375, 5, 85, 128, "l", lcol1, lcol2)     
     
 teamcounter = 0
 eteamcouner = 0
@@ -397,6 +397,12 @@ for j in range(13):
         my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, gameline + categorystrdy, "Semi finals")
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")    
-    
+
+teamcounter = 0
+for i in range(16):
+    drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]) / 4)
+    renderPDF.draw(drawing, my_canvas, 10, 10 + teamcounter * 9)
+    teamcounter += 1
+
 my_canvas.save()
 key = input("Wait")
