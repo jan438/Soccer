@@ -278,8 +278,6 @@ for poule in range(12):
     poule_x = poule_x + poule_width
     
 for i in range(len(cities)):
-    print(cities[i][0])
-    #my_canvas.setFillColor(HexColor(cities[i][1]))
     my_canvas.setFillColor(HexColor(colors[i]))
     my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#ffffff"))
@@ -355,7 +353,7 @@ for j in range(13):
         if hour < 12 and j < 9:
             renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 21.6, gameline - 1.0)
         locidx = lookuplocation(gameevents[calindex].location)
-        my_canvas.setFillColor(HexColor(cities[locidx][1]))
+        my_canvas.setFillColor(HexColor(colors[locidx]))
         my_canvas.circle(left_margin + i * colwidthgame + 17.7, gameline + 0.15, 2.0, stroke = 0, fill = 1)
         calindex += 1
     gameline -= rowheightgame
