@@ -255,6 +255,10 @@ for j in range(13):
         mode = "b"
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
     
+drawHorizontalRect(my_canvas, 10, 10, 85, 110, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 205, 10, 85, 110, "l", lcol1, lcol2)           
+drawHorizontalRect(my_canvas, 365, 10, 85, 110, "l", lcol1, lcol2)     
+    
 teamcounter = 0
 eteamcouner = 0
 my_canvas.setStrokeColor(black)
@@ -392,11 +396,7 @@ for j in range(13):
         my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Quarter finals")
         my_canvas.drawString(left_margin + 4 * colwidthgame + 1.0, gameline + categorystrdy, "Semi finals")
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
-        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")
-        
-drawHorizontalRect(my_canvas, 10, 10, 90, 110, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, 203, 10, 90, 110, "l", lcol1, lcol2)           
-drawHorizontalRect(my_canvas, 360, 10, 90, 110, "l", lcol1, lcol2)        
+        my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")    
     
 my_canvas.save()
 key = input("Wait")
