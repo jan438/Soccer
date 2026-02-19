@@ -252,6 +252,7 @@ for j in range(13):
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode)
     
 teamcounter = 0
+eteamcouner = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
     pouleland_y = 725
@@ -271,7 +272,9 @@ for poule in range(12):
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
         if nationsdata[teamcounter][9] == "e":
+            my_canvas.setFillColor(HexColor(colors[eteamcouner]))
             my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
+            eteamcouner += 1
         else:
             drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
             renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
