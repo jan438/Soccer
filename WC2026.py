@@ -71,9 +71,9 @@ def drawVerticalRect(c, x, y, w, h, mode, col1, col2):
     p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "b":
-        c.linearGradient(x, y, x, y + h, (outsidearea, col1, col2), (0, 0.5, 1))
+        c.linearGradient(x, y, x, y + h, (col1, col2, col1), (0, 0.5, 1))
     if mode == "t":
-        c.linearGradient(x, y, x, y + h, (outsidearea, col1, col2), (1, 0.5, 0))
+        c.linearGradient(x, y, x, y + h, (col1, col2, col1), (1, 0.5, 0))
     c.restoreState()
     
 def drawHorizontalRect(c, x, y, w, h, mode, col1, col2):    
@@ -82,9 +82,9 @@ def drawHorizontalRect(c, x, y, w, h, mode, col1, col2):
     p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "l":
-        c.linearGradient(x, y, x + w, y, (outsidearea, col1, col2), (0, 0.5, 1))
+        c.linearGradient(x, y, x + w, y, (col1, col2, col1), (0, 0.5, 1))
     if mode == "r":
-        c.linearGradient(x, y, x + w, y, (outsidearea, col1, col2), (1, 0.5, 0))
+        c.linearGradient(x, y, x + w, y, (col1, col2, col1), (1, 0.5, 0))
     c.restoreState()
 
 if sys.platform[0] == 'l':
