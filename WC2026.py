@@ -156,22 +156,22 @@ print("Count game events", len(gameevents))
 colors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
 
-cities = [["Mexico City", "#88255F", [87.0, 168.0], [87.0, 171.0]],
-          ["New York", "#DB4035", [145.0, 216.0], [148.0, 213.0]],
-          ["Dallas", "#FF9933", [100.0, 199.0], [100.0, 202.0]],
-          ["Kansas City", "#FAD000", [108.0, 209.0], [72.0, 208.0]],
-          ["Houston", "#AFB83B", [102.0, 193.0], [102.0, 196.0]],
-          ["Atlanta", "#7ECC49", [120.0, 200.0], [123.0, 201.0]],
-          ["Los Angeles", "#E7E84F", [62.0, 200.0], [23.0, 198.0]],
-          ["Seattle", "#299438", [66.0, 226.0],[40.0, 227.0]],
-          ["San Francisco", "#A8A202", [58.0, 205.0],[17.0, 205.0]],
-          ["Philadelphia", "#158FAD", [140.0, 211.0],[143.0, 206.0]],
-          ["Miami", "#14AAF5", [123.0, 185.0],[126.0, 185.0]],
-          ["Boston", "#CD0027", [148.0, 220.0], [151.0, 220.0]],
-          ["Vancouver", "#4073FF", [69.5, 233.0], [40.0, 235.0]],
-          ["Monterrey", "#D38895", [86.0, 181.0],[86.0, 184.0]], 
-          ["Toronto", "#884DFF", [133.0, 220.0], [134.0, 226.0]],
-          ["Guadalajara", "#AF38EB", [80.0, 170.0], [40.0, 168.0]]]
+cities = [["Mexico City", [87.0, 168.0], [87.0, 171.0]],
+          ["New York", [145.0, 216.0], [148.0, 213.0]],
+          ["Dallas", [100.0, 199.0], [100.0, 202.0]],
+          ["Kansas City", [108.0, 209.0], [72.0, 208.0]],
+          ["Houston", [102.0, 193.0], [102.0, 196.0]],
+          ["Atlanta", [120.0, 200.0], [123.0, 201.0]],
+          ["Los Angeles", [62.0, 200.0], [23.0, 198.0]],
+          ["Seattle", [66.0, 226.0],[40.0, 227.0]],
+          ["San Francisco", [58.0, 205.0],[17.0, 205.0]],
+          ["Philadelphia", [140.0, 211.0],[143.0, 206.0]],
+          ["Miami", [123.0, 185.0],[126.0, 185.0]],
+          ["Boston", [148.0, 220.0], [151.0, 220.0]],
+          ["Vancouver", [69.5, 233.0], [40.0, 235.0]],
+          ["Monterrey", [86.0, 181.0],[86.0, 184.0]], 
+          ["Toronto", [133.0, 220.0], [134.0, 226.0]],
+          ["Guadalajara", [80.0, 170.0], [40.0, 168.0]]]
 left_padding = 0
 bottom_padding = 0
 width = 595
@@ -279,10 +279,10 @@ for poule in range(12):
     
 for i in range(len(cities)):
     my_canvas.setFillColor(HexColor(colors[i]))
-    my_canvas.circle(float(cities[i][2][0]), float(cities[i][2][1]), 2.0, stroke = 0, fill = 1)
+    my_canvas.circle(float(cities[i][1][0]), float(cities[i][1][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#ffffff"))
     my_canvas.setFont(socfont, 7)
-    my_canvas.drawString(float(cities[i][3][0]), float(cities[i][3][1]), cities[i][0])
+    my_canvas.drawString(float(cities[i][2][0]), float(cities[i][2][1]), cities[i][0])
     
 calindex = 0
 limitcalindex = 103
