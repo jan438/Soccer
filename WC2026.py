@@ -65,26 +65,26 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
-def drawVerticalRect(c, x, y, w, h, mode):    
+def drawVerticalRect(c, x, y, w, h, mode, col1, col2):    
     c.saveState()
     p = c.beginPath()
     p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "b":
-        c.linearGradient(x, y, x, y + h, (outsidearea, col2, outsidearea), (0, 0.5, 1))
+        c.linearGradient(x, y, x, y + h, (outsidearea, col1, col2), (0, 0.5, 1))
     if mode == "t":
-        c.linearGradient(x, y, x, y + h, (outsidearea, col2, outsidearea), (1, 0.5, 0))
+        c.linearGradient(x, y, x, y + h, (outsidearea, col1, col2), (1, 0.5, 0))
     c.restoreState()
     
-def drawHorizontalRect(c, x, y, w, h, mode):    
+def drawHorizontalRect(c, x, y, w, h, mode, col1, col2):    
     c.saveState()
     p = c.beginPath()
     p.rect(x, y, w, h)
     c.clipPath(p, stroke = 0)
     if mode == "l":
-        c.linearGradient(x, y, x + w, y, (outsidearea, col2, outsidearea), (0, 0.5, 1))
+        c.linearGradient(x, y, x + w, y, (outsidearea, col1, col2), (0, 0.5, 1))
     if mode == "r":
-        c.linearGradient(x, y, x + w, y, (outsidearea, col2, outsidearea), (1, 0.5, 0))
+        c.linearGradient(x, y, x + w, y, (outsidearea, col1, col2), (1, 0.5, 0))
     c.restoreState()
 
 if sys.platform[0] == 'l':
@@ -201,8 +201,12 @@ ysimple = 10
 #mapversie = "GB"
 mapversie = "Russia"
 colwidthgame = 72
-col1 = HexColor("#b8bfbc")
-col2 = HexColor("#b6bdbb")
+pcol1 = HexColor("#b8bfbc")
+pcol2 = HexColor("#b6bdbb")
+ccol1 = HexColor("#b8bfbc")
+ccol2 = HexColor("#b6bdbb")
+lcol1 = HexColor("#b8bfbc")
+lcol2 = HexColor("#b6bdbb")
 rowheightgame = 18
 gameline = 550
 
@@ -239,7 +243,7 @@ for poule in range(12):
         mode = "l"
     else:
         mode = "r"
-    drawHorizontalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode)
+    drawHorizontalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode, pcol1, pcol2)
 
 line = gameline
 for j in range(13):
@@ -249,7 +253,7 @@ for j in range(13):
         mode = "t"
     else:
         mode = "b"
-    drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode)
+    drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
     
 teamcounter = 0
 eteamcouner = 0
@@ -390,9 +394,9 @@ for j in range(13):
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")
         
-drawHorizontalRect(my_canvas, 10, 10, 90, 110, "l")
-drawHorizontalRect(my_canvas, 203, 10, 90, 110, "l")           
-drawHorizontalRect(my_canvas, 360, 10, 90, 110, "l")        
+drawHorizontalRect(my_canvas, 10, 10, 90, 110, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 203, 10, 90, 110, "l", lcol1, lcol2)           
+drawHorizontalRect(my_canvas, 360, 10, 90, 110, "l", lcol1, lcol2)        
     
 my_canvas.save()
 key = input("Wait")
