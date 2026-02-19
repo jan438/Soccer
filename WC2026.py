@@ -205,8 +205,8 @@ pcol1 = HexColor("#b8bfbc")
 pcol2 = HexColor("#b6bdbb")
 ccol1 = HexColor("#b8bfbc")
 ccol2 = HexColor("#b6bdbb")
-lcol1 = HexColor("#b8bfbc")
-lcol2 = HexColor("#b6bdbb")
+lcol1 = HexColor("#849B5C")
+lcol2 = HexColor("#BFFFC7")
 rowheightgame = 18
 gameline = 550
 
