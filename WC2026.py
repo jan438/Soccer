@@ -418,9 +418,13 @@ for j in range(13):
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")    
 
 teamcounter = 0
-for i in range(16):
+for i in range(48):
+    if i == legenda1l:
+        break
     drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]) / 4)
-    renderPDF.draw(drawing, my_canvas, 10, 10 + teamcounter * 9)
+    renderPDF.draw(drawing, my_canvas, legenda1x + 10, legenda1y + i * legendarowheight)
+    drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
+    renderPDF.draw(drawing, my_canvas, legenda1x + 20, legenda1y + i * legendarowheight)
     teamcounter += 1
 
 my_canvas.save()
