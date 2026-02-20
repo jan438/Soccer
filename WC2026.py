@@ -425,6 +425,7 @@ for i in range(48):
     renderPDF.draw(drawing, my_canvas, legenda1x + 10, legenda1y + i * legendarowheight)
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
     renderPDF.draw(drawing, my_canvas, legenda1x + 20, legenda1y + i * legendarowheight)
+    my_canvas.drawString(legenda1x + 30, legenda1y + i * legendarowheight, nationsdata[teamcounter][0])
     teamcounter += 1
 
 my_canvas.save()
