@@ -223,8 +223,8 @@ legenda3l = 13
 legenda4x = 155
 legenda4y = 170
 legenda4l = 3
-legenda5x = 510
-legenda5y = 120
+legenda5x = 515
+legenda5y = 135
 legenda5l = 6
 
 countnations = 48
