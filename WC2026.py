@@ -261,7 +261,7 @@ drawHorizontalRect(my_canvas, 10, 5, legendawidth, legendarowheight * 12, "l", l
 drawHorizontalRect(my_canvas, 250, 5, legendawidth, legendarowheight * 12, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, 375, 5, legendawidth, legendarowheight * 12, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, 75, 50, legendawidth, legendarowheight * 4, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, 510, 100, legendawidth, legendarowheight * 8, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 510, 120, legendawidth, legendarowheight * 8, "l", lcol1, lcol2)
     
 teamcounter = 0
 eteamcouner = 0
