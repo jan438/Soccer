@@ -418,6 +418,7 @@ for j in range(13):
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")    
 
 teamcounter = 0
+eteamcounter = 0
 for i in range(48):
     if i == legenda1l:
         break
@@ -426,7 +427,11 @@ for i in range(48):
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
     renderPDF.draw(drawing, my_canvas, legenda1x + 20, legenda1y + i * legendarowheight)
     my_canvas.setFillColor(HexColor("#ffffff"))
-    my_canvas.drawString(legenda1x + 30, legenda1y + i * legendarowheight, nationsdata[teamcounter][0])
+    my_canvas.drawString(legenda1x + 35, legenda1y + i * legendarowheight, nationsdata[teamcounter][0])
+    if nationsdata[teamcounter][9] == "e":
+        my_canvas.setFillColor(HexColor(colors[eteamcouner]))
+        my_canvas.circle(legenda1x + 30, legenda1y + i * legendarowheight, 2.0, stroke = 0, fill = 1)
+        eteamcounter += 1
     teamcounter += 1
 
 my_canvas.save()
