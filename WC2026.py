@@ -217,6 +217,8 @@ legenda2x = 220
 legenda2y = 5
 legenda3x = 375
 legenda3y = 5
+legenda4x = 150
+legenda4y = 160
 
 countnations = 48
 
@@ -266,7 +268,7 @@ for j in range(13):
 drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * 14, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * 12, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * 13, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, 150, 160, legendawidth, legendarowheight * 3, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * 3, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, 510, 120, legendawidth, legendarowheight * 6, "l", lcol1, lcol2)
     
 teamcounter = 0
