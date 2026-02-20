@@ -257,10 +257,10 @@ for j in range(13):
         mode = "b"
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
     
-drawHorizontalRect(my_canvas, 10, 5, legendawidth, legendarowheight * 13, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 10, 5, legendawidth, legendarowheight * 14, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, 220, 5, legendawidth, legendarowheight * 12, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, 375, 5, legendawidth, legendarowheight * 13, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, 150, 160, legendawidth, legendarowheight * 4, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, 150, 160, legendawidth, legendarowheight * 3, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, 510, 120, legendawidth, legendarowheight * 6, "l", lcol1, lcol2)
     
 teamcounter = 0
