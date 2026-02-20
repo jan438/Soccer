@@ -219,8 +219,10 @@ legenda2y = 5
 legenda2l = 12
 legenda3x = 375
 legenda3y = 5
+legenda3l = 13
 legenda4x = 150
 legenda4y = 160
+legenda4l = 3
 legenda5x = 510
 legenda5y = 120
 
@@ -271,8 +273,8 @@ for j in range(13):
     
 drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, "l", lcol1, lcol2)    
-drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * 13, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * 3, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * legenda4l, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda5x, legenda5y, legendawidth, legendarowheight * 6, "l", lcol1, lcol2)
     
 teamcounter = 0
