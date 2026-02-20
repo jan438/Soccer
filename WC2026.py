@@ -213,8 +213,10 @@ legendawidth = 75
 legendarowheight = 10
 legenda1x = 10
 legenda1y = 5
+legenda1l = 14
 legenda2x = 220
 legenda2y = 5
+legenda2l = 12
 legenda3x = 375
 legenda3y = 5
 legenda4x = 150
@@ -267,8 +269,8 @@ for j in range(13):
         mode = "b"
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
     
-drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * 14, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * 12, "l", lcol1, lcol2)    
+drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, "l", lcol1, lcol2)
+drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * 13, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * 3, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda5x, legenda5y, legendawidth, legendarowheight * 6, "l", lcol1, lcol2)
