@@ -298,10 +298,6 @@ for poule in range(12):
             my_canvas.setFont(socfont, 8)
             namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 8)
             my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
-        if nationsdata[teamcounter][9] == "e":
-            my_canvas.setFillColor(HexColor(colors[eteamcouner]))
-            my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
-            eteamcouner += 1
         else:
             drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
             renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
@@ -443,6 +439,7 @@ for i in range(48):
     if nationsdata[teamcounter][9] == "e":
         my_canvas.setFillColor(HexColor(colors[eteamcounter]))
         my_canvas.circle(lx + 30, ly + i * legendarowheight, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
         eteamcounter += 1
     teamcounter += 1
 
