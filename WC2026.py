@@ -425,7 +425,7 @@ for i in range(48):
         ly = legenda2y + legenda1l * legendarowheight + legenda2l * legendarowheight
     if i == legenda1l + legenda2l:
         lx = legenda3x
-        ly = legenda3y - legenda1l * legendarowheight - legenda2l * legendarowheight
+        ly = legenda3y + legenda1l * legendarowheight + legenda2l * legendarowheight + legenda3l * legendarowheight
     if i == legenda1l + legenda2l + legenda3l:
         lx = legenda4x
         ly = legenda4y - legenda1l * legendarowheight - legenda2l * legendarowheight - legenda3l * legendarowheight
