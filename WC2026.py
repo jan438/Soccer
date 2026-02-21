@@ -418,7 +418,7 @@ nationsdata.sort()
 teamcounter = 0
 eteamcounter = 0
 lx = legenda1x
-ly = legenda1y
+ly = legenda1y + legenda1l * legendarowheight
 for i in range(48):
     if i == legenda1l:
         lx = legenda2x
@@ -433,14 +433,14 @@ for i in range(48):
         lx = legenda5x
         ly = legenda5y - legenda1l * legendarowheight - legenda2l * legendarowheight - legenda3l * legendarowheight - legenda4l * legendarowheight
     drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]) / 4)
-    renderPDF.draw(drawing, my_canvas, lx + 10, ly + i * legendarowheight)
+    renderPDF.draw(drawing, my_canvas, lx + 10, ly - i * legendarowheight)
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
-    renderPDF.draw(drawing, my_canvas, lx + 20, ly + i * legendarowheight)
+    renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#ffffff"))
-    my_canvas.drawString(lx + 35, ly + i * legendarowheight, nationsdata[teamcounter][0])
+    my_canvas.drawString(lx + 35, ly - i * legendarowheight, nationsdata[teamcounter][0])
     if nationsdata[teamcounter][9] == "e":
         my_canvas.setFillColor(HexColor(colors[eteamcounter]))
-        my_canvas.circle(lx + 30, ly + i * legendarowheight, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(lx + 30, ly - i * legendarowheight, 2.0, stroke = 0, fill = 1)
         my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
         eteamcounter += 1
     teamcounter += 1
