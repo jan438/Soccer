@@ -195,7 +195,6 @@ ywiki = 50
 scalesimple = 0.33
 xsimple = -56
 ysimple = 10
-#mapversie = "Wiki"
 #mapversie = "Simple"
 #mapversie = "Fifa"
 #mapversie = "GB"
@@ -240,12 +239,8 @@ my_canvas.setTitle("World Cup 2026")
 my_canvas.setFillColor(HexColor(outsidearea))
 my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
 
-if mapversie == "Wiki":
-    drawing = scaleSVG("SVG/WorldMap" + mapversie + ".svg", scalewiki)
-    renderPDF.draw(drawing, my_canvas, xwiki, ywiki)
-else:
-    drawing = scaleSVG("SVG/WorldMap" + mapversie + ".svg", scalesimple)
-    renderPDF.draw(drawing, my_canvas, xsimple, ysimple)
+drawing = scaleSVG("SVG/WorldMap" + mapversie + ".svg", scalesimple)
+renderPDF.draw(drawing, my_canvas, xsimple, ysimple)
     
 drawing = scaleSVG('FIFA.svg', 0.1)
 renderPDF.draw(drawing, my_canvas, 50, 800)
