@@ -432,9 +432,8 @@ for i in range(48):
         lx = legenda4x
         ly = legenda4y - legenda1l * legendarowheight - legenda2l * legendarowheight - legenda3l * legendarowheight
     if i == legenda1l + legenda2l + legenda3l + legenda4l:
-        lx = legenda4x
-        ly = legenda4y - legenda1l * legendarowheight - legenda2l * legendarowheight - legenda3l * legendarowheight - legenda4l * legendarowheight
-        break
+        lx = legenda5x
+        ly = legenda5y - legenda1l * legendarowheight - legenda2l * legendarowheight - legenda3l * legendarowheight - legenda4l * legendarowheight
     drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]) / 4)
     renderPDF.draw(drawing, my_canvas, lx + 10, ly + i * legendarowheight)
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
