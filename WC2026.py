@@ -413,6 +413,8 @@ for j in range(13):
         my_canvas.drawString(left_margin + 6 * colwidthgame + 1.0, gameline + categorystrdy, "Bronze final")
         my_canvas.drawString(left_margin + 7 * colwidthgame + 1.0, gameline + categorystrdy, "Final")    
 
+nationsdata.sort()
+
 teamcounter = 0
 eteamcounter = 0
 lx = legenda1x
