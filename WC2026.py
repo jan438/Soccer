@@ -441,6 +441,7 @@ for i in range(48):
     my_canvas.setFillColor(HexColor("#ffffff"))
     my_canvas.drawString(lx + 35, ly + i * legendarowheight, nationsdata[teamcounter][0])
     if nationsdata[teamcounter][9] == "e":
+        print(eteamcounter)
         my_canvas.setFillColor(HexColor(colors[eteamcouner]))
         my_canvas.circle(lx + 30, ly + i * legendarowheight, 2.0, stroke = 0, fill = 1)
         eteamcounter += 1
