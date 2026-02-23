@@ -53,5 +53,5 @@ svgtemplate="""
 <rect width="30" height="30" style="fill:red" />
 </svg>
 """
-png(svgtemplate,'Test_viewBox.png')
+png(svgtemplate,'PDF/Test_viewBox.png')
 key = input("Wait")
