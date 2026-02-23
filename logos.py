@@ -21,6 +21,11 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
+if sys.platform[0] == 'l':
+    path = '/home/jan/git/Soccer'
+if sys.platform[0] == 'w':
+    path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
+os.chdir(path)
 drawing = svg2rlg("Germany.svg")
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 key = input("Wait")
