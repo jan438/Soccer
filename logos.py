@@ -22,6 +22,5 @@ from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
 drawing = svg2rlg("Germany.svg")
-renderPDF.drawToFile(drawing, "Germany.pdf")
-renderPM.drawToFile(drawing, "Germany.png", fmt="PNG")
+renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 key = input("Wait")
