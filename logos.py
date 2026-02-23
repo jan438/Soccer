@@ -21,11 +21,23 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
+
+def scaleSVG(svgfile, scaling_factor):
+    svg_root = load_svg_file(svgfile)
+    svgRenderer = SvgRenderer(svgfile)
+    drawing = svgRenderer.render(svg_root)
+    scaling_x = scaling_factor
+    scaling_y = scaling_factor
+    drawing.width = drawing.minWidth() * scaling_x
+    drawing.height = drawing.height * scaling_y
+    drawing.scale(scaling_x, scaling_y)
+    return drawing
+    
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
-drawing = svg2rlg("Germany.svg")
+drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 key = input("Wait")
