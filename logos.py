@@ -34,6 +34,13 @@ def scaleSVG(svgfile, scaling_factor):
     drawing.scale(scaling_x, scaling_y)
     return drawing
     
+def png(svg,pngfilename):
+    text_file = open("template.svg", "w")
+    text_file.write(svg)
+    text_file.close()
+    drawing = svg2rlg("template.svg")
+    renderPM.drawToFile(drawing, pngfilename)
+    
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
 if sys.platform[0] == 'w':
@@ -41,4 +48,10 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
+svgtemplate="""
+<svg   width="1250" height="1250"  viewBox="-40 -40 80 80">
+<rect width="30" height="30" style="fill:red" />
+</svg>
+"""
+png(svgtemplate,'Test_viewBox.png')
 key = input("Wait")
