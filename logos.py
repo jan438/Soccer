@@ -49,8 +49,9 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 tree = ET.parse('Germany.svg')
 root = tree.getroot()
+tag = root.tag
 attrib = root.attrib
-print("root attributes", attrib)
+print("root tag attributes", tag, attrib)
 #for child in root:
 #    print(child.tag, child.attrib)
 drawing = scaleSVG("Germany.svg", 1.0)
