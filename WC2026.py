@@ -19,6 +19,7 @@ from reportlab.pdfbase.ttfonts import TTFont
 from reportlab.lib.units import inch, mm
 from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
+import xml.etree.ElementTree as ET
 
 socfont = "LiberationSerif"
 socfontbold = 'LiberationSerifBold'
