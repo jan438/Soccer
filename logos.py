@@ -50,10 +50,10 @@ os.chdir(path)
 tree = ET.parse('Germany.svg')
 root = tree.getroot()
 tag = root.tag
-print("root tag", tag)
 attrib = root.attrib
 for child in attrib:
     print(child)
+    break
 drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 svgtemplate="""
