@@ -50,7 +50,7 @@ os.chdir(path)
 tree = ET.parse('Germany.svg')
 root = tree.getroot()
 tag = root.tag
-print(tag)
+print("root tag", tag)
 attrib = root.attrib
 for child in attrib:
     print(child)
