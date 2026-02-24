@@ -283,6 +283,11 @@ for poule in range(12):
             my_canvas.setFillColor(HexColor("#c5c5c5"))
             my_canvas.rect(left_margin + poule * poule_width + poule_margin, pouleland_y, poule_width - 2 * poule_margin, pouleland_height, stroke = 1, fill = 1)
         svgfile = "Logos/" + nationsdata[teamcounter][0] + ".svg"
+        tree = ET.parse(svgfile)
+        root = tree.getroot()
+        attrib = root.attrib
+        for name, value in attrib.items():
+            print('{0}="{1}"'.format(name, value))
         drawing = scaleSVG(svgfile, float(nationsdata[teamcounter][1]))
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         if nameinlogo[0] == "n":
