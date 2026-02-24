@@ -53,9 +53,6 @@ tag = root.tag
 attrib = root.attrib
 for child in attrib:
     print(child)
-print("root tag attributes", tag, attrib)
-#for child in root:
-#    print(child.tag, child.attrib)
 drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 svgtemplate="""
