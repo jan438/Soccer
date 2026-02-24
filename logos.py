@@ -49,8 +49,9 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 tree = ET.parse('Germany.svg')
 root = tree.getroot()
-for child in root:
-    print(child.tag, child.attrib)
+print(root.attrib)
+#for child in root:
+#    print(child.tag, child.attrib)
 drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 svgtemplate="""
