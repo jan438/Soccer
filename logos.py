@@ -51,6 +51,8 @@ tree = ET.parse('Germany.svg')
 root = tree.getroot()
 tag = root.tag
 attrib = root.attrib
+for child in attrib:
+    print(child)
 print("root tag attributes", tag, attrib)
 #for child in root:
 #    print(child.tag, child.attrib)
