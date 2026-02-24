@@ -25,7 +25,7 @@ import xml.etree.ElementTree as ET
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
-    print("root", dir(svg_root))
+    #print("root", dir(svg_root))
     svgRenderer = SvgRenderer(svgfile)
     drawing = svgRenderer.render(svg_root)
     scaling_x = scaling_factor
