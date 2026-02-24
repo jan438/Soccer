@@ -21,6 +21,7 @@ from reportlab.graphics.shapes import *
 from svglib.svglib import svg2rlg, load_svg_file, SvgRenderer
 from svglib.svglib import svg2rlg
 from reportlab.graphics import renderPDF, renderPM
+import xml.etree.ElementTree as ET
 
 def scaleSVG(svgfile, scaling_factor):
     svg_root = load_svg_file(svgfile)
@@ -46,6 +47,10 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
+tree = ET.parse('Germany.svg')
+root = tree.getroot()
+for child in root:
+    print(child.tag, child.attrib)
 drawing = scaleSVG("Germany.svg", 1.0)
 renderPDF.drawToFile(drawing, "PDF/Germany.pdf")
 svgtemplate="""
