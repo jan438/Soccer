@@ -106,8 +106,8 @@ version="1.1"
 id="Calque_1"
 x="0px"
 y="0px"
-width="500px"
-height="500px"
+width="500px"          48 : 500
+height="500px"         40 : 500
 viewBox="0 0 500 500"
 enable-background="new 0 0 500 500"
 {http://www.w3.org/XML/1998/namespace}space="preserve"
@@ -154,7 +154,7 @@ data-name="Layer 1"
 viewBox="0 0 70.78 113.29"
 
 New Zealand
-width="224.7621"         48 : 224
+width="224.7621"         48 : 224    0.16
 height="171.40204"       40 : 171
 
 Spain
