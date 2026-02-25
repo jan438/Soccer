@@ -106,7 +106,7 @@ version="1.1"
 id="Calque_1"
 x="0px"
 y="0px"
-width="500px"          48 : 500    Aspectratio  0.68
+width="500px"          48:500=0.096   500:48=10.41     Scale  0.68
 height="500px"         40 : 500
 viewBox="0 0 500 500"
 enable-background="new 0 0 500 500"
@@ -154,7 +154,7 @@ data-name="Layer 1"
 viewBox="0 0 70.78 113.29"
 
 New Zealand
-width="224.7621"         48 : 224    Aspectioratio   0.16
+width="224.7621"         48:224=0.21  224:48=4.66    Scale  0.16
 height="171.40204"       40 : 171
 
 Spain
