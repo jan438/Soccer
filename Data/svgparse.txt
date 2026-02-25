@@ -140,17 +140,21 @@ id="LOGO"
 viewBox="0 0 159.4 310.23"
 width="226"
 height="439"
+
 Egypt
 {http://www.w3.org/XML/1998/namespace}space="preserve"
 version="1.0"
 viewBox="0 0 238.71 238.71"
+
 Iran
 id="Layer_1"
 data-name="Layer 1"
 viewBox="0 0 70.78 113.29"
+
 New Zealand
 width="224.7621"
 height="171.40204"
+
 Spain
 {http://www.w3.org/XML/1998/namespace}space="preserve"
 id="Livello_1"
@@ -158,6 +162,7 @@ width="147.7"
 height="250"
 version="1.1"
 viewBox="0 0 295.4 500"
+
 Cape Verde
 version="1.1"
 id="Layer_1"
@@ -166,10 +171,12 @@ y="0px"
 viewBox="0 0 1000 1000"
 style="enable-background:new 0 0 1000 1000;"
 {http://www.w3.org/XML/1998/namespace}space="preserve"
+
 Saudi Arabia
 width="266.312"
 height="375.5"
 viewBox="0 0 79.375 112.047"
+
 Uruguay
 {http://www.w3.org/XML/1998/namespace}space="preserve"
 id="katman_1"
@@ -179,6 +186,7 @@ version="1.0"
 viewBox="180 42.03 200 315.57"
 {http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname="uruguaywithoy stars.svg"
 {http://www.inkscape.org/namespaces/inkscape}version="1.4.2 (2aeb623e1d, 2025-05-12)"
+
 France
 id="Layer_1"
 data-name="Layer 1"
@@ -188,6 +196,7 @@ viewBox="0 0 175.7 305.68"
 version="1.1"
 {http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname="France (copy).svg"
 {http://www.inkscape.org/namespaces/inkscape}version="1.4.2 (2aeb623e1d, 2025-05-12)"
+
 Senegal
 clip-rule="evenodd"
 fill-rule="evenodd"
@@ -196,8 +205,10 @@ viewBox="0 0 560 400"
 blank
 width="1"
 height="1"
+
 Norway
 viewBox="0 0 204.88 301.64"
+
 Argentina
 viewBox="0 0 127.96634 157.81"
 width="127.96634"
@@ -206,6 +217,7 @@ version="1.1"
 id="svg90"
 {http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd}docname="Argentina_national_football_team_logo.svg"
 {http://www.inkscape.org/namespaces/inkscape}version="1.0.2-2 (e86c870879, 2021-01-15)"
+
 Algeria
 version="1.0"
 id="Layer_1"
@@ -214,14 +226,17 @@ y="0px"
 viewBox="0 0 1122 855.3"
 style="enable-background:new 0 0 1122 855.3;"
 {http://www.w3.org/XML/1998/namespace}space="preserve"
+
 Austria
 id="uuid-a979fac1-edb0-4da3-b1d2-4ba412f7957b"
 viewBox="0 0 200 262.3"
+
 Jordan
 width="330.71pt"
 height="424.65pt"
 viewBox="0 0 330.71 424.65"
 version="1.1"
+
 Portugal
 {http://www.w3.org/XML/1998/namespace}space="preserve"
 width="424.368"
