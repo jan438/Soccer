@@ -99,6 +99,7 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         nationsdata.append(row)
+        print(row[12])
         count += 1
 print("Count csv", count)
 

@@ -8,6 +8,9 @@
 7 y worldmap
 8 landcode
 9 continent
+10 logo legenda scale
+11 logo legenda x
+12 logo legenda y
 
 New Siberian Islands (4)
    d="M877.222,56.254 
