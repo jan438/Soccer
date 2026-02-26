@@ -187,7 +187,7 @@ poulerect_y = 585
 teamspp = 4
 poule_x = left_margin
 poule_margin = 5
-cadre_pouleland = False
+cadre_pouleland = True
 maxnamewidth = 42.0
 scalesimple = 0.33
 xsimple = -56
@@ -418,6 +418,9 @@ eteamcounter = 0
 lx = legenda1x
 ly = legenda1y + (legenda1l - 1) * legendarowheight
 for i in range(48):
+    if cadre_pouleland:
+        my_canvas.setFillColor(HexColor("#c5c5c5"))
+        my_canvas.rect(lx, ly, 10, 10, stroke = 1, fill = 1)
     if i == legenda1l:
         lx = legenda2x
         ly = legenda2y + legenda1l * legendarowheight + (legenda2l - 1) * legendarowheight
