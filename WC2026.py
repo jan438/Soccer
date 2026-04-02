@@ -443,7 +443,7 @@ for i in range(48):
         renderPDF.draw(drawing, my_canvas, lx + 7.5 + float(nationsdata[teamcounter][11]), ly - 1.5 - i * legendarowheight + float(nationsdata[teamcounter][12]))
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
     renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
-    my_canvas.setFillColor(HexColor("#ffffff"))
+    my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
     if nationsdata[teamcounter][9] == "e":
         my_canvas.setFillColor(HexColor(colors[eteamcounter]))
