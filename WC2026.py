@@ -154,9 +154,14 @@ print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 
-colors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+gostcolors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
-
+nationcolors = [
+"#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
+"#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+"#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
+"#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+          ]
 cities = [["Mexico City", [87.0, 168.0], [87.0, 171.0]],
           ["New York", [145.0, 216.0], [148.0, 213.0]],
           ["Dallas", [100.0, 199.0], [100.0, 202.0]],
@@ -305,7 +310,7 @@ for poule in range(12):
     poule_x = poule_x + poule_width
     
 for i in range(len(cities)):
-    my_canvas.setFillColor(HexColor(colors[i]))
+    my_canvas.setFillColor(HexColor(gostcolors[i]))
     my_canvas.circle(float(cities[i][1][0]), float(cities[i][1][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#ffffff"))
     my_canvas.setFont(socfont, 7)
@@ -326,7 +331,7 @@ for j in range(13):
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 1.0, gameline + categorystrdy, "Group Stage")
         my_canvas.drawString(left_margin + 60.0, gameline + categorystrdy, "Host")
-        my_canvas.setFillColor(HexColor(colors[13]))
+        my_canvas.setFillColor(HexColor(gostcolors[13]))
         my_canvas.circle(left_margin + 80.0, gameline + categorystrdy + 3.5, 2.0, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
         my_canvas.drawString(left_margin + 90.0, gameline + categorystrdy, "A.M.")
@@ -380,7 +385,7 @@ for j in range(13):
         if hour < 12 and j < 9:
             renderPDF.draw(scaleSVG("Clocks/halfmoontw.svg", 0.2), my_canvas, left_margin + i * colwidthgame + 21.6, gameline - 1.0)
         locidx = lookuplocation(gameevents[calindex].location)
-        my_canvas.setFillColor(HexColor(colors[locidx]))
+        my_canvas.setFillColor(HexColor(gostcolors[locidx]))
         my_canvas.circle(left_margin + i * colwidthgame + 17.7, gameline + 0.15, 2.0, stroke = 0, fill = 1)
         calindex += 1
     gameline -= rowheightgame
@@ -446,7 +451,7 @@ for i in range(48):
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
     if nationsdata[teamcounter][9] == "e":
-        my_canvas.setFillColor(HexColor(colors[eteamcounter]))
+        my_canvas.setFillColor(HexColor(nationcolors[eteamcounter]))
         my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
         my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
         eteamcounter += 1
