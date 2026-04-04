@@ -450,11 +450,9 @@ for i in range(48):
     renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
-    if nationsdata[teamcounter][9] == "e":
-        my_canvas.setFillColor(HexColor(nationcolors[eteamcounter]))
-        my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
-        my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
-        eteamcounter += 1
+    my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
+    my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
+    my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     teamcounter += 1
 
 my_canvas.save()
