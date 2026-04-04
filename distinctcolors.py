@@ -20,6 +20,8 @@ left_padding = 10
 bottom_padding = 100
 width = 10
 height = 10
-my_canvas.rect(left_padding, bottom_padding, width, height, fill = 1)
+for col in range(12):
+   for row in range(4):
+       my_canvas.rect(left_padding + col * width, bottom_padding + row * height, width, height, fill = 1)
 my_canvas.save()
 key = input("Wait")
