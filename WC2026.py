@@ -436,16 +436,6 @@ for i in range(48):
     if i == legenda1l + legenda2l + legenda3l + legenda4l:
         lx = legenda5x
         ly = legenda5y + legenda1l * legendarowheight + legenda2l * legendarowheight + legenda3l * legendarowheight + legenda4l * legendarowheight + (legenda5l - 1) * legendarowheight
-    if cadre_pouleland:
-        my_canvas.setFillColor(HexColor("#c5c5c5"))
-        my_canvas.rect(lx + 6, ly - i * legendarowheight, 12, 10, stroke = 1, fill = 1)
-    legendascaling = float(nationsdata[teamcounter][10])
-    if legendascaling == 0:
-        drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", float(nationsdata[teamcounter][1]) / 3.8)
-        renderPDF.draw(drawing, my_canvas, lx + 7.5 + float(nationsdata[teamcounter][1]) / 3.8, ly - 1.5 - i * legendarowheight + float(nationsdata[teamcounter][2]) / 3.8)
-    else:
-        drawing = scaleSVG("Logos/" + nationsdata[teamcounter][0] + ".svg", legendascaling)
-        renderPDF.draw(drawing, my_canvas, lx + 7.5 + float(nationsdata[teamcounter][11]), ly - 1.5 - i * legendarowheight + float(nationsdata[teamcounter][12]))
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
     renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#000000"))
