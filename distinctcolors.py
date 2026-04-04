@@ -16,10 +16,10 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 my_canvas.setFillColor(HexColor('#FECDE5'))
-left_padding = 10
-bottom_padding = 100
-width = 10
-height = 10
+left_padding = 100
+bottom_padding = 300
+width = 40
+height = 40
 for col in range(12):
    for row in range(4):
        my_canvas.rect(left_padding + col * width, bottom_padding + row * height, width, height, fill = 1)
