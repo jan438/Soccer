@@ -78,10 +78,11 @@ def rgbtuple_to_hex(x: RGBTuple):
     return "hallo"
     
 if __name__ == "__main__":
-    # sample 100 colors in css format
+    # sample 48 colors in css format
     sample_colors = list(itertools.islice(css_colors(), 48))
-    pprint(sample_colors)
-    pprint(rgb_to_hex(36, 78, 125))
-    pprint(rgbtuple_to_hex((36, 78, 125)))
+    for i in range(48):
+        pprint(sample_colors[i])
+    #pprint(rgb_to_hex(36, 78, 125))
+    #pprint(rgbtuple_to_hex((36, 78, 125)))
 
 key = input("wait")
