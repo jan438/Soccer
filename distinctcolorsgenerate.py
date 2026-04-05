@@ -74,6 +74,5 @@ if __name__ == "__main__":
     for i in range(48):
         print(i, sample_colors[i])
     #pprint(rgb_to_hex(36, 78, 125))
-    #pprint(rgbtuple_to_hex((36, 78, 125)))
 
 key = input("wait")
