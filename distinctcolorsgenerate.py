@@ -68,10 +68,15 @@ def rgb_to_hex(r, g, b):
     # Format as HEX string
     return "#{:02X}{:02X}{:02X}".format(r, g, b)
 
+def rgbtuple_to_hex(x: RGBTuple):
+    uint8tuple = map(lambda y: int(y*255), x)
+    return "rgb({},{},{})".format(*uint8tuple)
+    
 if __name__ == "__main__":
     # sample 100 colors in css format
     sample_colors = list(itertools.islice(css_colors(), 100))
     pprint(sample_colors)
     pprint(rgb_to_hex(36, 78, 125))
+    pprint(rgbtuple_to_hex((36, 78, 125)))
 
 key = input("wait")
