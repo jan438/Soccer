@@ -68,15 +68,6 @@ def rgb_to_hex(r, g, b):
     # Format as HEX string
     return "#{:02X}{:02X}{:02X}".format(r, g, b)
 
-def rgbtuple_to_hex(x: RGBTuple):
-    uint8tuple = map(lambda y: int(y*255), x)
-    RGBList = list(uint8tuple)
-    r = RGBList[0]
-    g = RGBList[1]
-    b = RGBList[2]
-    pprint(RGBList)
-    return "hallo"
-    
 if __name__ == "__main__":
     # sample 48 colors in css format
     sample_colors = list(itertools.islice(css_colors(), 48))
