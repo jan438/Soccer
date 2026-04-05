@@ -56,10 +56,22 @@ def rgb_to_css(x: RGBTuple) -> str:
 
 def css_colors() -> Iterable[str]:
     return map(rgb_to_css, rgbs())
+    
+def rgb_to_hex(r, g, b):
+    if not all(isinstance(v, int) for v in (r, g, b)):
+        raise TypeError("RGB values must be integers.")
+    
+    # Validate range
+    if not all(0 <= v <= 255 for v in (r, g, b)):
+        raise ValueError("RGB values must be between 0 and 255.")
+    
+    # Format as HEX string
+    return "#{:02X}{:02X}{:02X}".format(r, g, b)
 
 if __name__ == "__main__":
     # sample 100 colors in css format
     sample_colors = list(itertools.islice(css_colors(), 100))
     pprint(sample_colors)
+    pprint(rgb_to_hex(36, 78, 125))
 
 key = input("wait")
