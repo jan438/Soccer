@@ -71,6 +71,7 @@ def rgb_to_hex(r, g, b):
 if __name__ == "__main__":
     # sample 48 colors in css format
     sample_colors = list(itertools.islice(css_colors(), 48))
+    print("dir", dir(sample_colors[0])   )
     for i in range(48):
         print(i, sample_colors[i])
     #pprint(rgb_to_hex(36, 78, 125))
