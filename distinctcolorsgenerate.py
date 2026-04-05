@@ -71,6 +71,7 @@ def rgb_to_hex(r, g, b):
 def rgbtuple_to_hex(x: RGBTuple):
     uint8tuple = map(lambda y: int(y*255), x)
     RGBList = list(uint8tuple)
+    r = RGBList[0]
     pprint(RGBList)
     return "hallo"
     
