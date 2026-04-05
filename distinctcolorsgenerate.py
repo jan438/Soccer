@@ -9,6 +9,7 @@ import colorsys
 import itertools
 from fractions import Fraction
 from pprint import pprint
+from colormap import rgb2hex
 
 def zenos_dichotomy() -> Iterable[Fraction]:
     """
