@@ -49,3 +49,5 @@ plt.show()
 
 # Print the HEX codes
 print(colors_48)
+
+key = input("Wait")
