@@ -447,6 +447,8 @@ for i in range(48):
     my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
     my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
+    # nationcolor
+    print(teamcounter, nationsdata[teamcounter][0], nationsdata[teamcounter][9])
     teamcounter += 1
 my_canvas.save()
 key = input("Wait")
