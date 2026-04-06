@@ -59,7 +59,8 @@ if sys.platform[0] == 'w':
 os.chdir(path)
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 colors_48 = get_distinct_colors(48)
-print(colors_48)
+for i in range(48):
+    print(colors_48[i])
 left_padding = 100
 bottom_padding = 300
 width = 40
