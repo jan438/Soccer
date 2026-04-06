@@ -449,8 +449,9 @@ for i in range(48):
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     nationcolor = nationsdata[teamcounter][9]
     if nationcolor == "#ffffff":
-        print('hallo')
-    print(teamcounter, nationsdata[teamcounter][0], nationcolor)
+        print(teamcounter, "default", nationsdata[teamcounter][0], nationcolor)
+    else:
+        print(teamcounter, "different", nationsdata[teamcounter][0], nationcolor)
     teamcounter += 1
 my_canvas.save()
 key = input("Wait")
