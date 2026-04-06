@@ -45,7 +45,7 @@ for i, color in enumerate(colors_48):
 ax.set_xlim(0, 48)
 ax.set_ylim(0, 1)
 ax.axis('off')
-plt.show()
+#plt.show()
 
 # Print the HEX codes
 print(colors_48)
