@@ -157,31 +157,6 @@ print("Count game events", len(gameevents))
 gostcolors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
           
-#   1f77b4
-#   ff7f0e
-#   2ca02c
-#   d62728
-#   9467bd
-#   8c564b
-#   e377c2
-#   7f7f7f
-#   bcbd22
-#   17becf
-#   F0F8FF
-#   FAEBD7
-
-#   00FFFF
-#   7FFFD4
-#   F0FFFF
-#   F5F5DC
-#   FFE4C4
-#   000000
-#   FFEBCD
-#   0000FF
-#   8A2BE2
-#   A52A2A
-#   DEB887
-#   5F9EA0
 
 #   7FFF00
 #   D2691E
