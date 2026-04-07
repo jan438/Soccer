@@ -75,6 +75,14 @@ colors = [
 "#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
 "#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           ]
+          
+target_colors = [
+"#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
+"#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+"#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
+"#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
+          ]         
+          
 nationsdata = []
      
 def get_distinct_colors(n):
@@ -154,7 +162,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, target_y + 4.3 * height, "Target" )
 for row in range(4):
    for col in range(12):
-       my_canvas.setFillColor(HexColor(colors[i]))
+       my_canvas.setFillColor(HexColor(target_colors[i]))
        my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
