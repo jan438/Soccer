@@ -138,7 +138,7 @@ for row in range(4):
 i = 0
 for row in range(4):
    for col in range(12):
-       my_canvas.setFillColor(HexColor(colors[i]))
+       my_canvas.setFillColor(HexColor(nationsdata[i][9]))
        my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
        i += 1
 my_canvas.save()
