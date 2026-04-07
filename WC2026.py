@@ -196,7 +196,7 @@ poulerect_y = 585
 teamspp = 4
 poule_x = left_margin
 poule_margin = 5
-cadre_pouleland = True
+cadre_pouleland = False
 maxnamewidth = 42.0
 scalesimple = 0.33
 xsimple = -56
@@ -206,8 +206,8 @@ ysimple = 10
 #mapversie = "GB"
 mapversie = "Russia"
 colwidthgame = 72
-pcol1 = HexColor("#9e9e9e") # poule dark gray
-pcol2 = HexColor("#b0b0b0") # poule light gray
+pcol1 = HexColor("#b4e9ff") # poule dark gray
+pcol2 = HexColor("#b0c2ff") # poule light gray
 ccol1 = HexColor("#9e9e9e") # dark gray
 ccol2 = HexColor("#b0b0b0") # light gray
 lcol1 = HexColor("#9e9e9e") # legenda dark gray
@@ -259,9 +259,13 @@ my_canvas.drawString(200, 805, "World Cup Soccer 2026")
 for poule in range(12):
     if poule % 2 == 0:
         mode = "l"
+        my_canvas.setFillColor(pcol1)
+        my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, fill = 1)
     else:
+        my_canvas.setFillColor(pcol2)
         mode = "r"
-    drawHorizontalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode, pcol1, pcol2)
+        my_canvas.rect(left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, fill = 1)
+    #drawHorizontalRect(my_canvas, left_margin + poule * poule_width, poulerect_y, poule_width, poule_height, mode, pcol1, pcol2)
 
 line = gameline
 for j in range(13):
