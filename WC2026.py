@@ -444,14 +444,14 @@ for i in range(48):
     renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
-    my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
-    my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
-    my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     nationcolor = nationsdata[teamcounter][9]
     if nationcolor == "#ffffff":
         print(teamcounter, "default", nationsdata[teamcounter][0], nationcolor)
     else:
         print(teamcounter, "different", nationsdata[teamcounter][0], nationcolor)
+    my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
+    my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
+    my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     teamcounter += 1
 my_canvas.save()
 key = input("Wait")
