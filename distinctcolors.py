@@ -135,13 +135,14 @@ for i in range(48):
     colors[i] = colors_48[i]
 left_padding = 100
 matplot_y = 500
-custom_y = 200
+target_y = 300
+custom_y = 100
 width = 40
 height = 40
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, matplot_y + 5 * height, "MatPlot" )
+my_canvas.drawString(left_padding, matplot_y + 4.5 * height, "MatPlot" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(colors[i]))
@@ -150,7 +151,16 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, custom_y + 5 * height, "Custom" )
+my_canvas.drawString(left_padding, target_y + 4.5 * height, "Target" )
+for row in range(4):
+   for col in range(12):
+       my_canvas.setFillColor(HexColor(colors[i]))
+       my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
+       i += 1
+i = 0
+my_canvas.setFont(socfont, 25)
+my_canvas.setFillColor(HexColor("#000000"))
+my_canvas.drawString(left_padding, custom_y + 4.5 * height, "Custom" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(nationsdata[i][9]))
