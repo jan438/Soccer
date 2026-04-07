@@ -446,10 +446,9 @@ for i in range(48):
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
     nationcolor = nationsdata[teamcounter][9]
     if nationcolor == "#ffffff":
-        print(teamcounter, "default", nationsdata[teamcounter][0], nationcolor)
+        my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
     else:
-        print(teamcounter, "different", nationsdata[teamcounter][0], nationcolor)
-    my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
+        my_canvas.setFillColor(HexColor(nationcolor))
     my_canvas.circle(lx + 32, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     teamcounter += 1
