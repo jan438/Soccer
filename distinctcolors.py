@@ -6,11 +6,16 @@ import unicodedata
 from pathlib import Path
 from datetime import datetime, date, timedelta
 from reportlab.pdfgen import canvas
+from reportlab.pdfbase.ttfonts import TTFont
+from reportlab.pdfbase import pdfmetrics  
+from reportlab.pdfbase.pdfmetrics import registerFontFamily
 from reportlab.lib.colors import HexColor
 from reportlab.lib.units import inch, mm
 import matplotlib.pyplot as plt
 from matplotlib import colors as mcolors
 import numpy as np
+
+socfont = "LiberationSerif"
 
 #   1f77b4
 #   ff7f0e
@@ -110,6 +115,10 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
+pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
+pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
 file_to_open = "Data/WC2026.csv"
 with open(file_to_open, 'r') as file:
     csvreader = csv.reader(file, delimiter = ';')
@@ -130,6 +139,7 @@ custom_y = 200
 width = 40
 height = 40
 i = 0
+my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(10, matplot_y + 5 * height, "MatPlot" )
 for row in range(4):
@@ -138,6 +148,7 @@ for row in range(4):
        my_canvas.rect(left_padding + col * width, matplot_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
+my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(10, custom_y + 5 * height, "Custom" )
 for row in range(4):
