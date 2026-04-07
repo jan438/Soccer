@@ -141,7 +141,7 @@ height = 40
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(10, matplot_y + 5 * height, "MatPlot" )
+my_canvas.drawString(left_padding, matplot_y + 5 * height, "MatPlot" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(colors[i]))
@@ -150,7 +150,7 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(10, custom_y + 5 * height, "Custom" )
+my_canvas.drawString(left_padding, custom_y + 5 * height, "Custom" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(nationsdata[i][9]))
