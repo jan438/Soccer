@@ -70,7 +70,8 @@ colors = [
 "#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
 "#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           ]
-          
+nationsdata = []
+     
 def get_distinct_colors(n):
     """
     Generate up to n visually distinct colors as HEX codes.
@@ -109,6 +110,15 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
+file_to_open = "Data/WC2026.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        nationsdata.append(row)
+        #print(row[12])
+        count += 1
+print("Count csv", count)
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 colors_48 = get_distinct_colors(48)
 for i in range(48):
