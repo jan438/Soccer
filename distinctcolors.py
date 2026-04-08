@@ -163,7 +163,7 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, sphx_sample_y + 4.3 * height, "sphx_sample" )
+my_canvas.drawString(left_padding, sphx_sample_y + 4.3 * height, "SPHX sample" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(sphx_sample_colors[i]))
