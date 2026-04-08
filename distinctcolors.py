@@ -79,8 +79,8 @@ colors = [
 target_colors = [
 # aqua2        aquamarine          azure         beige              blue               brown        chartreuse
 "#13EAC9","#04D8B2","#7FFFD6","#069AF3","#F5F5DC","#E6DAA6","#0000FF","#0343DF","#A52A2A","#653700","#7FFF00","#C1F80A",
-#   chocolate              coral               crimson         darkblue              darkgreen        fuchsia
-"#D2691E","#3D1C02","#FF7F50","#FC5A50","#DC143C","#8C000F","#00008B","#030764","#006400","#054907","#FF00FF","#ED0Dd9",
+#   chocolate              coral               crimson         darkblue              darkgreen  yellowfuchsia
+"#D2691E","#3D1C02","#FF7F50","#FC5A50","#DC143C","#8C000F","#00008B","#030764","#006400","#054907","#FFFF14","#ED0Dd9",
 #    gold                   goldenrod          green             silver               indigo           khaki
 "#FFD700","#DBB40C","#DAA520","#FAC205","#008000","#15B01A","#808080","#929591","#4B0082","#380282","#F0E68C","#AAA662",
 #     lavendar             lightblue          lightgreen           lime               magenta          maroon
