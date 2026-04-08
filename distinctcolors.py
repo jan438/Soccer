@@ -83,8 +83,8 @@ target_colors = [
 "#D2691E","#3D1C02","#FF7F50","#FC5A50","#DC143C","#8C000F","#00008B","#030764","#006400","#054907","#FF00FF","#ED0Dd9",
 #    gold                   goldenrod          green             silver               indigo         khaki
 "#FFD700","#DBB40C","#DAA520","#FAC205","#008000","#15B01A","#808080","#929591","#4B0082","#380282","#F0E68C","#AAA662",
-#     lavendar             lightblue          lightgreen           lime
-"#E6E6FA","#C79FEF","#ADD8E6","#7BC8F6","#90EE90","#76FF7B","#00FF00","#AAFF32","#AFB83B","#7ECC49","#E7E84F","#299438",
+#     lavendar             lightblue          lightgreen           lime               magenta
+"#E6E6FA","#C79FEF","#ADD8E6","#7BC8F6","#90EE90","#76FF7B","#00FF00","#AAFF32","#FF00FF","#C20078","#E7E84F","#299438",
           ]         
           
 nationsdata = []
