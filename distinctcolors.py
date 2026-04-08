@@ -76,7 +76,7 @@ colors = [
 "#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           ]
           
-target_colors = [
+sphx_sample_colors = [
 # aqua2        aquamarine          azure         beige              blue               brown        chartreuse
 "#13EAC9","#04D8B2","#7FFFD6","#069AF3","#F5F5DC","#E6DAA6","#0000FF","#0343DF","#A52A2A","#653700","#7FFF00","#C1F80A",
 #   chocolate              coral               crimson         darkblue              darkgreen        fuchsia
@@ -147,7 +147,7 @@ for i in range(48):
     colors[i] = colors_48[i]
 left_padding = 100
 matplot_y = 500
-target_y = 300
+sphx_sample_y = 300
 custom_y = 100
 width = 40
 height = 40
@@ -163,11 +163,11 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, target_y + 4.3 * height, "Target" )
+my_canvas.drawString(left_padding, sphx_sample_y + 4.3 * height, "sphx_sample" )
 for row in range(4):
    for col in range(12):
-       my_canvas.setFillColor(HexColor(target_colors[i]))
-       my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
+       my_canvas.setFillColor(HexColor(sphx_sample_colors[i]))
+       my_canvas.rect(left_padding + col * width, sphx_sample_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 25)
