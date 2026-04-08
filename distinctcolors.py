@@ -81,8 +81,8 @@ target_colors = [
 "#13EAC9","#04D8B2","#7FFFD6","#069AF3","#F5F5DC","#E6DAA6","#0000FF","#0343DF","#A52A2A","#653700","#7FFF00","#C1F80A",
 #   chocolate              coral               crimson         darkblue              darkgreen      fuchsia
 "#D2691E","#3D1C02","#FF7F50","#FC5A50","#DC143C","#8C000F","#00008B","#030764","#006400","#054907","#FF00FF","#ED0Dd9",
-#    gold                   goldenrod          green             silver
-"#FFD700","#DBB40C","#DAA520","#FAC205","#008000","#15B01A","#808080","#929591","#A8A202","#158FAD","#14AAF5","#CD0027",
+#    gold                   goldenrod          green             silver               indigo
+"#FFD700","#DBB40C","#DAA520","#FAC205","#008000","#15B01A","#808080","#929591","#4B0082","#380282","#14AAF5","#CD0027",
 "#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           ]         
           
