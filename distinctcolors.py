@@ -156,11 +156,11 @@ colors_48 = get_distinct_colors(48)
 for i in range(48):
     print(colors_48[i])
     colors[i] = colors_48[i]
-left_padding = 100
-matplot_y = 610
-target_y = 410
-sphx_sample_y = 210
-custom_y = 10
+left_padding = 50
+matplot_y = 650
+target_y = 450
+sphx_sample_y = 250
+custom_y = 50
 width = 40
 height = 40
 i = 0
