@@ -160,9 +160,7 @@ print("Count csv", count)
 
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 colors_48 = get_distinct_colors(48)
-for i in range(48):
-    print(colors_48[i])
-    colors[i] = colors_48[i]
+
 left_padding = 50
 matplot_y = 650
 target_y = 450
@@ -175,7 +173,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, matplot_y + 4.3 * height, "MatPlot" )
 for row in range(4):
    for col in range(12):
-       my_canvas.setFillColor(HexColor(colors[i]))
+       my_canvas.setFillColor(HexColor(colors_48[i]))
        my_canvas.rect(left_padding + col * width, matplot_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
