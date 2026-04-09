@@ -99,7 +99,15 @@ sphx_sample_colors = [
           ]         
           
 nationsdata = []
-     
+xcolors = []
+
+def lookupcolor(color):
+    index = -1
+    for l in range(len(xcolors)):
+        if xcolors[l][0] == color:
+            index = l
+    return index
+    
 def get_distinct_colors(n):
     """
     Generate up to n visually distinct colors as HEX codes.
@@ -151,6 +159,16 @@ with open(file_to_open, 'r') as file:
         #print(row[12])
         count += 1
 print("Count csv", count)
+
+file_to_open = "Data/xkcdrgb.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        xcolors.append(row)
+        count += 1
+print("Count csv", count)
+
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 colors_48 = get_distinct_colors(48)
 for i in range(48):
@@ -196,9 +214,17 @@ my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, custom_y + 4.3 * height, "Custom" )
 for row in range(4):
-   for col in range(12):
-       my_canvas.setFillColor(HexColor(nationsdata[i][9]))
-       my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
-       i += 1
+    for col in range(12):
+        nationcolor = nationsdata[i][9]
+        if nationcolor == "#ffffff":
+            my_canvas.setFillColor(HexColor(nationcolor))
+        else:
+            colorindex = lookupcolor(nationcolor)
+            if colorindex >= 0:
+                 my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
+            else:
+                my_canvas.setFillColor(HexColor("#000000"))
+        my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+        i += 1
 my_canvas.save()
 key = input("Wait")
