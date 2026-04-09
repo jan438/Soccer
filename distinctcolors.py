@@ -17,58 +17,6 @@ import numpy as np
 
 socfont = "LiberationSerif"
 
-#   1f77b4
-#   ff7f0e
-#   2ca02c
-#   d62728
-#   9467bd
-#   8c564b
-#   e377c2
-#   7f7f7f
-#   bcbd22
-#   17becf
-#   F0F8FF
-#   FAEBD7
-
-#   00FFFF
-#   7FFFD4
-#   F0FFFF
-#   F5F5DC
-#   FFE4C4
-#   000000
-#   FFEBCD
-#   0000FF
-#   8A2BE2
-#   A52A2A
-#   DEB887
-#   5F9EA0
-
-#   7FFF00
-#   D2691E
-#   FF7F50
-#   6495ED
-#   FFF8DC
-#   DC143C
-#   00008B
-#   008B8B
-#   B8860B
-#   A9A9A9
-#   006400
-#   BDB76B
-
-#   8B008B
-#   556B2F
-#   FF8C00
-#   9932CC
-#   8B0000
-#   E9967A
-#   8FBC8F
-#   483D8B
-#   2F4F4F
-#   00CED1
-#   9400D3
-#   FF1493
-
 colors = [
 "#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438","#A8A202","#158FAD","#14AAF5","#CD0027",
 "#4073FF","#D38895","#884DFF","#AF38EB","#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
@@ -194,13 +142,18 @@ for row in range(4):
         nationcolor = nationsdata[i][9]
         if nationcolor == "#ffffff":
             my_canvas.setFillColor(HexColor(nationcolor))
+            my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
         else:
             colorindex = lookupcolor(nationcolor)
             if colorindex >= 0:
-                 my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
+                my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
+                my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+                my_canvas.setFont(socfont, 6)
+                my_canvas.setFillColor(HexColor("#000000"))
+                my_canvas.drawString(left_padding + col * width, custom_y + row * height, xcolors[colorindex][0])
             else:
                 my_canvas.setFillColor(HexColor("#000000"))
-        my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+                my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
         i += 1
 my_canvas.save()
 key = input("Wait")
