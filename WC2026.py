@@ -469,7 +469,7 @@ for i in range(48):
     if nationcolor == "#ffffff":
         my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
     else:
-        print("to lookup")
+        print("to lookup", nationcolor)
         colorindex = lookupcolor(nationcolor)
         if colorindex >= 0:
             print(colorindex)
