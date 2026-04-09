@@ -25,6 +25,7 @@ socfont = "LiberationSerif"
 socfontbold = 'LiberationSerifBold'
 version = "1.0"
 nationsdata = []
+xcolors = []
 alleventslines = []
 gameevents = []
 
@@ -100,6 +101,16 @@ with open(file_to_open, 'r') as file:
     for row in csvreader:
         nationsdata.append(row)
         #print(row[12])
+        count += 1
+print("Count csv", count)
+
+file_to_open = "Data/xkcdrgb.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        xcolors.append(row)
+        print(row[0])
         count += 1
 print("Count csv", count)
 
