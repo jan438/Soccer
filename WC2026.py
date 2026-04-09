@@ -110,7 +110,6 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         xcolors.append(row)
-        print(row[0])
         count += 1
 print("Count csv", count)
 
