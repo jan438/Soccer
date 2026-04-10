@@ -233,6 +233,23 @@ rowheightgame = 18
 gameline = 550
 legendawidth = 75
 legendarowheight = 10
+
+#legenda1x = 10
+#legenda1y = 5
+#legenda1l = 14
+#legenda2x = 155
+#legenda2y = 170
+#legenda2l = 3
+#legenda3x = 210
+#legenda3y = 5
+#legenda3l = 12
+#legenda4x = 375
+#legenda4y = 5
+#legenda4l = 13
+#legenda5x = 515
+#legenda5y = 135
+#legenda5l = 6
+
 legenda1x = 10
 legenda1y = 5
 legenda1l = 14
