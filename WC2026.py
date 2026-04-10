@@ -234,22 +234,6 @@ gameline = 550
 legendawidth = 75
 legendarowheight = 10
 
-#legenda1x = 10
-#legenda1y = 5
-#legenda1l = 14
-#legenda2x = 155
-#legenda2y = 170
-#legenda2l = 3
-#legenda3x = 210
-#legenda3y = 5
-#legenda3l = 12
-#legenda4x = 375
-#legenda4y = 5
-#legenda4l = 13
-#legenda5x = 515
-#legenda5y = 135
-#legenda5l = 6
-
 legenda1x = 10
 legenda1y = 5
 legenda1l = 14
@@ -315,8 +299,7 @@ drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheig
 drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * legenda4l, "l", lcol1, lcol2)
-#drawHorizontalRect(my_canvas, legenda5x, legenda5y, legendawidth, legendarowheight * legenda5l, "l", lcol1, lcol2)
-    
+
 teamcounter = 0
 eteamcouner = 0
 my_canvas.setStrokeColor(black)
