@@ -30,6 +30,7 @@ target_colors = [
             
 nationsdata = []
 xcolors = []
+wccolors = []
 
 def lookupcolor(color):
     index = -1
@@ -96,6 +97,15 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         xcolors.append(row)
+        count += 1
+print("Count csv", count)
+
+file_to_open = "Data/wccolorstodo.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        wccolors.append(row)
         count += 1
 print("Count csv", count)
 
