@@ -231,7 +231,7 @@ lcol1 = HexColor("#70ff66") # legenda dark green
 lcol2 = HexColor("#8cff8a") # legenda light green
 rowheightgame = 18
 gameline = 550
-legendawidth = 75
+legendawidth = 68
 legendarowheight = 8
 
 legenda1x = 10
@@ -453,7 +453,7 @@ for i in range(48):
         ly = legenda3y + legenda1l * legendarowheight + legenda2l * legendarowheight + (legenda3l - 1) * legendarowheight
 
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
-    renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
+    renderPDF.draw(drawing, my_canvas, lx + 8, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(lx + 35, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
     nationcolor = nationsdata[teamcounter][9]
