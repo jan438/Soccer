@@ -146,8 +146,11 @@ for row in range(4):
        wccolor = wccolors[i][0]
        colorindex = lookupcolor(wccolor)
        if colorindex >= 0:
-           print(i, wccolor, colorindex)
-       my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
+           my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
+           my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
+       else:
+           my_canvas.setFillColor(HexColor("#000000"))
+           my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 25)
