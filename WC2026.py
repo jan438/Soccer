@@ -453,9 +453,9 @@ for i in range(48):
         ly = legenda3y + legenda1l * legendarowheight + legenda2l * legendarowheight + (legenda3l - 1) * legendarowheight
 
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
-    renderPDF.draw(drawing, my_canvas, lx + 5, ly - i * legendarowheight)
+    renderPDF.draw(drawing, my_canvas, lx + 4.5, ly - i * legendarowheight)
     my_canvas.setFillColor(HexColor("#000000"))
-    my_canvas.drawString(lx + 24, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
+    my_canvas.drawString(lx + 23.5, ly + 2.0 - i * legendarowheight, nationsdata[teamcounter][0])
     nationcolor = nationsdata[teamcounter][9]
     if nationcolor == "#ffffff":
         my_canvas.setFillColor(HexColor(nationcolors[teamcounter]))
@@ -465,7 +465,7 @@ for i in range(48):
             my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
         else:
             my_canvas.setFillColor(HexColor("#000000"))
-    my_canvas.circle(lx + 19, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
+    my_canvas.circle(lx + 18.5, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     teamcounter += 1
 my_canvas.save()
