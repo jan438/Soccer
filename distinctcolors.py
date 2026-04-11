@@ -115,6 +115,7 @@ colors_48 = get_distinct_colors(48)
 left_padding = 50
 matplot_y = 650
 target_y = 450
+wccolors_y = 250
 custom_y = 50
 width = 40
 height = 40
@@ -135,6 +136,16 @@ for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(target_colors[i]))
        my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
+       i += 1
+i = 0
+my_canvas.setFont(socfont, 25)
+my_canvas.setFillColor(HexColor("#000000"))
+my_canvas.drawString(left_padding, wccolors_y + 4.3 * height, "WCColors" )
+for row in range(4):
+   for col in range(12):
+       wccolor = wccolors[i][0]
+       print(i, wccolor)
+       my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 25)
