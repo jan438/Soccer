@@ -227,8 +227,8 @@ pcol1 = HexColor("#b4e9ff") # poule light blue
 pcol2 = HexColor("#b0c2ff") # poule dark blue
 ccol1 = HexColor("#9e9e9e") # dark gray
 ccol2 = HexColor("#b0b0b0") # light gray
-lcol1 = HexColor("#9e9e9e") # legenda dark gray
-lcol2 = HexColor("#b0b0b0") # legenda light gray
+lcol1 = HexColor("#70ff66") # legenda dark green
+lcol2 = HexColor("#8cff8a") # legenda light green
 rowheightgame = 18
 gameline = 550
 legendawidth = 75
@@ -288,10 +288,13 @@ for j in range(13):
     else:
         mode = "b"
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
-    
-drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, "l", lcol1, lcol2)    
-drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, "l", lcol1, lcol2)
+
+my_canvas.setFillColor(lcol1)    
+my_canvas.rect(legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, fill = 1)
+my_canvas.setFillColor(lcol2)    
+my_canvas.rect(legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, fill = 1)
+my_canvas.setFillColor(lcol1)    
+my_canvas.rect(legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, fill = 1)
 
 teamcounter = 0
 eteamcouner = 0
