@@ -144,7 +144,9 @@ my_canvas.drawString(left_padding, wccolors_y + 4.3 * height, "WCColors" )
 for row in range(4):
    for col in range(12):
        wccolor = wccolors[i][0]
-       print(i, wccolor)
+       colorindex = lookupcolor(wccolor)
+       if colorindex >= 0:
+           print(i, wccolor, colorindex)
        my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
