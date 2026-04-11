@@ -148,6 +148,7 @@ for row in range(4):
        if colorindex >= 0:
            my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
            my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
+           my_canvas.setFont(socfont, 8)
            my_canvas.setFillColor(HexColor("#000000"))
            my_canvas.drawString(left_padding + col * width + 5, wccolors_y + row * height + 5, xcolors[colorindex][0])
        else:
@@ -169,7 +170,7 @@ for row in range(4):
             if colorindex >= 0:
                 my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
                 my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
-                my_canvas.setFont(socfont, 6)
+                my_canvas.setFont(socfont, 8)
                 my_canvas.setFillColor(HexColor("#000000"))
                 my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, xcolors[colorindex][0])
             else:
