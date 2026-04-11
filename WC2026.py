@@ -243,9 +243,6 @@ legenda2l = 16
 legenda3x = 375
 legenda3y = 5
 legenda3l = 16
-legenda4x = 515
-legenda4y = 135
-legenda4l = 9
 
 countnations = 48
 
@@ -295,7 +292,6 @@ for j in range(13):
 drawHorizontalRect(my_canvas, legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, "l", lcol1, lcol2)
 drawHorizontalRect(my_canvas, legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, "l", lcol1, lcol2)    
 drawHorizontalRect(my_canvas, legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, "l", lcol1, lcol2)
-drawHorizontalRect(my_canvas, legenda4x, legenda4y, legendawidth, legendarowheight * legenda4l, "l", lcol1, lcol2)
 
 teamcounter = 0
 eteamcouner = 0
@@ -452,9 +448,6 @@ for i in range(48):
     if i == legenda1l + legenda2l:
         lx = legenda3x
         ly = legenda3y + legenda1l * legendarowheight + legenda2l * legendarowheight + (legenda3l - 1) * legendarowheight
-    if i == legenda1l + legenda2l + legenda3l:
-        lx = legenda4x
-        ly = legenda4y + legenda1l * legendarowheight + legenda2l * legendarowheight + legenda3l * legendarowheight + (legenda4l - 1) * legendarowheight
 
     drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
     renderPDF.draw(drawing, my_canvas, lx + 20, ly - i * legendarowheight)
