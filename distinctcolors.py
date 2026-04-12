@@ -140,7 +140,7 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, wccolors_y + 4.3 * height, "WCColors" )
+my_canvas.drawString(left_padding, wccolors_y + 4.3 * height, "WCColorsTodo" )
 for row in range(4):
    for col in range(12):
        wccolor = wccolors[i][0]
@@ -158,7 +158,7 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, custom_y + 4.3 * height, "Custom" )
+my_canvas.drawString(left_padding, custom_y + 4.3 * height, "WCColors" )
 for row in range(4):
     for col in range(12):
         nationcolor = nationsdata[i][9]
