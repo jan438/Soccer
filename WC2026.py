@@ -281,11 +281,11 @@ for j in range(13):
     drawVerticalRect(my_canvas, left_margin, line - 3.5 - j * rowheightgame, 8 * colwidthgame, rowheightgame, mode, ccol1, ccol2)
 
 my_canvas.setFillColor(lcol)    
-my_canvas.rect(legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l, stroke = 0, fill = 1)
+my_canvas.rect(legenda1x, legenda1y, legendawidth, legendarowheight * legenda1l + 1, stroke = 0, fill = 1)
 my_canvas.setFillColor(lcol)    
-my_canvas.rect(legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l, stroke = 0, fill = 1)
+my_canvas.rect(legenda2x, legenda2y, legendawidth, legendarowheight * legenda2l + 1, stroke = 0, fill = 1)
 my_canvas.setFillColor(lcol)    
-my_canvas.rect(legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l, stroke = 0, fill = 1)
+my_canvas.rect(legenda3x, legenda3y, legendawidth, legendarowheight * legenda3l + 1, stroke = 0, fill = 1)
 
 teamcounter = 0
 eteamcouner = 0
