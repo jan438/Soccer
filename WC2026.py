@@ -456,7 +456,7 @@ for i in range(48):
     my_canvas.circle(lx + 18.1, ly + 4.0 - i * legendarowheight, 2.0, stroke = 0, fill = 1)
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     if cadre_pouleland:
-        my_canvas.circle(300 + (i % 8) * 10, 400 + (i / 8) * 10, 2.0, stroke = 0, fill = 1)
+        my_canvas.circle(300 + (i % 8) * 10, 50 + (i / 8) * 10, 2.0, stroke = 0, fill = 1)
     teamcounter += 1
 my_canvas.save()
 key = input("Wait")
