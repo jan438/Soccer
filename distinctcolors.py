@@ -113,10 +113,10 @@ my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 colors_48 = get_distinct_colors(48)
 
 left_padding = 5
-matplot_y = 650
-target_y = 450
-wccolors_y = 250
-custom_y = 50
+matplot_y = 605
+target_y = 405
+wccolors_y = 205
+custom_y = 5
 width = 45
 height = 45
 i = 0
