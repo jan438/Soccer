@@ -120,27 +120,27 @@ custom_y = 5
 width = 45
 height = 45
 i = 0
-my_canvas.setFont(socfont, 25)
+my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, matplot_y + 4.3 * height, "MatPlot" )
+my_canvas.drawString(left_padding, matplot_y + 4.1 * height, "MatPlot" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(colors_48[i]))
        my_canvas.rect(left_padding + col * width, matplot_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
-my_canvas.setFont(socfont, 25)
+my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, target_y + 4.3 * height, "Target" )
+my_canvas.drawString(left_padding, target_y + 4.1 * height, "Target" )
 for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(target_colors[i]))
        my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
-my_canvas.setFont(socfont, 25)
+my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, wccolors_y + 4.3 * height, "WCColorsTodo" )
+my_canvas.drawString(left_padding, wccolors_y + 4.1 * height, "WCColorsTodo" )
 for row in range(4):
    for col in range(12):
        wccolor = wccolors[i][0]
@@ -156,9 +156,9 @@ for row in range(4):
            my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
-my_canvas.setFont(socfont, 25)
+my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, custom_y + 4.3 * height, "WCColors" )
+my_canvas.drawString(left_padding, custom_y + 4.1 * height, "WCColors" )
 for row in range(4):
     for col in range(12):
         nationcolorname = nationsdata[i][9]
