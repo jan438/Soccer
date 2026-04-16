@@ -117,8 +117,8 @@ matplot_y = 650
 target_y = 450
 wccolors_y = 250
 custom_y = 50
-width = 42
-height = 42
+width = 45
+height = 45
 i = 0
 my_canvas.setFont(socfont, 25)
 my_canvas.setFillColor(HexColor("#000000"))
