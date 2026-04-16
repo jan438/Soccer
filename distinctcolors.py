@@ -164,7 +164,9 @@ for row in range(4):
         nationcolor = nationsdata[i][9]
         colorindex = lookupcolor(nationcolor)
         if colorindex >= 0:
-            my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
+            nationcolor = xcolors[colorindex][1]
+            print(nationcolor)
+            my_canvas.setFillColor(HexColor(nationcolor))
             my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
             my_canvas.setFont(socfont, 8)
             my_canvas.setFillColor(HexColor("#000000"))
