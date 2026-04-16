@@ -110,8 +110,10 @@ with open(file_to_open, 'r') as file:
 print("Count csv", count)
 
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
+my_canvas.setTitle("Distinct Colors")
+my_canvas.setFont(socfont, 20)
+my_canvas.drawString(200, 805, "Distinct Colors")
 colors_48 = get_distinct_colors(48)
-
 left_padding = 5
 matplot_y = 605
 target_y = 405
