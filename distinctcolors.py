@@ -165,14 +165,15 @@ for row in range(4):
         colorindex = lookupcolor(nationcolor)
         if colorindex >= 0:
             nationcolor = xcolors[colorindex][1]
-            print(nationcolor)
             my_canvas.setFillColor(HexColor(nationcolor))
             my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
             my_canvas.setFont(socfont, 8)
-            my_canvas.setFillColor(HexColor("#000000"))
-            my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, xcolors[colorindex][0])
-            my_canvas.setFillColor(HexColor("#ffffff"))
-            my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 10, xcolors[colorindex][0])
+            if nationcolor >= '#800000':
+                my_canvas.setFillColor(HexColor("#ffffff"))
+                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, nationcolor)
+            else:
+                my_canvas.setFillColor(HexColor("#000000"))
+                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, nationcolor)
         else:
             my_canvas.setFillColor(HexColor("#000000"))
             my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
