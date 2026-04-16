@@ -435,7 +435,7 @@ teamcounter = 0
 eteamcounter = 0
 lx = legenda1x
 ly = legenda1y + (legenda1l - 1) * legendarowheight
-ccy = 5
+ccy = 1
 for i in range(48):
     if i == legenda1l:
         lx = legenda2x
@@ -458,7 +458,7 @@ for i in range(48):
     my_canvas.circle(float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]), 2.0, stroke = 0, fill = 1)
     if cadre_pouleland:
         if (i % 8) == 0:
-            ccy = ccy + 3
+            ccy = ccy + 8
         my_canvas.circle(295 + (i % 8) * 8, ccy, 3.0, stroke = 0, fill = 1)
     teamcounter += 1
 my_canvas.save()
