@@ -168,7 +168,7 @@ for row in range(4):
             my_canvas.setFillColor(HexColor(nationcolor))
             my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
             my_canvas.setFont(socfont, 8)
-            if nationcolor >= '#800000':
+            if nationcolor < '#800000':
                 my_canvas.setFillColor(HexColor("#ffffff"))
                 my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, nationcolor)
             else:
