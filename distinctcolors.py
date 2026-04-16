@@ -162,22 +162,18 @@ my_canvas.drawString(left_padding, custom_y + 4.3 * height, "WCColors" )
 for row in range(4):
     for col in range(12):
         nationcolor = nationsdata[i][9]
-        if nationcolor == "#ffffff":
-            my_canvas.setFillColor(HexColor(nationcolor))
+        colorindex = lookupcolor(nationcolor)
+        if colorindex >= 0:
+            my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
             my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+            my_canvas.setFont(socfont, 8)
+            my_canvas.setFillColor(HexColor("#000000"))
+            my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, xcolors[colorindex][0])
+            my_canvas.setFillColor(HexColor("#ffffff"))
+            my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 10, xcolors[colorindex][0])
         else:
-            colorindex = lookupcolor(nationcolor)
-            if colorindex >= 0:
-                my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
-                my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
-                my_canvas.setFont(socfont, 8)
-                my_canvas.setFillColor(HexColor("#000000"))
-                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, xcolors[colorindex][0])
-                my_canvas.setFillColor(HexColor("#ffffff"))
-                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 10, xcolors[colorindex][0])
-            else:
-                my_canvas.setFillColor(HexColor("#000000"))
-                my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+            my_canvas.setFillColor(HexColor("#000000"))
+            my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
         i += 1
 my_canvas.save()
 key = input("Wait")
