@@ -218,7 +218,7 @@ pcol1 = HexColor("#b4e9ff") # poule light blue
 pcol2 = HexColor("#b0c2ff") # poule dark blue
 ccol1 = HexColor("#9e9e9e") # dark gray
 ccol2 = HexColor("#b0b0b0") # light gray
-lcol = HexColor("#e3e3e3") # legenda gray
+lcol = HexColor("#c3ff9e") # legenda green
 
 rowheightgame = 18
 gameline = 550
