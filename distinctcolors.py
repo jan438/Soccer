@@ -31,7 +31,6 @@ target_colors = [
 nationsdata = []
 xcolors = []
 wccolors = []
-fiftycolors = []
 
 def lookupcolor(color):
     index = -1
@@ -110,15 +109,6 @@ with open(file_to_open, 'r') as file:
         count += 1
 print("Count csv", count)
 
-file_to_open = "Data/50colors.csv"
-with open(file_to_open, 'r') as file:
-    csvreader = csv.reader(file, delimiter = ';')
-    count = 0
-    for row in csvreader:
-        fiftycolors.append(row)
-        count += 1
-print("Count csv", count)
-
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 my_canvas.setTitle("Distinct Colors")
 my_canvas.setFont(socfont, 20)
@@ -149,15 +139,6 @@ for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(target_colors[i]))
        my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
-       i += 1
-i = 0
-my_canvas.setFont(socfont, 20)
-my_canvas.setFillColor(HexColor("#000000"))
-#my_canvas.drawString(left_padding, fifty_y + 4.02 * height, "50colors" )
-for row in range(5):
-   for col in range(10):
-       my_canvas.setFillColor(HexColor(fiftycolors[i][0]))
-       #my_canvas.rect(left_padding + col * width, fifty_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 20)
