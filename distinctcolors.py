@@ -109,6 +109,15 @@ with open(file_to_open, 'r') as file:
         count += 1
 print("Count csv", count)
 
+file_to_open = "Data/50colors.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        wccolors.append(row)
+        count += 1
+print("Count csv", count)
+
 my_canvas = canvas.Canvas("PDF/distinctcolors.pdf")
 my_canvas.setTitle("Distinct Colors")
 my_canvas.setFont(socfont, 20)
