@@ -153,11 +153,11 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, fifty_y + 4.02 * height, "50colors" )
+#my_canvas.drawString(left_padding, fifty_y + 4.02 * height, "50colors" )
 for row in range(5):
    for col in range(10):
        my_canvas.setFillColor(HexColor(fiftycolors[i][0]))
-       my_canvas.rect(left_padding + col * width, fifty_y + row * height, width, height, fill = 1)
+       #my_canvas.rect(left_padding + col * width, fifty_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 20)
