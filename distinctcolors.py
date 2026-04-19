@@ -31,6 +31,7 @@ target_colors = [
 nationsdata = []
 xcolors = []
 wccolors = []
+fiftycolors = []
 
 def lookupcolor(color):
     index = -1
@@ -114,7 +115,7 @@ with open(file_to_open, 'r') as file:
     csvreader = csv.reader(file, delimiter = ';')
     count = 0
     for row in csvreader:
-        wccolors.append(row)
+        fiftycolors.append(row)
         count += 1
 print("Count csv", count)
 
@@ -125,6 +126,7 @@ my_canvas.drawString(200, 805, "Distinct Colors")
 colors_48 = get_distinct_colors(48)
 left_padding = 5
 matplot_y = 605
+fifty_y = 605
 target_y = 405
 wccolors_y = 205
 custom_y = 5
@@ -147,6 +149,16 @@ for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(target_colors[i]))
        my_canvas.rect(left_padding + col * width, target_y + row * height, width, height, fill = 1)
+       i += 1
+i = 0
+my_canvas.setFont(socfont, 20)
+my_canvas.setFillColor(HexColor("#000000"))
+my_canvas.drawString(left_padding, fifty_y + 4.02 * height, "50colors" )
+for row in range(5):
+   for col in range(10):
+       #my_canvas.setFillColor(HexColor(fiftycolors[i]))
+       #my_canvas.rect(left_padding + col * width, fifty_y + row * height, width, height, fill = 1)
+       print(fiftycolors[i])
        i += 1
 i = 0
 my_canvas.setFont(socfont, 20)
