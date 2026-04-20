@@ -136,8 +136,17 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, eccolors_y + 4.02 * height, "ECColors" )
 for row in range(4):
    for col in range(12):
-       my_canvas.setFillColor(HexColor(eccolors[i][1]))
+       eccolor = eccolors[i][1]
+       ecname = eccolors[i][0]
+       my_canvas.setFillColor(HexColor(eccolor))
        my_canvas.rect(left_padding + col * width, eccolors_y + row * height, width, height, fill = 1)
+       my_canvas.setFont(socfont, 8)
+       if eccolor < '#800000':
+           my_canvas.setFillColor(HexColor("#ffffff"))
+           my_canvas.drawString(left_padding + col * width + 5, eccolors_y + row * height + 5, ecname)
+       else:
+            my_canvas.setFillColor(HexColor("#000000"))
+            my_canvas.drawString(left_padding + col * width + 5, wccolors_y + row * height + 5, ecname)
        if i == 27:
            break
        i += 1       
