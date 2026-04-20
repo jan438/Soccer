@@ -134,10 +134,12 @@ i = 0
 my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, eccolors_y + 4.02 * height, "ECColors" )
-for row in range(2):
+for row in range(4):
    for col in range(12):
        my_canvas.setFillColor(HexColor(eccolors[i][1]))
        my_canvas.rect(left_padding + col * width, eccolors_y + row * height, width, height, fill = 1)
+       if i == 27:
+           break
        i += 1       
 i = 0
 my_canvas.setFont(socfont, 20)
