@@ -115,7 +115,6 @@ my_canvas.drawString(200, 805, "Distinct Colors")
 colors_48 = get_distinct_colors(48)
 left_padding = 5
 matplot_y = 605
-fifty_y = 605
 eccolors_y = 405
 wccolorstodo_y = 205
 wccolors_y = 5
