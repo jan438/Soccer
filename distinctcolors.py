@@ -20,6 +20,7 @@ socfont = "LiberationSerif"
 nationsdata = []
 xcolors = []
 wccolors = []
+eccolors = []
 
 def lookupcolor(color):
     index = -1
@@ -86,6 +87,15 @@ with open(file_to_open, 'r') as file:
     count = 0
     for row in csvreader:
         xcolors.append(row)
+        count += 1
+print("Count csv", count)
+
+file_to_open = "Data/EC2015.csv"
+with open(file_to_open, 'r') as file:
+    csvreader = csv.reader(file, delimiter = ';')
+    count = 0
+    for row in csvreader:
+        eccolors.append(row)
         count += 1
 print("Count csv", count)
 
