@@ -136,7 +136,7 @@ my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.drawString(left_padding, eccolors_y + 4.02 * height, "ECColors" )
 for row in range(4):
    for col in range(12):
-       if i == 32:
+       if i == 36:
            break
        eccolor = eccolors[i][1]
        ecname = eccolors[i][0]
