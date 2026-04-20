@@ -19,7 +19,7 @@ socfont = "LiberationSerif"
    
 nationsdata = []
 xcolors = []
-wccolors = []
+wccolorstodo = []
 eccolors = []
 
 def lookupcolor(color):
@@ -104,7 +104,7 @@ with open(file_to_open, 'r') as file:
     csvreader = csv.reader(file, delimiter = ';')
     count = 0
     for row in csvreader:
-        wccolors.append(row)
+        wccolorstodo.append(row)
         count += 1
 print("Count csv", count)
 
@@ -117,8 +117,8 @@ left_padding = 5
 matplot_y = 605
 fifty_y = 605
 target_y = 405
-wccolors_y = 205
-custom_y = 5
+wccolorstodo_y = 205
+wccolors_y = 5
 width = 45
 height = 45
 i = 0
@@ -133,25 +133,25 @@ for row in range(4):
 i = 0
 my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, wccolors_y + 4.02 * height, "WCColorsTodo" )
+my_canvas.drawString(left_padding, wccolorstodo_y + 4.02 * height, "WCColorsTodo" )
 for row in range(4):
    for col in range(12):
-       wccolor = wccolors[i][0]
+       wccolor = wccolorstodo[i][0]
        colorindex = lookupcolor(wccolor)
        if colorindex >= 0:
            my_canvas.setFillColor(HexColor(xcolors[colorindex][1]))
-           my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
+           my_canvas.rect(left_padding + col * width, wccolorstodo_y + row * height, width, height, fill = 1)
            my_canvas.setFont(socfont, 8)
            my_canvas.setFillColor(HexColor("#000000"))
-           my_canvas.drawString(left_padding + col * width + 5, wccolors_y + row * height + 5, xcolors[colorindex][0])
+           my_canvas.drawString(left_padding + col * width + 5, wccolorstodo_y + row * height + 5, xcolors[colorindex][0])
        else:
            my_canvas.setFillColor(HexColor("#000000"))
-           my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
+           my_canvas.rect(left_padding + col * width, wccolorstodo_y + row * height, width, height, fill = 1)
        i += 1
 i = 0
 my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
-my_canvas.drawString(left_padding, custom_y + 4.02 * height, "WCColors" )
+my_canvas.drawString(left_padding, wccolors_y + 4.02 * height, "WCColors" )
 for row in range(4):
     for col in range(12):
         nationcolorname = nationsdata[i][9]
@@ -159,17 +159,17 @@ for row in range(4):
         if colorindex >= 0:
             nationcolor = xcolors[colorindex][1]
             my_canvas.setFillColor(HexColor(nationcolor))
-            my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+            my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
             my_canvas.setFont(socfont, 8)
             if nationcolor < '#800000':
                 my_canvas.setFillColor(HexColor("#ffffff"))
-                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, nationcolorname)
+                my_canvas.drawString(left_padding + col * width + 5, wccolors_y + row * height + 5, nationcolorname)
             else:
                 my_canvas.setFillColor(HexColor("#000000"))
-                my_canvas.drawString(left_padding + col * width + 5, custom_y + row * height + 5, nationcolorname)
+                my_canvas.drawString(left_padding + col * width + 5, wccolors_y + row * height + 5, nationcolorname)
         else:
             my_canvas.setFillColor(HexColor("#000000"))
-            my_canvas.rect(left_padding + col * width, custom_y + row * height, width, height, fill = 1)
+            my_canvas.rect(left_padding + col * width, wccolors_y + row * height, width, height, fill = 1)
         i += 1
 my_canvas.save()
 key = input("Wait")
