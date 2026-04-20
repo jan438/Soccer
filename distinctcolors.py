@@ -116,7 +116,7 @@ colors_48 = get_distinct_colors(48)
 left_padding = 5
 matplot_y = 605
 fifty_y = 605
-target_y = 405
+eccolors_y = 405
 wccolorstodo_y = 205
 wccolors_y = 5
 width = 45
@@ -130,6 +130,15 @@ for row in range(4):
        my_canvas.setFillColor(HexColor(colors_48[i]))
        my_canvas.rect(left_padding + col * width, matplot_y + row * height, width, height, fill = 1)
        i += 1
+i = 0
+my_canvas.setFont(socfont, 20)
+my_canvas.setFillColor(HexColor("#000000"))
+my_canvas.drawString(left_padding, eccolors_y + 4.02 * height, "ECColors" )
+for row in range(1):
+   for col in range(12):
+       my_canvas.setFillColor(HexColor(eccolors[i][1]))
+       my_canvas.rect(left_padding + col * width, eccolors_y + row * height, width, height, fill = 1)
+       i += 1       
 i = 0
 my_canvas.setFont(socfont, 20)
 my_canvas.setFillColor(HexColor("#000000"))
