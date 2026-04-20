@@ -147,7 +147,7 @@ for row in range(4):
        else:
            my_canvas.setFillColor(HexColor("#000000"))
            my_canvas.drawString(left_padding + col * width + 5, eccolors_y + row * height + 5, ecname)
-       if i == 27:
+       if i == 29:
            break
        i += 1       
 i = 0
