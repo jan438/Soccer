@@ -10,6 +10,8 @@ GER  Houston
 NED  Dallas
 CIV  Philadelphia
 SWE  Monterray
+ESP  Atlanta
+BEL  Seattle
 
 073 Los Angeles 
 
