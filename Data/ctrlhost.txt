@@ -1,0 +1,11 @@
+MEX  Mexico City
+KOR  Guadulara 
+CAN Toronto 
+USA  Los Angeles 
+AUS  Vancouver
+QAT  San Francisco 
+
+073 Los Angeles 
+
+
+090 Houston
