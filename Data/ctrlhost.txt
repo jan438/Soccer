@@ -20,6 +20,9 @@ ARG  Kansas
 AUT  San Francisco
 POR  Houston
 ENG  Dallas
+GHA  Toronto
+UZB  Mexico City
+
 
 
 073 Los Angeles 
