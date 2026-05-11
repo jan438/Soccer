@@ -18,6 +18,9 @@ FRA  New York???
 IRQ  Boston
 ARG  Kansas
 AUT  San Francisco
+POR  Houston
+ENG  Dallas
+
 
 073 Los Angeles 
 
