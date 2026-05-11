@@ -1,6 +1,6 @@
 MEX  Mexico City
 KOR  Guadulara 
-CAN Toronto 
+CAN  Toronto 
 USA  Los Angeles 
 AUS  Vancouver
 QAT  San Francisco
@@ -8,6 +8,8 @@ BRA  New York
 HAI  Boston
 GER  Houston
 NED  Dallas
+CIV  Philadelphia
+SWE  Monterray
 
 073 Los Angeles 
 
