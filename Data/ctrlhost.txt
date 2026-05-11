@@ -16,6 +16,8 @@ KSA  Miami
 IRN  Los Angeles
 FRA  New York???
 IRQ  Boston
+ARG  Kansas
+AUT  San Francisco
 
 073 Los Angeles 
 
