@@ -6,6 +6,8 @@ AUS  Vancouver
 QAT  San Francisco
 BRA  New York
 HAI  Boston
+GER  Houston
+NED  Dallas
 
 073 Los Angeles 
 
