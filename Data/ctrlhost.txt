@@ -12,6 +12,8 @@ CIV  Philadelphia
 SWE  Monterray
 ESP  Atlanta
 BEL  Seattle
+KSA  Miami
+IRN  Los Angeles
 
 073 Los Angeles 
 
