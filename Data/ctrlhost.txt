@@ -3,7 +3,9 @@ KOR  Guadulara
 CAN Toronto 
 USA  Los Angeles 
 AUS  Vancouver
-QAT  San Francisco 
+QAT  San Francisco
+BRA  New York
+HAI  Boston
 
 073 Los Angeles 
 
