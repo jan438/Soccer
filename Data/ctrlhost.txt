@@ -22,7 +22,8 @@ POR  Houston
 ENG  Dallas
 GHA  Toronto
 UZB  Mexico City
-
+SUI  Los Angeles
+CZE  Atlanta
 
 
 073 Los Angeles 
