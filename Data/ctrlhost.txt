@@ -24,6 +24,8 @@ GHA  Toronto
 UZB  Mexico City
 SUI  Los Angeles
 CZE  Atlanta
+CAN  Vancouver
+MEX  Dalajara
 
 
 073 Los Angeles 
