@@ -28,6 +28,10 @@ CAN  Vancouver
 MEX  Dalajara
 TUR  Francisco
 USA  Seattle
+SCO  Boston
+BRA  Phildelphia
+
+
 
 073 Los Angeles 
 
