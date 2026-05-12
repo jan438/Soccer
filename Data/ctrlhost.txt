@@ -32,6 +32,10 @@ SCO  Boston
 BRA  Phildelphia
 TUN  Moterray
 NED  Houston
+GER  Toronto
+ECU  Kansas
+
+
 
 
 073 Los Angeles 
