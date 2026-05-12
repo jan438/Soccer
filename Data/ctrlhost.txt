@@ -42,6 +42,8 @@ ARG  Dallas
 FRA  Philadelphia
 NOR  New York
 JOR  San Francisco
+POR  Houston
+ENG  Boston
 
 
 073 Los Angeles 
