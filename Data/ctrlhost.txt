@@ -36,7 +36,8 @@ GER  Toronto
 ECU  Kansas
 ESP  Atlanta
 BEL  Los Angeles
-
+URU  Miami
+NZL  Vancouver
 
 
 
