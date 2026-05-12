@@ -44,6 +44,8 @@ NOR  New York
 JOR  San Francisco
 POR  Houston
 ENG  Boston
+PAN  Toronto
+COL  Guadalara
 
 
 073 Los Angeles 
