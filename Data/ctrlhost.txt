@@ -26,7 +26,8 @@ SUI  Los Angeles
 CZE  Atlanta
 CAN  Vancouver
 MEX  Dalajara
-
+TUR  Francisco
+USA  Seattle
 
 073 Los Angeles 
 
