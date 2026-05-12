@@ -38,7 +38,8 @@ ESP  Atlanta
 BEL  Los Angeles
 URU  Miami
 NZL  Vancouver
-
+ARG  Dallas
+FRA  Philadelphia
 
 
 073 Los Angeles 
