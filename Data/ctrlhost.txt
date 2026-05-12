@@ -40,6 +40,8 @@ URU  Miami
 NZL  Vancouver
 ARG  Dallas
 FRA  Philadelphia
+NOR  New York
+JOR  San Francisco
 
 
 073 Los Angeles 
