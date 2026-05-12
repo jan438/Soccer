@@ -34,6 +34,8 @@ TUN  Moterray
 NED  Houston
 GER  Toronto
 ECU  Kansas
+ESP  Atlanta
+BEL  Los Angeles
 
 
 
