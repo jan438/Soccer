@@ -87,4 +87,10 @@ for i in range(len(alleventslines)):
         gameevents.append(GameEvent(summary, day, description, location, starttime, endtime, month))
 print("Count game events", len(gameevents))
 
+c = Calendar()
+
+with open("Calendar/WK2026_32.ics", "w") as f:
+    f.write(c.serialize())
+    f.close()
+
 key = input("Wait")
