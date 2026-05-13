@@ -89,7 +89,7 @@ e1.end = datetime(
     hour=12,
     minute=5,
     second=23,
-    tzinfo=timezone(timedelta(seconds=7200)),
+    tzinfo=timezone(timedelta(seconds=7200))
 )
 c.events.add(e1)
 e2 = Event()
@@ -104,7 +104,7 @@ e2.end = datetime(
     hour=12,
     minute=5,
     second=23,
-    tzinfo=timezone(timedelta(seconds=7200)),
+    tzinfo=timezone(timedelta(seconds=7200))
 )
 c.events.add(e2)
 with open("PDF/WK2026_32.ics", "w") as f:
