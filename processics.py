@@ -77,11 +77,11 @@ for i in range(len(alleventslines)):
 print("Count game events", len(gameevents))
 
 c = Calendar()
-e = Event()
-e.summary = "My cool event"
-e.description = "A meaningful description"
-e.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
-e.end = datetime(
+e1 = Event()
+e1.summary = "My cool event 1"
+e1.description = "A meaningful description 1"
+e1.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
+e1.end = datetime(
     year=2022,
     month=6,
     day=6,
@@ -90,7 +90,21 @@ e.end = datetime(
     second=23,
     tzinfo=timezone(timedelta(seconds=7200)),
 )
-c.events.add(e)
+c.events.add(e1)
+e2 = Event()
+e2.summary = "My cool event 2"
+e2.description = "A meaningful description 2"
+e2.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
+e2.end = datetime(
+    year=2022,
+    month=6,
+    day=6,
+    hour=12,
+    minute=5,
+    second=23,
+    tzinfo=timezone(timedelta(seconds=7200)),
+)
+c.events.add(e2)
 with open("Calendar/WK2026_32.ics", "w") as f:
     f.write(c.serialize())
     f.close()
