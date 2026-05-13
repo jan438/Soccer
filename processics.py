@@ -78,12 +78,12 @@ print("Count game events", len(gameevents))
 
 c = Calendar()
 for i in range(len(gameevents)):
-    e1 = Event()
-    e1.summary = "My cool event 1"
-    e1.description = "A meaningful description 1"
-    e1.location = "Dallas"
-    e1.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
-    e1.end = datetime(
+    e = Event()
+    e.summary = "My cool event 1"
+    e.description = "A meaningful description 1"
+    e.location = "Dallas"
+    e.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
+    e.end = datetime(
         year=2022,
         month=6,
         day=6,
@@ -92,7 +92,7 @@ for i in range(len(gameevents)):
         second=23,
         tzinfo=timezone(timedelta(seconds=7200))
     )
-    c.events.add(e1)
+    c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
     f.write(c.serialize())
