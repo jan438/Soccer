@@ -79,9 +79,9 @@ print("Count game events", len(gameevents))
 c = Calendar()
 for i in range(len(gameevents)):
     e = Event()
-    e.summary = "My cool event 1"
-    e.description = "A meaningful description 1"
-    e.location = "Dallas"
+    e.summary = gameevents[i].summary
+    e.description = gameevents[i].description
+    e.location = gameevents[i].description
     e.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
     e.end = datetime(
         year=2022,
