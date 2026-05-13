@@ -80,6 +80,7 @@ c = Calendar()
 e1 = Event()
 e1.summary = "My cool event 1"
 e1.description = "A meaningful description 1"
+e1.location = "Dallas"
 e1.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
 e1.end = datetime(
     year=2022,
@@ -94,6 +95,7 @@ c.events.add(e1)
 e2 = Event()
 e2.summary = "My cool event 2"
 e2.description = "A meaningful description 2"
+e2.location = "San Francisco"
 e2.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
 e2.end = datetime(
     year=2022,
@@ -105,7 +107,7 @@ e2.end = datetime(
     tzinfo=timezone(timedelta(seconds=7200)),
 )
 c.events.add(e2)
-with open("Calendar/WK2026_32.ics", "w") as f:
+with open("PDF/WK2026_32.ics", "w") as f:
     f.write(c.serialize())
     f.close()
 
