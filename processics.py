@@ -93,6 +93,7 @@ for i in range(len(gameevents)):
     e.description = gameevents[i].description
     e.location = gameevents[i].description
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
+    print(gameevents[i].starttime, hourb, minuteb)
     e.begin = datetime(
         year=2026,
         month=gameevents[i].month,
@@ -102,7 +103,6 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
-    print(gameevents[i].starttime, hourb, minuteb)
     e.end = datetime(
         year=2026,
         month=gameevents[i].month,
