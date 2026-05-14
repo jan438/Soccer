@@ -92,8 +92,17 @@ for i in range(len(gameevents)):
     e.summary = gameevents[i].summary
     e.description = gameevents[i].description
     e.location = gameevents[i].description
-    e.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
+    #e.begin = datetime.fromisoformat("2022-06-06T12:05:23+02:00")
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
+    e.begin = datetime(
+        year=2026,
+        month=gameevents[i].month,
+        day=gameevents[i].day,
+        hour=11,
+        minute=5,
+        second=23,
+        tzinfo=timezone(timedelta(seconds=7200))
+    )
     print(gameevents[i].starttime, hourb, minuteb)
     e.end = datetime(
         year=2026,
