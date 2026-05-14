@@ -89,10 +89,10 @@ c = Calendar()
 for i in range(len(gameevents)):
     e = Event()
     e.summary = gameevents[i].summary
+    print(e.summary)
     e.description = gameevents[i].description
     e.location = gameevents[i].description
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
-    print(gameevents[i].starttime, hourb, minuteb)
     e.begin = datetime(
         year=2026,
         month=gameevents[i].month,
@@ -103,7 +103,6 @@ for i in range(len(gameevents)):
         tzinfo=timezone(timedelta(seconds=7200))
     )
     [houre, minutee] = converttimetztolocalclock(gameevents[i].endtime)
-    print(gameevents[i].endtime, houre, minutee)
     e.end = datetime(
         year=2026,
         month=gameevents[i].month,
