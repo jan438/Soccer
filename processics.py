@@ -88,7 +88,7 @@ print("Count game events", len(gameevents))
 c = Calendar()
 for i in range(len(gameevents)):
     e = Event()
-    e.summary = gameevents[i].summary
+    e.name = gameevents[i].summary
     e.description = gameevents[i].description
     e.location = gameevents[i].description
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
@@ -111,7 +111,7 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
-    print(e.summary)
+    print(e.name)
     c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
