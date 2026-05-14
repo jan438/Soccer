@@ -90,7 +90,7 @@ for i in range(len(gameevents)):
     e = Event()
     e.name = gameevents[i].summary
     e.description = gameevents[i].description
-    e.location = gameevents[i].description
+    e.location = gameevents[i].location
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
     e.begin = datetime(
         year=2026,
