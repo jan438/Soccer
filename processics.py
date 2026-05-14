@@ -115,7 +115,7 @@ for i in range(len(gameevents)):
     c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
-    f.write(c.serialize())
+    f.writelines(c)
     f.close()
 
 key = input("Wait")
