@@ -17,4 +17,8 @@ e.end = datetime(
 )
 c.events.add(e)
 
+with open("PDF/test.ics", "w") as f:
+    f.write(c.serialize())
+    f.close()
+    
 key = input("Wait")
