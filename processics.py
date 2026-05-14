@@ -99,7 +99,7 @@ for i in range(len(gameevents)):
         day=gameevents[i].day,
         hour=11,
         minute=15,
-        second=23,
+        second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
     print(gameevents[i].starttime, hourb, minuteb)
@@ -109,7 +109,7 @@ for i in range(len(gameevents)):
         day=gameevents[i].day,
         hour=12,
         minute=5,
-        second=23,
+        second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
     c.events.add(e)
