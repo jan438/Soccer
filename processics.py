@@ -73,9 +73,11 @@ for i in range(len(alleventslines)):
         month = int(eventdtstartstr[4:6])
         day = int(eventdtstartstr[6:8])
         starttime = eventdtstartstr
+        print("start", starttime)
     if dtendeventpos == 0:
         eventdtendstr = alleventslines[i][6:]
         endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
+        print("end", endtime)
     if summaryeventpos == 0:
         summary = alleventslines[i][8:]
     if descriptioneventpos == 0:
@@ -93,7 +95,7 @@ for i in range(len(gameevents)):
     e.description = gameevents[i].description
     e.location = gameevents[i].description
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
-    print(gameevents[i].starttime, hourb, minuteb)
+    #print(gameevents[i].starttime, hourb, minuteb)
     e.begin = datetime(
         year=2026,
         month=gameevents[i].month,
@@ -103,7 +105,7 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
-    print(gameevents[i].endtime)
+    #print(gameevents[i].endtime)
     e.end = datetime(
         year=2026,
         month=gameevents[i].month,
