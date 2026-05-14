@@ -16,6 +16,7 @@ e.end = datetime(
     tzinfo=timezone(timedelta(seconds=7200)),
 )
 c.events.add(e)
+print(dir(e))
 
 with open("PDF/test.ics", "w") as f:
     f.write(c.serialize())
