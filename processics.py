@@ -103,6 +103,7 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
+    print(gameevents[i].endtime)
     e.end = datetime(
         year=2026,
         month=gameevents[i].month,
