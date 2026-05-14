@@ -97,8 +97,8 @@ for i in range(len(gameevents)):
         year=2026,
         month=gameevents[i].month,
         day=gameevents[i].day,
-        hour=11,
-        minute=15,
+        hour=hourb,
+        minute=minuteb,
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
@@ -108,8 +108,8 @@ for i in range(len(gameevents)):
         year=2026,
         month=gameevents[i].month,
         day=gameevents[i].day,
-        hour=12,
-        minute=5,
+        hour=hourb,
+        minute=minuteb + 15,
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
