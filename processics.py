@@ -76,8 +76,7 @@ for i in range(len(alleventslines)):
         print("start", starttime)
     if dtendeventpos == 0:
         eventdtendstr = alleventslines[i][6:]
-        endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
-        print("end", endtime)
+        print("end", eventdtendstr)
     if summaryeventpos == 0:
         summary = alleventslines[i][8:]
     if descriptioneventpos == 0:
