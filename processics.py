@@ -89,6 +89,11 @@ c = Calendar()
 for i in range(len(gameevents)):
     e = Event()
     e.name = gameevents[i].summary
+    if len(e.name) == 2:
+        category = e.name[0]
+    else:
+        category = e.name[5]
+    print("category", category)
     e.description = gameevents[i].description
     e.location = gameevents[i].location
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
