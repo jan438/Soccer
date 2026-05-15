@@ -41,7 +41,7 @@ eventcal = "Calendar/WK2026.ics"
 in_file = open(os.path.join(path, eventcal), 'r')
 count = 0
 lastpos = 0
-found = 0
+count32 = 0
 for line in in_file:
     newlinepos = line.find("\t\n")
     lastsubstring = line[lastpos:newlinepos]
@@ -119,7 +119,10 @@ for i in range(len(gameevents)):
     )
     if category == "3":
         idx = e.description.find("-")
-        print(e.description, idx)
+        opponent1 = e.description[:idx - 1]
+        opponent2 = e.description[idx + 2:]
+        print(count32, opponent1, opponent2)
+        count32 += 1
     c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
