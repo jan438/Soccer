@@ -111,7 +111,6 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
-    print(e.name)
     c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
