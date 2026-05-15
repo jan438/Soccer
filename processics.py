@@ -121,7 +121,8 @@ for i in range(len(gameevents)):
         idx = e.description.find("-")
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
-        print(count32, opponent1, opponent2)
+        e.description = opponent1 + " - " + opponent2
+        print(count32, e.description)
         count32 += 1
     c.events.add(e)
 
