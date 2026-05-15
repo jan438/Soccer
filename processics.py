@@ -95,7 +95,6 @@ for i in range(len(gameevents)):
         category = e.name[5]
     opponent1 = ""
     opponent2 = ""
-    print("category", category)
     e.description = gameevents[i].description
     e.location = gameevents[i].location
     [hourb, minuteb] = converttimetztolocalclock(gameevents[i].starttime)
@@ -118,6 +117,9 @@ for i in range(len(gameevents)):
         second=0,
         tzinfo=timezone(timedelta(seconds=7200))
     )
+    if category == "3":
+        idx = e.description.find("-")
+        print(e.description, idx)
     c.events.add(e)
 
 with open("PDF/WK2026_32.ics", "w") as f:
