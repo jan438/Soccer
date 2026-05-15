@@ -93,6 +93,8 @@ for i in range(len(gameevents)):
         category = e.name[0]
     else:
         category = e.name[5]
+    opponent1 = ""
+    opponent2 = ""
     print("category", category)
     e.description = gameevents[i].description
     e.location = gameevents[i].location
