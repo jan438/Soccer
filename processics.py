@@ -11,6 +11,24 @@ from datetime import datetime, timezone, timedelta
 
 alleventslines = []
 gameevents = []
+opponents32 = [
+"00opponent",
+"01opponent",
+"02opponent",
+"03opponent",
+"04opponent",
+"05opponent",
+"06opponent",
+"07opponent",
+"08opponent",
+"09opponent",
+"10opponent",
+"11opponent",
+"12opponent",
+"13opponent",
+"14opponent",
+"15opponent"
+]
 
 class GameEvent:
     def __init__(self, summary, day, description, location, starttime, endtime, month):
@@ -122,7 +140,7 @@ for i in range(len(gameevents)):
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
         e.description = opponent1 + " - " + opponent2
-        print(count32, e.description)
+        print(count32, e.description, opponents32[count32])
         count32 += 1
     c.events.add(e)
 
