@@ -6,7 +6,7 @@ import pytz
 
 c = Calendar()
 t = dt(2020, 4, 1, 18, 0)
-e = Event()
+e = Event(begin=t)
 e.begin = t.replace(tzinfo=gettz('America/New York'))
 c.events.add(e)
 
