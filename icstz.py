@@ -17,6 +17,16 @@ class GameEvent:
         self.endtime = endtime
         self.month = month
         
+def converttimetztolocalclock(timetz):
+    utc_string = timetz
+    utc_format = "%Y%m%dT%H%M%SZ"
+    local_tz = pytz.timezone('Europe/Amsterdam')
+    utc_dt = datetime.strptime(utc_string, utc_format)
+    local_dt = utc_dt
+    hour = local_dt.hour
+    minute = local_dt.minute
+    return [hour, minute]       
+        
 c = Calendar()
 t = datetime(2020, 4, 1, 18, 0)
 e = Event(begin=t)
@@ -79,5 +89,7 @@ for i in range(len(alleventslines)):
         gameevents.append(GameEvent(summary, day, description, location, starttime, endtime, month))
         
 print(len(gameevents), gameevents[0].starttime)
-         
+
+[hour, minute] = converttimetztolocalclock(gameevents[0].starttime)
+  
 key = input("Wait")
