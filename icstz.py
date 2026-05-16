@@ -28,4 +28,6 @@ with open("Calendar/WK2026_test_lines.ics", "r") as f:
         count += 1
     f.close()
     
+print("Count eventslines", len(alleventslines))
+
 key = input("Wait")
