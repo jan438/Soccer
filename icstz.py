@@ -78,6 +78,6 @@ for i in range(len(alleventslines)):
     if endeventpos == 0:
         gameevents.append(GameEvent(summary, day, description, location, starttime, endtime, month))
         
-print(len(gameevents), gameevents[0])
+print(len(gameevents), gameevents[0].starttime)
          
 key = input("Wait")
