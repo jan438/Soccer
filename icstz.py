@@ -6,6 +6,7 @@ import pytz
 
 t = dt(2020, 4, 1, 18, 0)
 e = Event()
+e.begin = t.replace(tzinfo=gettz('America/New York'))
 e.begin
 
 print(e)
