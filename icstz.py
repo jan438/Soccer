@@ -30,4 +30,38 @@ with open("Calendar/WK2026_test_lines.ics", "r") as f:
     
 print("Count eventslines", len(alleventslines))
 
+for i in range(len(alleventslines)):
+    neweventpos = alleventslines[i].find("BEGIN:VEVENT")
+    summaryeventpos = alleventslines[i].find("SUMMARY")
+    descriptioneventpos = alleventslines[i].find("DESCRIPTION")
+    locationeventpos = alleventslines[i].find("LOCATION")
+    dtstarteventpos = alleventslines[i].find("DTSTART")
+    dtendeventpos = alleventslines[i].find("DTEND")
+    endeventpos = alleventslines[i].find("END:VEVENT")
+    if neweventpos == 0:
+        day = 0
+        description = ""
+        location = ""
+        starttime = 0
+        endtime = 0
+        month = 0
+    if dtstarteventpos == 0:
+        eventdtstartstr = alleventslines[i][8:]
+        datevaluepos = alleventslines[i].find("VALUE=DATE:")
+        if datevaluepos == 8:
+            eventdtstartstr = alleventslines[i][19:]
+        year = int(eventdtstartstr[:4])
+        month = int(eventdtstartstr[4:6])
+        day = int(eventdtstartstr[6:8])
+        starttime = eventdtstartstr
+    if dtendeventpos == 0:
+        eventdtendstr = alleventslines[i][6:]
+        endtime = eventdtendstr[9:11] + ':' + eventdtendstr[11:13]
+    if summaryeventpos == 0:
+        summary = alleventslines[i][8:]
+    if descriptioneventpos == 0:
+        description = alleventslines[i][12:]
+    if locationeventpos == 0:
+        location = alleventslines[i][9:]
+        
 key = input("Wait")
