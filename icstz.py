@@ -4,6 +4,8 @@ from ics import Event, Calendar
 import os, time
 import pytz
 
+alleventslines = []
+
 c = Calendar()
 t = dt(2020, 4, 1, 18, 0)
 e = Event(begin=t)
@@ -15,11 +17,15 @@ with open("Calendar/WK2026_test_lines.ics", "w") as f:
     f.close()
     
 c = Calendar()
+count = 0
+lastpos = 0
 
 with open("Calendar/WK2026_test_lines.ics", "r") as f:
-    c = f.readlines()
+    for line in f:
+        newlinepos = line.find("\t\n")
+        lastsubstring = line[lastpos:newlinepos]
+        alleventslines.append(lastsubstring)
+        count += 1
     f.close()
     
-print(dir(c), c) 
-
 key = input("Wait")
