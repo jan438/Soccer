@@ -19,5 +19,7 @@ c = Calendar()
 with open("Calendar/WK2026_test_lines.ics", "r") as f:
     c = f.readlines()
     f.close()
+    
+print(c)
 
 key = input("Wait")
