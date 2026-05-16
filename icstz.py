@@ -4,10 +4,14 @@ from ics import Event, Calendar
 import os, time
 import pytz
 
+c = Calendar()
 t = dt(2020, 4, 1, 18, 0)
 e = Event()
 e.begin = t.replace(tzinfo=gettz('America/New York'))
+c.events.add(e)
 
-print(e)
-
+with open("Calendar/WK2026_test_lines.ics", "w") as f:
+    f.writelines(c)
+    f.close()
+    
 key = input("Wait")
