@@ -7,7 +7,6 @@ import pytz
 c = Calendar()
 t = dt(2020, 4, 1, 18, 0)
 e = Event(begin=t)
-e.begin = t.replace(tzinfo=gettz('America/New York'))
 c.events.add(e)
 
 with open("Calendar/WK2026_test_lines.ics", "w") as f:
