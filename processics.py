@@ -144,7 +144,7 @@ for i in range(len(gameevents)):
         count32 += 1
     c.events.add(e)
 
-with open("PDF/WK2026_32.ics", "w") as f:
+with open("Calendar/WK2026_32.ics", "w") as f:
     f.writelines(c)
     f.close()
 
