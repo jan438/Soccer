@@ -91,5 +91,7 @@ for i in range(len(alleventslines)):
 print(len(gameevents), gameevents[0].starttime)
 
 [hour, minute] = converttimetztolocalclock(gameevents[0].starttime)
-  
+
+print(hour, minute)
+
 key = input("Wait")
