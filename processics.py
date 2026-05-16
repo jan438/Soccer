@@ -144,8 +144,12 @@ for i in range(len(gameevents)):
         count32 += 1
     c.events.add(e)
 
-with open("Calendar/WK2026_32.ics", "w") as f:
+with open("Calendar/WK2026_32_lines.ics", "w") as f:
     f.writelines(c)
     f.close()
-
+    
+with open("Calendar/WK2026_32_serialize.ics", "w") as f:
+    f.write(c.serialize())
+    f.close()
+    
 key = input("Wait")
