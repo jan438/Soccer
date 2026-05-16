@@ -1,5 +1,5 @@
 from dateutil.tz import gettz
-from datetime import datetime as dt
+from datetime import datetime
 from ics import Event, Calendar
 import os, time
 import pytz
@@ -18,7 +18,7 @@ class GameEvent:
         self.month = month
         
 c = Calendar()
-t = dt(2020, 4, 1, 18, 0)
+t = datetime(2020, 4, 1, 18, 0)
 e = Event(begin=t)
 
 c.events.add(e)
