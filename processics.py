@@ -123,7 +123,7 @@ for i in range(len(gameevents)):
         hour=hourb,
         minute=minuteb,
         second=0,
-        tzinfo=timezone(timedelta(seconds=7200))
+        tzinfo=None
     )
     [houre, minutee] = converttimetztolocalclock(gameevents[i].endtime)
     e.end = datetime(
@@ -133,7 +133,7 @@ for i in range(len(gameevents)):
         hour=hourb,
         minute=minuteb + 15,
         second=0,
-        tzinfo=timezone(timedelta(seconds=7200))
+        tzinfo=None
     )
     if category == "3":
         idx = e.description.find("-")
