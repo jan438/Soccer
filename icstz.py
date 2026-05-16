@@ -5,7 +5,18 @@ import os, time
 import pytz
 
 alleventslines = []
+gameevents = []
 
+class GameEvent:
+    def __init__(self, summary, day, description, location, starttime, endtime, month):
+        self.summary = summary
+        self.day = day
+        self.description = description
+        self.location = location
+        self.starttime = starttime
+        self.endtime = endtime
+        self.month = month
+        
 c = Calendar()
 t = dt(2020, 4, 1, 18, 0)
 e = Event(begin=t)
@@ -40,6 +51,7 @@ for i in range(len(alleventslines)):
     endeventpos = alleventslines[i].find("END:VEVENT")
     if neweventpos == 0:
         day = 0
+        summary = ""
         description = ""
         location = ""
         starttime = 0
@@ -63,5 +75,7 @@ for i in range(len(alleventslines)):
         description = alleventslines[i][12:]
     if locationeventpos == 0:
         location = alleventslines[i][9:]
-        
+    if endeventpos == 0:
+        gameevents.append(GameEvent(summary, day, description, location, starttime, endtime, month))
+         
 key = input("Wait")
