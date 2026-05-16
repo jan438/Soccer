@@ -20,6 +20,6 @@ with open("Calendar/WK2026_test_lines.ics", "r") as f:
     c = f.readlines()
     f.close()
     
-print(c)
+print(dir(c), c) 
 
 key = input("Wait")
