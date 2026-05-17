@@ -119,7 +119,7 @@ with open(file_to_open, 'r') as file:
         count += 1
 print("Count csv", count)
 
-eventcal = "Calendar/WK2026.ics"
+eventcal = "Calendar/WK2026new.ics"
 in_file = open(os.path.join(path, eventcal), 'r')
 count = 0
 lastpos = 0
@@ -240,7 +240,7 @@ pdfmetrics.registerFont(TTFont('LiberationSerif', 'LiberationSerif-Regular.ttf')
 pdfmetrics.registerFont(TTFont('LiberationSerifBold', 'LiberationSerif-Bold.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifItalic', 'LiberationSerif-Italic.ttf'))
 pdfmetrics.registerFont(TTFont('LiberationSerifBoldItalic', 'LiberationSerif-BoldItalic.ttf'))
-my_canvas = canvas.Canvas("PDF/WorldCup2026" + mapversie + ".pdf")
+my_canvas = canvas.Canvas("PDF/WorldCup2026new.pdf")
 
 my_canvas.setTitle("World Cup 2026")
 
