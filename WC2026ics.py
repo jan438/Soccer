@@ -174,10 +174,7 @@ print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 
-sortedevents = gameevents.sort(key=lambda x: x.starttime)
-tmpevent = gameevents[0]
-gameevents[0] = gameevents[1]
-gameevents[1] = tmpevent
+gameevents.sort(key=lambda x: x.starttime)
 
 gostcolors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
