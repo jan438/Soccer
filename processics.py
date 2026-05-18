@@ -51,10 +51,8 @@ def converttimetztolocalclock(timetz):
     return [hour, minute]
     
 def select32(resultpoule):
-    print("select32", resultpoule)
-    #selected32 = ""
-    #if resultpoule == "Winner C":
-        #selected32 = "ABC"
+    if resultpoule == "Winner C":
+        print("select32", resultpoule)
     #return selected32
     
 if sys.platform[0] == 'l':
