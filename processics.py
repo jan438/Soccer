@@ -52,10 +52,10 @@ def converttimetztolocalclock(timetz):
     
 def select32(resultpoule):
     print("select32", resultpoule)
-    selected32 = ""
-    if resultpoule == "Winner C":
-        selected32 = "ABC"
-    return selected32
+    #selected32 = ""
+    #if resultpoule == "Winner C":
+        #selected32 = "ABC"
+    #return selected32
     
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -143,13 +143,11 @@ for i in range(len(gameevents)):
         tzinfo=None
     )
     if category == "3":
-        print(count32, e.description)
         idx = e.description.find("-")
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
-        #opponent1 = select32(opponent1)
-        #e.description = opponent1 + " - " + opponent2
-        #print(count32, e.description, opponents32[count32])
+        opponent1 = select32(opponent1)
+        opponent2 = select32(opponent2)
         count32 += 1
     c.events.add(e)
 
