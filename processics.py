@@ -51,9 +51,10 @@ def converttimetztolocalclock(timetz):
     return [hour, minute]
     
 def select32(resultpoule):
+    selected32 = resultpoule
     if resultpoule == "Winner C":
-        print("select32", resultpoule)
-    #return selected32
+        selected32 = "ABC"
+    return selected32
     
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -146,6 +147,7 @@ for i in range(len(gameevents)):
         opponent2 = e.description[idx + 2:]
         opponent1 = select32(opponent1)
         opponent2 = select32(opponent2)
+        e.description = opponent1 + " - " + opponent2
         count32 += 1
     c.events.add(e)
 
