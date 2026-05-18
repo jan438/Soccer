@@ -94,10 +94,6 @@ def drawHorizontalRect(c, x, y, w, h, mode, col1, col2):
     if mode == "r":
         c.linearGradient(x, y, x + w, y, (col1, col2, col1), (1, 0.5, 0))
     c.restoreState()
-    
-def myfunct(e):
-    return e['starttime']
-
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
