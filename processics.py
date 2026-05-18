@@ -150,7 +150,9 @@ for i in range(len(gameevents)):
         e.description = opponent1 + " - " + opponent2
         count32 += 1
     c.events.add(e)
-print(len(c.events))
+listevents = list(c.events)
+for i in range(len(listevents)):
+    print(listevents[i])
 
 with open("Calendar/WK2026ics.ics", "w") as f:
     f.writelines(c)
