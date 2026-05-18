@@ -94,6 +94,10 @@ def drawHorizontalRect(c, x, y, w, h, mode, col1, col2):
     if mode == "r":
         c.linearGradient(x, y, x + w, y, (col1, col2, col1), (1, 0.5, 0))
     c.restoreState()
+    
+def myfunct(e):
+    return e['starttime']
+
 
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
@@ -169,6 +173,9 @@ for i in range(len(alleventslines)):
 print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
+
+gameevents[0] = gameevents[1]
+gameevents[1] = gameevents[0]
 
 gostcolors = ["#88255F","#DB4035","#FF9933","#FAD000","#AFB83B","#7ECC49","#E7E84F","#299438",
           "#A8A202","#158FAD","#14AAF5","#CD0027","#4073FF","#D38895","#884DFF","#AF38EB"]
