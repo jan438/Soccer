@@ -174,6 +174,7 @@ print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
 
+sortedevents = gameevents.sort(key=lambda x: x.starttime)
 tmpevent = gameevents[0]
 gameevents[0] = gameevents[1]
 gameevents[1] = tmpevent
