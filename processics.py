@@ -143,6 +143,7 @@ for i in range(len(gameevents)):
         tzinfo=None
     )
     if category == "3":
+        print(count32, e.description)
         idx = e.description.find("-")
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
