@@ -55,7 +55,7 @@ if sys.platform[0] == 'l':
 if sys.platform[0] == 'w':
     path = "C:/Users/janbo/OneDrive/Documents/GitHub/Soccer"
 os.chdir(path)
-eventcal = "Calendar/WK2026.ics"
+eventcal = "Calendar/WK2026new.ics"
 in_file = open(os.path.join(path, eventcal), 'r')
 count = 0
 lastpos = 0
@@ -144,12 +144,8 @@ for i in range(len(gameevents)):
         count32 += 1
     c.events.add(e)
 
-with open("Calendar/WK2026_32_lines.ics", "w") as f:
+with open("Calendar/WK2026ics.ics", "w") as f:
     f.writelines(c)
     f.close()
-    
-with open("Calendar/WK2026_32_serialize.ics", "w") as f:
-    f.write(c.serialize())
-    f.close()
-    
+
 key = input("Wait")
