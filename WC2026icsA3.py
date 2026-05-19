@@ -168,8 +168,8 @@ for i in range(len(alleventslines)):
         gameevents.append(GameEvent(summary, day, description, location, starttime, endtime, month))
 print("Count game events", len(gameevents))
 
-# 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
-# 842 pixels = 297 mm A3 width, 1191 pixels = 420 mm A3 height
+# 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height poule_width 48
+# 842 pixels = 297 mm A3 width, 1191 pixels = 420 mm A3 height poule_width 68
 
 gameevents.sort(key=lambda x: x.starttime)
 
@@ -196,7 +196,7 @@ left_padding = 0
 bottom_padding = 0
 width = 595
 height = 842
-poule_width = 48
+poule_width = 68
 poule_height = 205
 pouleland_height = 40
 outsidearea = "#9e9e9e"
