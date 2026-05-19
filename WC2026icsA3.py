@@ -169,6 +169,7 @@ for i in range(len(alleventslines)):
 print("Count game events", len(gameevents))
 
 # 595 pixels = 210 mm A4 width, 842 pixels = 297 mm A4 height
+# 842 pixels = 297 mm A3 width, 1191 pixels = 420 mm A3 height
 
 gameevents.sort(key=lambda x: x.starttime)
 
