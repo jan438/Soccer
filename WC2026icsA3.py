@@ -206,7 +206,7 @@ poulerect_y = 735
 teamspp = 4
 poule_x = left_margin
 poule_margin = 5
-cadre_pouleland = True
+cadre_pouleland = False
 maxnamewidth = 42.0
 scalesimple = 0.33
 xsimple = -56
@@ -314,9 +314,9 @@ for poule in range(12):
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         if nameinlogo[0] == "n":
             my_canvas.setFillColor(HexColor("#000000"))
-            my_canvas.setFont(socfont, 7)
-            namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 7)
-            my_canvas.drawString(left_margin + 2 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
+            my_canvas.setFont(socfont, 10)
+            namewidth = pdfmetrics.stringWidth(nationsdata[teamcounter][0], socfont, 10)
+            my_canvas.drawString(left_margin + 11 + poule * poule_width + 0.5 * (maxnamewidth - namewidth), pouleland_y + 1, nationsdata[teamcounter][0])
         if nationsdata[teamcounter][10] != "e":
             drawing = scaleSVG("Flags/" + nationsdata[teamcounter][8] + "tw.svg", 0.25)
             renderPDF.draw(drawing, my_canvas, float(nationsdata[teamcounter][6]), float(nationsdata[teamcounter][7]))
@@ -328,7 +328,7 @@ for i in range(len(cities)):
     my_canvas.setFillColor(HexColor(gostcolors[i]))
     my_canvas.circle(float(cities[i][1][0]), float(cities[i][1][1]), 2.0, stroke = 0, fill = 1)
     my_canvas.setFillColor(HexColor("#ffffff"))
-    my_canvas.setFont(socfont, 7)
+    my_canvas.setFont(socfont, 10)
     my_canvas.drawString(float(cities[i][2][0]), float(cities[i][2][1]), cities[i][0])
     
 calindex = 0
