@@ -340,7 +340,7 @@ categoryrectheight = 9
  
 for j in range(13):
     if j == 0:
-        my_canvas.setFont(socfont, 8)
+        my_canvas.setFont(socfont, 10)
         my_canvas.setFillColor(HexColor(fifacolor))
         my_canvas.rect(left_margin, gameline + categoryrectdy, 8 * colwidthgame, categoryrectheight, stroke = 0, fill = 1)
         my_canvas.setFillColor(HexColor("#ffffff"))
@@ -363,7 +363,7 @@ for j in range(13):
             break
         drawing = scaleSVG("SVG/calendar-blank.svg", 0.42)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, gameline - 2)
-        my_canvas.setFont(socfont, 7)
+        my_canvas.setFont(socfont, 9)
         my_canvas.setFillColor(HexColor("#ffffff"))
         if category >= "A" and category <= "L":
             description = gameevents[calindex].description
@@ -377,10 +377,10 @@ for j in range(13):
             opponent1 = description[:idx - 1]
             opponent2 = description[idx + 2:]
         else:
-            my_canvas.setFont(socfontbold, 7)
+            my_canvas.setFont(socfontbold, 9)
             my_canvas.setFillColor(HexColor("#ffffff"))
             my_canvas.drawString(left_margin + i * colwidthgame + 5.5, gameline + 8.0, category)
-        my_canvas.setFont(socfont, 7)  
+        my_canvas.setFont(socfont, 9)  
         my_canvas.setFillColor(HexColor("#000000"))
         daystr = str(gameevents[calindex].day)
         monthstr = str(gameevents[calindex].month)
