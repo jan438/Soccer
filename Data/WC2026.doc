@@ -52,3 +52,11 @@ leftmargin    12 * poule_width  rightmargin
    13.0          12 * 68 = 816    13.0
    
               poule_height  275
+              
+Categoryregio
+
+categoryrectdy = 15
+categorystrdy = 17
+categoryrectheight = 9
+rowheightgame = 18
+gameline = 550
