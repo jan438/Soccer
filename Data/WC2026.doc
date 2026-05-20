@@ -39,12 +39,16 @@ heightsvg = 857  heightpdf = 857 * 0,33 = 282.81
                                
 Pouleregio
 
-A4 w 595
+A4 w 595  h 842
 
 leftmargin   12 * poule_width  rightmargin
    9.4          12 * 48 = 576    9.6
    
-A3 w 842
+             poule_height 205
+   
+A3 w 842  h 1191
 
 leftmargin    12 * poule_width  rightmargin
    13.0          12 * 68 = 816    13.0
+   
+              poule_height  250
