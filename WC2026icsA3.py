@@ -198,7 +198,7 @@ width = 595
 height = 842
 poule_width = 68
 poule_height = 275
-pouleland_height = 45
+pouleland_height = 50
 outsidearea = "#9e9e9e"
 fifacolor = "#326295"
 left_margin = 13.0
@@ -294,7 +294,7 @@ teamcounter = 0
 eteamcouner = 0
 my_canvas.setStrokeColor(black)
 for poule in range(12):
-    pouleland_y = 895
+    pouleland_y = 915
     my_canvas.setFont(socfont, 35)
     my_canvas.setFillColor(HexColor("#000000"))
     my_canvas.drawString(left_margin + poule * poule_width + 17.0, poulerect_y + poule_height - 30, chr(65 + poule))
