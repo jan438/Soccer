@@ -222,7 +222,7 @@ ccol1 = HexColor("#9e9e9e") # dark gray
 ccol2 = HexColor("#b0b0b0") # light gray
 lcol = HexColor("#c3ff9e") # legenda green
 
-rowheightgame = 18
+rowheightgame = 22
 gameline = 550
 legendawidth = 68
 legendarowheight = 8
