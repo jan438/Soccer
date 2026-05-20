@@ -260,7 +260,7 @@ renderPDF.draw(drawing, my_canvas, 75, 1050)
 my_canvas.setFont(socfont, 40)
 my_canvas.setFillColor(HexColor("#000000"))
 my_canvas.setTitle("World Cup Soccer 2026 " + version)
-my_canvas.drawString(200, 1055, "World Cup Soccer 2026")
+my_canvas.drawString(250, 1055, "World Cup Soccer 2026")
 
 for poule in range(12):
     if poule % 2 == 0:
