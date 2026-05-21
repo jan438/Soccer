@@ -55,8 +55,17 @@ leftmargin    12 * poule_width  rightmargin
               
 Categoryregio
 
+A3
+
 categoryrectdy = 15
 categorystrdy = 17
-categoryrectheight = 9
-rowheightgame = 18
-gameline = 550
+categoryrectheight = 11
+rowheightgame = 22
+gameline = 700
+
+Mapregio
+
+A3
+
+xsimple = -56
+ysimple = 10
