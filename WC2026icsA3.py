@@ -228,13 +228,13 @@ legendawidth = 80
 legendarowheight = 8
 
 legenda1x = 45
-legenda1y = 5
+legenda1y = 50
 legenda1l = 16
 legenda2x = 210
-legenda2y = 5
+legenda2y = 50
 legenda2l = 16
 legenda3x = 375
-legenda3y = 5
+legenda3y = 50
 legenda3l = 16
 
 countnations = 48
