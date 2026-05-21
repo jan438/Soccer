@@ -223,7 +223,7 @@ ccol2 = HexColor("#b0b0b0") # light gray
 lcol = HexColor("#c3ff9e") # legenda green
 
 rowheightgame = 22
-gameline = 550
+gameline = 700
 legendawidth = 68
 legendarowheight = 8
 
