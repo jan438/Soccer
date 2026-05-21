@@ -224,7 +224,7 @@ lcol = HexColor("#c3ff9e") # legenda green
 
 rowheightgame = 22
 gameline = 700
-legendawidth = 68
+legendawidth = 80
 legendarowheight = 8
 
 legenda1x = 45
