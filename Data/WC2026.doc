@@ -67,5 +67,6 @@ Mapregio
 
 A3
 
-xsimple = -56
-ysimple = 10
+scalesimple = 0.40
+xsimple = 0
+ysimple = 100
