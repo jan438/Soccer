@@ -233,7 +233,7 @@ legenda1l = 16
 legenda2x = 310
 legenda2y = 50
 legenda2l = 16
-legenda3x = 375
+legenda3x = 520
 legenda3y = 50
 legenda3l = 16
 
