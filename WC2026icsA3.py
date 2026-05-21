@@ -336,7 +336,7 @@ limitcalindex = 103
 gameindex = 0
 categoryrectdy = 15
 categorystrdy = 17
-categoryrectheight = 9
+categoryrectheight = 11
  
 for j in range(13):
     if j == 0:
