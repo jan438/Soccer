@@ -227,10 +227,10 @@ gameline = 700
 legendawidth = 80
 legendarowheight = 8
 
-legenda1x = 45
+legenda1x = 100
 legenda1y = 50
 legenda1l = 16
-legenda2x = 300
+legenda2x = 310
 legenda2y = 50
 legenda2l = 16
 legenda3x = 375
