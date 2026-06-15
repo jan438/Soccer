@@ -86,7 +86,10 @@ def select32(resultpoule):
     if resultpoule == "Runnerup K":
         selected32 = "Runnerup Kt"
     if resultpoule == "Runnerup L":
-        selected32 = "Runnerup Lt"        
+        selected32 = "Runnerup Lt"
+        
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"          
     return selected32
     
 if sys.platform[0] == 'l':
