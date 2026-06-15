@@ -101,6 +101,10 @@ def select32(resultpoule):
         selected32 = "3rd AEHIJt"    
     if resultpoule == "3rd BEFIJ":
         selected32 = "3rd BEFIJt"
+    if resultpoule == "3rd EFGIJ":
+        selected32 = "3rd EFGIJt"    
+    if resultpoule == "3rd DEIJL":
+        selected32 = "3rd DEIJLt"
             
     return selected32
     
