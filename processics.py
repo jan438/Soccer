@@ -89,7 +89,32 @@ def select32(resultpoule):
         selected32 = "Runnerup Lt"
         
     if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"          
+        selected32 = "3rd ABCDFt"    
+    if resultpoule == "3rd CDFGH":
+        selected32 = "3rd CDFGHt"
+    if resultpoule == "3rd CEFHI":
+        selected32 = "3rd CEFHIt"
+    if resultpoule == "3rd EHIJK":
+        selected32 = "3rd EHIJKt"
+        
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"    
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"
+        
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"    
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"
+    if resultpoule == "3rd ABCDF":
+        selected32 = "3rd ABCDFt"     
+            
     return selected32
     
 if sys.platform[0] == 'l':
