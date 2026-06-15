@@ -11,24 +11,6 @@ from datetime import datetime, timezone, timedelta
 
 alleventslines = []
 gameevents = []
-opponents32 = [
-"00opponent",
-"01opponent",
-"02opponent",
-"03opponent",
-"04opponent",
-"05opponent",
-"06opponent",
-"07opponent",
-"08opponent",
-"09opponent",
-"10opponent",
-"11opponent",
-"12opponent",
-"13opponent",
-"14opponent",
-"15opponent"
-]
 
 class GameEvent:
     def __init__(self, summary, day, description, location, starttime, endtime, month):
@@ -53,31 +35,58 @@ def converttimetztolocalclock(timetz):
 def select32(resultpoule):
     selected32 = resultpoule
     if resultpoule == "Winner A":
-        selected32 = "Winner Atodo"
+        selected32 = "Winner At"
     if resultpoule == "Winner B":
-        selected32 = "Winner Btodo"
+        selected32 = "Winner Bt"
     if resultpoule == "Winner C":
-        selected32 = "Winner Ctodo"
+        selected32 = "Winner Ct"
     if resultpoule == "Winner D":
-        selected32 = "Winner Dtodo"
+        selected32 = "Winner Dt"
         
     if resultpoule == "Winner E":
-        selected32 = "Winner Etodo"
+        selected32 = "Winner Et"
     if resultpoule == "Winner F":
-        selected32 = "Winner Ftodo"
+        selected32 = "Winner Ft"
     if resultpoule == "Winner G":
-        selected32 = "Winner Gtodo"
+        selected32 = "Winner Gt"
     if resultpoule == "Winner H":
-        selected32 = "Winner Htodo"
+        selected32 = "Winner Ht"
         
     if resultpoule == "Winner I":
-        selected32 = "Winner Itodo"
+        selected32 = "Winner It"
     if resultpoule == "Winner J":
-        selected32 = "Winner Jtodo"
+        selected32 = "Winner Jt"
     if resultpoule == "Winner K":
-        selected32 = "Winner Ktodo"
+        selected32 = "Winner Kt"
     if resultpoule == "Winner L":
-        selected32 = "Winner Ltodo"
+        selected32 = "Winner Lt"
+        
+    if resultpoule == "Runnerup A":
+        selected32 = "Runnerup At"
+    if resultpoule == "Runnerup B":
+        selected32 = "Runnerup Bt"
+    if resultpoule == "Runnerup C":
+        selected32 = "Runnerup Ct"
+    if resultpoule == "Runnerup D":
+        selected32 = "Runnerup Dt"
+        
+    if resultpoule == "Runnerup E":
+        selected32 = "Runnerup Et"
+    if resultpoule == "Runnerup F":
+        selected32 = "Runnerup Ft"
+    if resultpoule == "Runnerup G":
+        selected32 = "Runnerup Gt"
+    if resultpoule == "Runnerup H":
+        selected32 = "Runnerup Ht"
+        
+    if resultpoule == "Runnerup I":
+        selected32 = "Runnerup It"
+    if resultpoule == "Runnerup J":
+        selected32 = "Runnerup Jt"
+    if resultpoule == "Runnerup K":
+        selected32 = "Runnerup Kt"
+    if resultpoule == "Runnerup L":
+        selected32 = "Runnerup Lt"        
     return selected32
     
 if sys.platform[0] == 'l':
