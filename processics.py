@@ -60,6 +60,24 @@ def select32(resultpoule):
         selected32 = "Winner Ctodo"
     if resultpoule == "Winner D":
         selected32 = "Winner Dtodo"
+        
+    if resultpoule == "Winner E":
+        selected32 = "Winner Etodo"
+    if resultpoule == "Winner F":
+        selected32 = "Winner Ftodo"
+    if resultpoule == "Winner G":
+        selected32 = "Winner Gtodo"
+    if resultpoule == "Winner H":
+        selected32 = "Winner Htodo"
+        
+    if resultpoule == "Winner I":
+        selected32 = "Winner Itodo"
+    if resultpoule == "Winner J":
+        selected32 = "Winner Jtodo"
+    if resultpoule == "Winner K":
+        selected32 = "Winner Ktodo"
+    if resultpoule == "Winner L":
+        selected32 = "Winner Ltodo"
     return selected32
     
 if sys.platform[0] == 'l':
