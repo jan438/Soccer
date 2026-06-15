@@ -97,23 +97,10 @@ def select32(resultpoule):
     if resultpoule == "3rd EHIJK":
         selected32 = "3rd EHIJKt"
         
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"    
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"
-        
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"    
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"
-    if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"     
+    if resultpoule == "3rd AEHIJ":
+        selected32 = "3rd AEHIJt"    
+    if resultpoule == "3rd BEFIJ":
+        selected32 = "3rd BEFIJt"
             
     return selected32
     
