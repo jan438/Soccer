@@ -169,7 +169,6 @@ for i in range(len(gameevents)):
         category = e.name[0]
     else:
         category = e.name[5]
-    print(i, category)
     opponent1 = ""
     opponent2 = ""
     e.description = gameevents[i].description
@@ -195,6 +194,7 @@ for i in range(len(gameevents)):
         tzinfo=None
     )
     if category == "3":
+        print(i, category)
         idx = e.description.find("-")
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
