@@ -36,6 +36,7 @@ def select32(resultpoule):
     selected32 = resultpoule
     print(resultpoule)
     if resultpoule == "Winner A":
+        print(resultpoule, "Winner A")
         selected32 = "Mexico"
     if resultpoule == "Winner B":
         selected32 = "Winner Bt"
