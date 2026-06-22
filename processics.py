@@ -36,7 +36,6 @@ def select32(resultpoule):
     selected32 = resultpoule
     if resultpoule == "Winner A":
         selected32 = "Mexico"
-        print(resultpoule, "Winner A", selected32)
     if resultpoule == "Winner B":
         selected32 = "Winner Bt"
     if resultpoule == "Winner C":
@@ -170,6 +169,7 @@ for i in range(len(gameevents)):
         category = e.name[0]
     else:
         category = e.name[5]
+    print(i, category)
     opponent1 = ""
     opponent2 = ""
     e.description = gameevents[i].description
