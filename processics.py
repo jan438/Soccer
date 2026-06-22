@@ -194,11 +194,9 @@ for i in range(len(gameevents)):
         tzinfo=None
     )
     if category == "3":
-        print(i, category)
         idx = e.description.find("-")
         opponent1 = e.description[:idx - 1]
         opponent2 = e.description[idx + 2:]
-        print(i, category, opponent1, opponent2)
         opponent1 = select32(opponent1)
         opponent2 = select32(opponent2)
         print("32", i, category, opponent1, opponent2)
