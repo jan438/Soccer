@@ -34,17 +34,18 @@ def converttimetztolocalclock(timetz):
     
 def select32(resultpoule):
     selected32 = resultpoule
+    print(resultpoule)
     if resultpoule == "Winner A":
-        selected32 = "Winner At"
+        selected32 = "Mexico"
     if resultpoule == "Winner B":
         selected32 = "Winner Bt"
     if resultpoule == "Winner C":
         selected32 = "Winner Ct"
     if resultpoule == "Winner D":
-        selected32 = "Winner Dt"
+        selected32 = "V. Staten"
         
     if resultpoule == "Winner E":
-        selected32 = "Winner Et"
+        selected32 = "Duitsland"
     if resultpoule == "Winner F":
         selected32 = "Winner Ft"
     if resultpoule == "Winner G":
