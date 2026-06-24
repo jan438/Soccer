@@ -55,7 +55,7 @@ def select32(resultpoule):
     if resultpoule == "Winner I":
         selected32 = "Winner It"
     if resultpoule == "Winner J":
-        selected32 = "Winner Jt"
+        selected32 = "Argentinië"
     if resultpoule == "Winner K":
         selected32 = "Winner Kt"
     if resultpoule == "Winner L":
