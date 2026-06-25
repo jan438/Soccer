@@ -37,9 +37,9 @@ def select32(resultpoule):
     if resultpoule == "Winner A":
         selected32 = "Mexico"
     if resultpoule == "Winner B":
-        selected32 = "Winner Bt"
+        selected32 = "Zwitserland"
     if resultpoule == "Winner C":
-        selected32 = "Winner Ct"
+        selected32 = "Brazilië"
     if resultpoule == "Winner D":
         selected32 = "V. Staten"
         
@@ -62,11 +62,11 @@ def select32(resultpoule):
         selected32 = "Winner Lt"
         
     if resultpoule == "Runnerup A":
-        selected32 = "Runnerup At"
+        selected32 = "Zuid Afrika"
     if resultpoule == "Runnerup B":
-        selected32 = "Runnerup Bt"
+        selected32 = "Canada"
     if resultpoule == "Runnerup C":
-        selected32 = "Runnerup Ct"
+        selected32 = "Marokko"
     if resultpoule == "Runnerup D":
         selected32 = "Runnerup Dt"
         
