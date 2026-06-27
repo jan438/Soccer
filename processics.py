@@ -89,9 +89,9 @@ def select32(resultpoule):
         selected32 = "Runnerup Lt"
         
     if resultpoule == "3rd ABCDF":
-        selected32 = "3rd ABCDFt"    
+        selected32 = "Paraguay"    
     if resultpoule == "3rd CDFGH":
-        selected32 = "3rd CDFGHt"
+        selected32 = "Zweden"
     if resultpoule == "3rd CEFHI":
         selected32 = "3rd CEFHIt"
     if resultpoule == "3rd EHIJK":
