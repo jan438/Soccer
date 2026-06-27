@@ -1,7 +1,7 @@
-1  Bosnië en H.   Match 81 1  juli  V. Staten
-2  Paraguay       Match 74 29 juni  Duitsland
+1  Bosnië en H.   Match 81 V. Staten BEFIJt
+2  Paraguay       Match 74 Duitsland ABCDFt
 3  Ecuador
-4  Zweden         Match 77 30 juni  Frankrijk        
+4  Zweden         Match 77 Frankrijk  CDFGHt
 5  Senegal
 6
 7  Colombia
