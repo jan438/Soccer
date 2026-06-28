@@ -59,7 +59,7 @@ def select32(resultpoule):
     if resultpoule == "Winner K":
         selected32 = "Colombia"
     if resultpoule == "Winner L":
-        selected32 = "Winner Lt"
+        selected32 = "Engeland"
         
     if resultpoule == "Runnerup A":
         selected32 = "Zuid Afrika"
@@ -86,7 +86,7 @@ def select32(resultpoule):
     if resultpoule == "Runnerup K":
         selected32 = "Portugal"
     if resultpoule == "Runnerup L":
-        selected32 = "Runnerup Lt"
+        selected32 = "Kroatië"
         
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
