@@ -1,5 +1,8 @@
 Round 32
 
+SUMMARY:#073 32   Runnerup A - Runnerup B
+SUMMARY:#076 32   Runnerup C - Runnerup       
+SUMMARY:#074 32   Winner E - 3rd ABCDF
 
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
