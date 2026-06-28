@@ -1,31 +1,22 @@
-1  Bosnië en H.   Match 81 V. Staten BEFIJt
-2  Paraguay       Match 74 Duitsland ABCDFt
-3  Ecuador
-4  Zweden         Match 77 Frankrijk  CDFGHt
-5  Senegal
-6
-7  Colombia
-8  Portugal
-9  Engeland
-10 Ghana
+
 
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
     if resultpoule == "3rd CDFGH":
         selected32 = "Zweden"
     if resultpoule == "3rd CEFHI":
-        selected32 = "3rd CEFHIt"   tegen mexico
+        selected32 = "3rd CEFHIt"   ecuador tegen mexico
     if resultpoule == "3rd EHIJK":
-        selected32 = "3rd EHIJKt"    tegen engeland
+        selected32 = "3rd EHIJKt"   dr congo tegen engeland
         
     if resultpoule == "3rd AEHIJ":
-        selected32 = "3rd AEHIJt"     tegen belgie
+        selected32 = "3rd AEHIJt"    senegal tegen belgie
     if resultpoule == "3rd BEFIJ":
         selected32 = "Bosnië en H."
     if resultpoule == "3rd EFGIJ":   
-        selected32 = "3rd EFGIJt"      tegen zwitserlnd  
+        selected32 = "3rd EFGIJt"    algerije tegen zwitserlnd  
     if resultpoule == "3rd DEIJL":
-        selected32 = "3rd DEIJLt"      tegen colombia
+        selected32 = "3rd DEIJLt"     ghana tegen colombia
         
 1. DR Congo - 4 points (+1 GD) - QUALIFIED
 2. Sweden - 4 points (0 GD) - QUALIFIED
