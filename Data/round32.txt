@@ -87,14 +87,14 @@ Output processics
 32 73 3 Brazilië Japan
 32 74 3 Duitsland Paraguay
 32 75 3 Nederland Marokko
-32 76 3 Ivoorkust Kroatië
+32 76 3 Ivoorkust Kroatië      *** DESCRIPTION:Winner C - Runnerup F
 32 77 3 Frankrijk Zweden
 32 78 3 Mexico Ecuador
 32 79 3 Engeland DR Congo
 32 80 3 België Senegal
 32 81 3 V. Staten Bosnië en H.
 32 82 3 Spanje Oostenrijk
-32 83 3 Portugal Kroatië
+32 83 3 Portugal Kroatië       *** DESCRIPTION:Runnerup K - Runnerup L
 32 84 3 Zwitserland Algerije
 32 85 3 Australië Egypte
 32 86 3 Argentinië Kaapverdië
