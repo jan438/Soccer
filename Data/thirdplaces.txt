@@ -9,5 +9,21 @@
 9  Engeland
 10 Ghana
 
-
+    if resultpoule == "3rd ABCDF":
+        selected32 = "Paraguay"    
+    if resultpoule == "3rd CDFGH":
+        selected32 = "Zweden"
+    if resultpoule == "3rd CEFHI":
+        selected32 = "3rd CEFHIt"
+    if resultpoule == "3rd EHIJK":
+        selected32 = "3rd EHIJKt"
+        
+    if resultpoule == "3rd AEHIJ":
+        selected32 = "3rd AEHIJt"    
+    if resultpoule == "3rd BEFIJ":
+        selected32 = "Bosnië en H."
+    if resultpoule == "3rd EFGIJ":
+        selected32 = "3rd EFGIJt"    
+    if resultpoule == "3rd DEIJL":
+        selected32 = "3rd DEIJLt"
 
