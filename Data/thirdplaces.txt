@@ -14,7 +14,7 @@
     if resultpoule == "3rd CDFGH":
         selected32 = "Zweden"
     if resultpoule == "3rd CEFHI":
-        selected32 = "3rd CEFHIt"
+        selected32 = "3rd Algerije"
     if resultpoule == "3rd EHIJK":
         selected32 = "3rd EHIJKt"
         
@@ -26,4 +26,13 @@
         selected32 = "3rd EFGIJt"    
     if resultpoule == "3rd DEIJL":
         selected32 = "3rd DEIJLt"
+        
+1. DR Congo - 4 points (+1 GD) - QUALIFIED
+2. Sweden - 4 points (0 GD) - QUALIFIED
+3. Ecuador - 4 points (0 GD) - QUALIFIED
+4. Ghana - 4 points (0 GD) - QUALIFIED
+5. Bosnia and Herzegovina - 4 points (-1 GD) - QUALIFIED
+6. Algeria - 4 points (-2 GD) - QUALIFIED
+7. Paraguay - 4 points (-2 GD) - QUALIFIED
+8. Senegal - 3 points (+2 GD) - QUALIFIED
 
