@@ -1,5 +1,8 @@
 Round 32
 
+   runnerup E
+   runnerup L 
+
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
     if resultpoule == "3rd CDFGH":
