@@ -1,7 +1,5 @@
 Round 32
 
-   runnerup E  Ivoorkust
-   runnerup L  Kroatië
 
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
@@ -30,9 +28,6 @@ Round 32
 7. Paraguay - 4 points (-2 GD) - QUALIFIED
 8. Senegal - 3 points (+2 GD) - QUALIFIED
 
-fout
-Noorwegen ipv Kroatië tegen Ivoorkust
-30-6 Runnerup E - runnerup L
+Ivoorkust - Noorwegen
 
-goed
-Portugal Kroatië
+Portugal  - Kroatië
