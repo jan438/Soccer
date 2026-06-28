@@ -82,7 +82,7 @@ def select32(resultpoule):
     if resultpoule == "Runnerup I":
         selected32 = "Noorwegen"
     if resultpoule == "Runnerup J":
-        selected32 = "Runnerup Jt"
+        selected32 = "Oostenrijk"
     if resultpoule == "Runnerup K":
         selected32 = "Portugal"
     if resultpoule == "Runnerup L":
