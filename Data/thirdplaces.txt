@@ -14,18 +14,18 @@
     if resultpoule == "3rd CDFGH":
         selected32 = "Zweden"
     if resultpoule == "3rd CEFHI":
-        selected32 = "3rd CEFHIt"
+        selected32 = "3rd CEFHIt"   tegen mexico
     if resultpoule == "3rd EHIJK":
-        selected32 = "3rd EHIJKt"
+        selected32 = "3rd EHIJKt"    tegen engeland
         
     if resultpoule == "3rd AEHIJ":
-        selected32 = "3rd AEHIJt"    
+        selected32 = "3rd AEHIJt"     tegen belgie
     if resultpoule == "3rd BEFIJ":
         selected32 = "Bosnië en H."
-    if resultpoule == "3rd EFGIJ":
-        selected32 = "3rd EFGIJt"    
+    if resultpoule == "3rd EFGIJ":   
+        selected32 = "3rd EFGIJt"      tegen zwitserlnd  
     if resultpoule == "3rd DEIJL":
-        selected32 = "3rd DEIJLt"
+        selected32 = "3rd DEIJLt"      tegen colombia
         
 1. DR Congo - 4 points (+1 GD) - QUALIFIED
 2. Sweden - 4 points (0 GD) - QUALIFIED
