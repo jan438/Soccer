@@ -1,7 +1,7 @@
 Round 32
 
-   runnerup E
-   runnerup L 
+   runnerup E  Ivoorkust
+   runnerup L  Kroatië
 
     if resultpoule == "3rd ABCDF":
         selected32 = "Paraguay"    
