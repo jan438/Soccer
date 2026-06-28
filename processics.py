@@ -93,18 +93,18 @@ def select32(resultpoule):
     if resultpoule == "3rd CDFGH":
         selected32 = "Zweden"
     if resultpoule == "3rd CEFHI":
-        selected32 = "3rd CEFHIt"
+        selected32 = "Ecuador"
     if resultpoule == "3rd EHIJK":
-        selected32 = "3rd EHIJKt"
+        selected32 = "DR Congo"
         
     if resultpoule == "3rd AEHIJ":
-        selected32 = "3rd AEHIJt"    
+        selected32 = "Senegal"    
     if resultpoule == "3rd BEFIJ":
         selected32 = "Bosnië en H."
     if resultpoule == "3rd EFGIJ":
-        selected32 = "3rd EFGIJt"    
+        selected32 = "Algerije"    
     if resultpoule == "3rd DEIJL":
-        selected32 = "3rd DEIJLt"
+        selected32 = "Ghana"
             
     return selected32
     
