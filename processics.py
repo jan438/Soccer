@@ -32,82 +32,6 @@ def converttimetztolocalclock(timetz):
     minute = local_dt.minute
     return [hour, minute]
     
-def select32(resultpoule):
-    selected32 = resultpoule
-    if resultpoule == "Winner A":
-        selected32 = "Mexico"
-    if resultpoule == "Winner B":
-        selected32 = "Zwitserland"
-    if resultpoule == "Winner C":
-        selected32 = "Brazilië"
-    if resultpoule == "Winner D":
-        selected32 = "V. Staten"
-        
-    if resultpoule == "Winner E":
-        selected32 = "Duitsland"
-    if resultpoule == "Winner F":
-        selected32 = "Nederland"
-    if resultpoule == "Winner G":
-        selected32 = "België"
-    if resultpoule == "Winner H":
-        selected32 = "Spanje"
-        
-    if resultpoule == "Winner I":
-        selected32 = "Frankrijk"
-    if resultpoule == "Winner J":
-        selected32 = "Argentinië"
-    if resultpoule == "Winner K":
-        selected32 = "Colombia"
-    if resultpoule == "Winner L":
-        selected32 = "Engeland"
-        
-    if resultpoule == "Runnerup A":
-        selected32 = "Zuid Afrika"
-    if resultpoule == "Runnerup B":
-        selected32 = "Canada"
-    if resultpoule == "Runnerup C":
-        selected32 = "Marokko"
-    if resultpoule == "Runnerup D":
-        selected32 = "Australië"
-        
-    if resultpoule == "Runnerup E":
-        selected32 = "Ivoorkust"
-    if resultpoule == "Runnerup F":
-        selected32 = "Japan"
-    if resultpoule == "Runnerup G":
-        selected32 = "Egypte"
-    if resultpoule == "Runnerup H":
-        selected32 = "Kaapverdië"
-        
-    if resultpoule == "Runnerup I":
-        selected32 = "Noorwegen"
-    if resultpoule == "Runnerup J":
-        selected32 = "Oostenrijk"
-    if resultpoule == "Runnerup K":
-        selected32 = "Portugal"
-    if resultpoule == "Runnerup L":
-        selected32 = "Kroatië"
-        
-    if resultpoule == "3rd ABCDF":
-        selected32 = "Paraguay"    
-    if resultpoule == "3rd CDFGH":
-        selected32 = "Zweden"
-    if resultpoule == "3rd CEFHI":
-        selected32 = "Ecuador"
-    if resultpoule == "3rd EHIJK":
-        selected32 = "DR Congo"
-        
-    if resultpoule == "3rd AEHIJ":
-        selected32 = "Senegal"    
-    if resultpoule == "3rd BEFIJ":
-        selected32 = "Bosnië en H."
-    if resultpoule == "3rd EFGIJ":
-        selected32 = "Algerije"    
-    if resultpoule == "3rd DEIJL":
-        selected32 = "Ghana"
-            
-    return selected32
-    
 if sys.platform[0] == 'l':
     path = '/home/jan/git/Soccer'
 if sys.platform[0] == 'w':
@@ -117,7 +41,6 @@ eventcal = "Calendar/WK2026new.ics"
 in_file = open(os.path.join(path, eventcal), 'r')
 count = 0
 lastpos = 0
-count32 = 0
 for line in in_file:
     newlinepos = line.find("\t\n")
     lastsubstring = line[lastpos:newlinepos]
