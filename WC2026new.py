@@ -354,7 +354,7 @@ for j in range(13):
             opponent2 = ""
         else:
             break
-        drawing = scaleSVG("SVG/calendar-blank.svg", 0.54)
+        drawing = scaleSVG("SVG/calendar-blank.svg", 0.55)
         renderPDF.draw(drawing, my_canvas, left_margin + i * colwidthgame, gameline - 2)
         my_canvas.setFont(socfont, 7)
         my_canvas.setFillColor(HexColor("#ffffff"))
