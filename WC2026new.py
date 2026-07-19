@@ -458,5 +458,7 @@ for i in range(48):
         my_canvas.circle(297 + (i % 8) * 8, ccy, 3.0, stroke = 0, fill = 1)
     teamcounter += 1
 renderPDF.draw(scaleSVG("SVG/Bronze_medal.svg", 0.06), my_canvas, 530, 140)
+renderPDF.draw(scaleSVG("SVG/Silver_medal.svg", 0.06), my_canvas, 530, 160)
+renderPDF.draw(scaleSVG("SVG/Gold_medal.svg", 0.06), my_canvas, 530, 180)
 my_canvas.save()
 key = input("Wait")
