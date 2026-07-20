@@ -215,7 +215,7 @@ pcol2 = HexColor("#b0c2ff") # poule dark blue
 ccol1 = HexColor("#9e9e9e") # dark gray
 ccol2 = HexColor("#b0b0b0") # light gray
 lcol = HexColor("#c3ff9e") # legenda green
-scalemedal = 0.06
+scalemedal = 0.065
 scalecup = 0.02
 
 rowheightgame = 18
