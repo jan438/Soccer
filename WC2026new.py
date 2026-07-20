@@ -306,7 +306,7 @@ for poule in range(12):
         attrib = root.attrib
         for name, value in attrib.items():
             if name == "viewBox":
-                print('{0}="{1}"'.format(name, value), nationsdata[teamcounter][0])
+                print('{0}="{1}"'.format(name, value), nationsdata[teamcounter][0], str(round(1.4 * float(nationsdata[teamcounter][1]), 3)))
         drawing = scaleSVG(svgfile, 1.4 * float(nationsdata[teamcounter][1]))
         renderPDF.draw(drawing, my_canvas, poule_x + float(nationsdata[teamcounter][2]), pouleland_y +  float(nationsdata[teamcounter][3]))
         if nameinlogo[0] == "n":
