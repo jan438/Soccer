@@ -217,6 +217,8 @@ ccol2 = HexColor("#b0b0b0") # light gray
 lcol = HexColor("#c3ff9e") # legenda green
 scalemedal = 0.065
 scalecup = 0.02
+xmedal = 520
+xcup = 521
 
 rowheightgame = 18
 gameline = 550
@@ -459,12 +461,12 @@ for i in range(48):
             ccy = ccy + 8
         my_canvas.circle(297 + (i % 8) * 8, ccy, 3.0, stroke = 0, fill = 1)
     teamcounter += 1
-renderPDF.draw(scaleSVG("SVG/Bronze_medal.svg", scalemedal), my_canvas, 520, 140)
-renderPDF.draw(scaleSVG("SVG/Silver_medal.svg", scalemedal), my_canvas, 520, 160)
-renderPDF.draw(scaleSVG("SVG/Gold_medal.svg", scalemedal), my_canvas, 520, 180)
-renderPDF.draw(scaleSVG("SVG/Bronze_cup.svg", scalecup), my_canvas, 520, 140)
-renderPDF.draw(scaleSVG("SVG/Silver_cup.svg", scalecup), my_canvas, 520, 160)
-renderPDF.draw(scaleSVG("SVG/Gold_cup.svg", scalecup), my_canvas, 520, 180)
+renderPDF.draw(scaleSVG("SVG/Bronze_medal.svg", scalemedal), my_canvas, xmedal, 140)
+renderPDF.draw(scaleSVG("SVG/Silver_medal.svg", scalemedal), my_canvas, xmedal, 160)
+renderPDF.draw(scaleSVG("SVG/Gold_medal.svg", scalemedal), my_canvas, xmedal, 180)
+renderPDF.draw(scaleSVG("SVG/Bronze_cup.svg", scalecup), my_canvas, xcup, 140)
+renderPDF.draw(scaleSVG("SVG/Silver_cup.svg", scalecup), my_canvas, xcup, 160)
+renderPDF.draw(scaleSVG("SVG/Gold_cup.svg", scalecup), my_canvas, xcup, 180)
 my_canvas.setFont(socfont, 12)
 my_canvas.setFillColor(HexColor("#ffffff"))
 my_canvas.drawString(538,143,"England")
