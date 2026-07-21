@@ -386,8 +386,8 @@ for j in range(13):
             my_canvas.drawString(left_margin + i * colwidthgame + 2.0, gameline + 0.5, datestr)
         else:
             my_canvas.drawString(left_margin + i * colwidthgame + 0.45, gameline + 0.5, datestr)
-        my_canvas.drawString(left_margin + i * colwidthgame + 29, gameline, opponent2)
-        my_canvas.drawString(left_margin + i * colwidthgame + 29, gameline + 6, opponent1)
+        my_canvas.drawString(left_margin + i * colwidthgame + 28, gameline, opponent2)
+        my_canvas.drawString(left_margin + i * colwidthgame + 28, gameline + 6, opponent1)
         [hour, minute] = converttimetztolocalclock(gameevents[calindex].starttime)
         strhour = "{:02d}".format(hour)
         strminute = "{:02d}".format(minute)
